@@ -1,0 +1,125 @@
+\hypertarget{scon_8c}{}\section{scon/scon.c File Reference}
+\label{scon_8c}\index{scon/scon.\+c@{scon/scon.\+c}}
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Device.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$O\+S\+A\+P\+I.\+h$>$}\\*
+{\ttfamily \#include $<$M\+S\+E\+C\+Config.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}scon.\+h\char`\"{}}\\*
+Include dependency graph for scon.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{scon_8c_a3b298bc6bee085f76930be55165307b0}{S\+C\+O\+N\+\_\+\+S\+P}~S\+Y\+S\+\_\+\+Set\+Point
+\item 
+\#define \hyperlink{scon_8c_a11535e868331af181c68c89ce7b199eb}{S\+C\+O\+N\+\_\+\+Car}~S\+Y\+S\+\_\+\+Car\+Select
+\item 
+\#define \hyperlink{scon_8c_a2e7e83e09a7c6f1c454a6926384ca548}{S\+C\+O\+N\+\_\+\+N}~S\+Y\+S\+\_\+\+N
+\item 
+\#define \hyperlink{scon_8c_adee94e3af7a769b0af592a1d630725d5}{S\+C\+O\+N\+\_\+pfa}~S\+Y\+S\+\_\+a
+\item 
+\#define \hyperlink{scon_8c_a4cb274172bfd24cf4f1c661d5564b993}{S\+C\+O\+N\+\_\+pfb}~S\+Y\+S\+\_\+b
+\item 
+\#define \hyperlink{scon_8c_a2ffcbfe7af3c44b1bc4a098502f95703}{S\+C\+O\+N\+\_\+pfu}~S\+Y\+S\+\_\+u
+\item 
+\#define \hyperlink{scon_8c_acce6fbfa24ef4441ec0333df419c649e}{S\+C\+O\+N\+\_\+pfy}~S\+Y\+S\+\_\+y
+\item 
+\#define \hyperlink{scon_8c_a797fa412abd9a883c9e23e64ae671c1c}{S\+C\+O\+N\+\_\+\+Control\+Domain}~S\+Y\+S\+\_\+\+Control\+Domain
+\item 
+\#define \hyperlink{scon_8c_a11cfde539c6b83d87f6d0444e9be8dfe}{S\+C\+O\+N\+\_\+\+Task\+Period}~S\+Y\+S\+\_\+\+Sampling\+Period
+\item 
+\#define \hyperlink{scon_8c_a49baa7efc7b74513b52765ffca59bd28}{S\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State}~S\+Y\+S\+\_\+\+M\+S\+E\+C\+State
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{scon_8c_af077b37ba6c6b3e5a3da3a39eb150af1}{S\+C\+O\+N\+\_\+v\+Init} (void)
+\item 
+void \hyperlink{scon_8c_ab4be858291df764cf93902ace4b7caca}{S\+C\+O\+N\+\_\+v\+Task} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{scon_8c_a11535e868331af181c68c89ce7b199eb}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+\+Car@{S\+C\+O\+N\+\_\+\+Car}}
+\index{S\+C\+O\+N\+\_\+\+Car@{S\+C\+O\+N\+\_\+\+Car}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+\+Car}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+\+Car~S\+Y\+S\+\_\+\+Car\+Select}\label{scon_8c_a11535e868331af181c68c89ce7b199eb}
+\hypertarget{scon_8c_a797fa412abd9a883c9e23e64ae671c1c}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+\+Control\+Domain@{S\+C\+O\+N\+\_\+\+Control\+Domain}}
+\index{S\+C\+O\+N\+\_\+\+Control\+Domain@{S\+C\+O\+N\+\_\+\+Control\+Domain}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+\+Control\+Domain}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+\+Control\+Domain~S\+Y\+S\+\_\+\+Control\+Domain}\label{scon_8c_a797fa412abd9a883c9e23e64ae671c1c}
+\hypertarget{scon_8c_a49baa7efc7b74513b52765ffca59bd28}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State@{S\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State}}
+\index{S\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State@{S\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State~S\+Y\+S\+\_\+\+M\+S\+E\+C\+State}\label{scon_8c_a49baa7efc7b74513b52765ffca59bd28}
+\hypertarget{scon_8c_a2e7e83e09a7c6f1c454a6926384ca548}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+\+N@{S\+C\+O\+N\+\_\+\+N}}
+\index{S\+C\+O\+N\+\_\+\+N@{S\+C\+O\+N\+\_\+\+N}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+\+N~S\+Y\+S\+\_\+\+N}\label{scon_8c_a2e7e83e09a7c6f1c454a6926384ca548}
+\hypertarget{scon_8c_adee94e3af7a769b0af592a1d630725d5}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+pfa@{S\+C\+O\+N\+\_\+pfa}}
+\index{S\+C\+O\+N\+\_\+pfa@{S\+C\+O\+N\+\_\+pfa}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+pfa}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+pfa~S\+Y\+S\+\_\+a}\label{scon_8c_adee94e3af7a769b0af592a1d630725d5}
+\hypertarget{scon_8c_a4cb274172bfd24cf4f1c661d5564b993}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+pfb@{S\+C\+O\+N\+\_\+pfb}}
+\index{S\+C\+O\+N\+\_\+pfb@{S\+C\+O\+N\+\_\+pfb}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+pfb}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+pfb~S\+Y\+S\+\_\+b}\label{scon_8c_a4cb274172bfd24cf4f1c661d5564b993}
+\hypertarget{scon_8c_a2ffcbfe7af3c44b1bc4a098502f95703}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+pfu@{S\+C\+O\+N\+\_\+pfu}}
+\index{S\+C\+O\+N\+\_\+pfu@{S\+C\+O\+N\+\_\+pfu}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+pfu}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+pfu~S\+Y\+S\+\_\+u}\label{scon_8c_a2ffcbfe7af3c44b1bc4a098502f95703}
+\hypertarget{scon_8c_acce6fbfa24ef4441ec0333df419c649e}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+pfy@{S\+C\+O\+N\+\_\+pfy}}
+\index{S\+C\+O\+N\+\_\+pfy@{S\+C\+O\+N\+\_\+pfy}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+pfy}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+pfy~S\+Y\+S\+\_\+y}\label{scon_8c_acce6fbfa24ef4441ec0333df419c649e}
+\hypertarget{scon_8c_a3b298bc6bee085f76930be55165307b0}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+\+S\+P@{S\+C\+O\+N\+\_\+\+S\+P}}
+\index{S\+C\+O\+N\+\_\+\+S\+P@{S\+C\+O\+N\+\_\+\+S\+P}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+\+S\+P~S\+Y\+S\+\_\+\+Set\+Point}\label{scon_8c_a3b298bc6bee085f76930be55165307b0}
+S-\/domain Controller Foreign header files Internal header files Module level configuration \hypertarget{scon_8c_a11cfde539c6b83d87f6d0444e9be8dfe}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+\+Task\+Period@{S\+C\+O\+N\+\_\+\+Task\+Period}}
+\index{S\+C\+O\+N\+\_\+\+Task\+Period@{S\+C\+O\+N\+\_\+\+Task\+Period}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+\+Task\+Period}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+O\+N\+\_\+\+Task\+Period~S\+Y\+S\+\_\+\+Sampling\+Period}\label{scon_8c_a11cfde539c6b83d87f6d0444e9be8dfe}
+
+
+\subsection{Function Documentation}
+\hypertarget{scon_8c_af077b37ba6c6b3e5a3da3a39eb150af1}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+v\+Init@{S\+C\+O\+N\+\_\+v\+Init}}
+\index{S\+C\+O\+N\+\_\+v\+Init@{S\+C\+O\+N\+\_\+v\+Init}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+v\+Init}]{\setlength{\rightskip}{0pt plus 5cm}void S\+C\+O\+N\+\_\+v\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{scon_8c_af077b37ba6c6b3e5a3da3a39eb150af1}
+Module level variables Module initialization 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{scon_8c_ab4be858291df764cf93902ace4b7caca}{}\index{scon.\+c@{scon.\+c}!S\+C\+O\+N\+\_\+v\+Task@{S\+C\+O\+N\+\_\+v\+Task}}
+\index{S\+C\+O\+N\+\_\+v\+Task@{S\+C\+O\+N\+\_\+v\+Task}!scon.\+c@{scon.\+c}}
+\subsubsection[{S\+C\+O\+N\+\_\+v\+Task}]{\setlength{\rightskip}{0pt plus 5cm}void S\+C\+O\+N\+\_\+v\+Task (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{scon_8c_ab4be858291df764cf93902ace4b7caca}
+Main function task 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+T\+O\+D\+O\+: implement body of task and define proper activation time
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+

@@ -1,0 +1,5 @@
+MSE Controller
+
+Date		Rev	Comments
+15-05-02	5.2	[JoPe] ConIn module was integrated. Only one eQEP is expected to be used
+			at a time, which one depends on global variable SYS_ControlInputSource.

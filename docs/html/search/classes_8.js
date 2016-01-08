@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['i2c_5fregs',['I2C_REGS',['../struct_i2_c___r_e_g_s.html',1,'']]],
+  ['i2cemdr_5fbits',['I2CEMDR_BITS',['../struct_i2_c_e_m_d_r___b_i_t_s.html',1,'']]],
+  ['i2cemdr_5freg',['I2CEMDR_REG',['../union_i2_c_e_m_d_r___r_e_g.html',1,'']]],
+  ['i2cffrx_5fbits',['I2CFFRX_BITS',['../struct_i2_c_f_f_r_x___b_i_t_s.html',1,'']]],
+  ['i2cffrx_5freg',['I2CFFRX_REG',['../union_i2_c_f_f_r_x___r_e_g.html',1,'']]],
+  ['i2cfftx_5fbits',['I2CFFTX_BITS',['../struct_i2_c_f_f_t_x___b_i_t_s.html',1,'']]],
+  ['i2cfftx_5freg',['I2CFFTX_REG',['../union_i2_c_f_f_t_x___r_e_g.html',1,'']]],
+  ['i2cier_5fbits',['I2CIER_BITS',['../struct_i2_c_i_e_r___b_i_t_s.html',1,'']]],
+  ['i2cier_5freg',['I2CIER_REG',['../union_i2_c_i_e_r___r_e_g.html',1,'']]],
+  ['i2cisrc_5fbits',['I2CISRC_BITS',['../struct_i2_c_i_s_r_c___b_i_t_s.html',1,'']]],
+  ['i2cisrc_5freg',['I2CISRC_REG',['../union_i2_c_i_s_r_c___r_e_g.html',1,'']]],
+  ['i2cmdr_5fbits',['I2CMDR_BITS',['../struct_i2_c_m_d_r___b_i_t_s.html',1,'']]],
+  ['i2cmdr_5freg',['I2CMDR_REG',['../union_i2_c_m_d_r___r_e_g.html',1,'']]],
+  ['i2cmsg',['I2CMSG',['../struct_i2_c_m_s_g.html',1,'']]],
+  ['i2cpsc_5fbits',['I2CPSC_BITS',['../struct_i2_c_p_s_c___b_i_t_s.html',1,'']]],
+  ['i2cpsc_5freg',['I2CPSC_REG',['../union_i2_c_p_s_c___r_e_g.html',1,'']]],
+  ['i2cstr_5fbits',['I2CSTR_BITS',['../struct_i2_c_s_t_r___b_i_t_s.html',1,'']]],
+  ['i2cstr_5freg',['I2CSTR_REG',['../union_i2_c_s_t_r___r_e_g.html',1,'']]]
+];

@@ -1,0 +1,246 @@
+\hypertarget{_d_s_p2833x___cpu_timers_8h}{}\section{f2833x/v140/\+D\+S\+P2833x\+\_\+headers/include/\+D\+S\+P2833x\+\_\+\+Cpu\+Timers.h File Reference}
+\label{_d_s_p2833x___cpu_timers_8h}\index{f2833x/v140/\+D\+S\+P2833x\+\_\+headers/include/\+D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{f2833x/v140/\+D\+S\+P2833x\+\_\+headers/include/\+D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_c_r___b_i_t_s}{T\+C\+R\+\_\+\+B\+I\+T\+S}
+\item 
+union \hyperlink{union_t_c_r___r_e_g}{T\+C\+R\+\_\+\+R\+E\+G}
+\item 
+struct \hyperlink{struct_t_p_r___b_i_t_s}{T\+P\+R\+\_\+\+B\+I\+T\+S}
+\item 
+union \hyperlink{union_t_p_r___r_e_g}{T\+P\+R\+\_\+\+R\+E\+G}
+\item 
+struct \hyperlink{struct_t_p_r_h___b_i_t_s}{T\+P\+R\+H\+\_\+\+B\+I\+T\+S}
+\item 
+union \hyperlink{union_t_p_r_h___r_e_g}{T\+P\+R\+H\+\_\+\+R\+E\+G}
+\item 
+struct \hyperlink{struct_t_i_m___r_e_g}{T\+I\+M\+\_\+\+R\+E\+G}
+\item 
+union \hyperlink{union_t_i_m___g_r_o_u_p}{T\+I\+M\+\_\+\+G\+R\+O\+U\+P}
+\item 
+struct \hyperlink{struct_p_r_d___r_e_g}{P\+R\+D\+\_\+\+R\+E\+G}
+\item 
+union \hyperlink{union_p_r_d___g_r_o_u_p}{P\+R\+D\+\_\+\+G\+R\+O\+U\+P}
+\item 
+struct \hyperlink{struct_c_p_u_t_i_m_e_r___r_e_g_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+R\+E\+G\+S}
+\item 
+struct \hyperlink{struct_c_p_u_t_i_m_e_r___v_a_r_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a98358fad4405f518535934bb8b0420af}{Start\+Cpu\+Timer0}()~Cpu\+Timer0\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 0
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_ac4d5a46e949f4dfda25cde6ea4c754a5}{Stop\+Cpu\+Timer0}()~Cpu\+Timer0\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 1
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a2b059a810ae91f3b44021b7fe5c10ee3}{Reload\+Cpu\+Timer0}()~Cpu\+Timer0\+Regs.\+T\+C\+R.\+bit.\+T\+R\+B = 1
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_adc6c0b5670b0b5229826c58309c56830}{Read\+Cpu\+Timer0\+Counter}()~Cpu\+Timer0\+Regs.\+T\+I\+M.\+all
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a925369d3f767097b913219e3f6b0991f}{Read\+Cpu\+Timer0\+Period}()~Cpu\+Timer0\+Regs.\+P\+R\+D.\+all
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a018edd11d50b967cdfb852168a843fd8}{Start\+Cpu\+Timer1}()~Cpu\+Timer1\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 0
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_aa0f5329bb23b2566e86358eca9ed3573}{Start\+Cpu\+Timer2}()~Cpu\+Timer2\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 0
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a0eb843ef1cc940e64e1b75a023a40bab}{Stop\+Cpu\+Timer1}()~Cpu\+Timer1\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 1
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_adc200976083bb13b49c2674ac042cf9f}{Stop\+Cpu\+Timer2}()~Cpu\+Timer2\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 1
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a536a8b96dcf7e7a89c2262936497a084}{Reload\+Cpu\+Timer1}()~Cpu\+Timer1\+Regs.\+T\+C\+R.\+bit.\+T\+R\+B = 1
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a97461baeb4cd3cf6bf8b66d5f56c9a1b}{Reload\+Cpu\+Timer2}()~Cpu\+Timer2\+Regs.\+T\+C\+R.\+bit.\+T\+R\+B = 1
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a0145fb1bc37359d7932af09a1805f3d1}{Read\+Cpu\+Timer1\+Counter}()~Cpu\+Timer1\+Regs.\+T\+I\+M.\+all
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a24a4a5053f09943aac76265f3859d0d5}{Read\+Cpu\+Timer2\+Counter}()~Cpu\+Timer2\+Regs.\+T\+I\+M.\+all
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a25929ef1e114fbc5c2b9fb5563d88369}{Read\+Cpu\+Timer1\+Period}()~Cpu\+Timer1\+Regs.\+P\+R\+D.\+all
+\item 
+\#define \hyperlink{_d_s_p2833x___cpu_timers_8h_a91fd6cae3bdea2b6691297b28237d780}{Read\+Cpu\+Timer2\+Period}()~Cpu\+Timer2\+Regs.\+P\+R\+D.\+all
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_d_s_p2833x___cpu_timers_8h_aa23a1f332721d800fa9b232563403609}{Init\+Cpu\+Timers} (void)
+\item 
+void \hyperlink{_d_s_p2833x___cpu_timers_8h_ab9368e14715e9c17a2223c7433fabe73}{Config\+Cpu\+Timer} (struct \hyperlink{struct_c_p_u_t_i_m_e_r___v_a_r_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S} $\ast$Timer, float Freq, float Period)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile struct \hyperlink{struct_c_p_u_t_i_m_e_r___r_e_g_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+R\+E\+G\+S} \hyperlink{_d_s_p2833x___cpu_timers_8h_a755ad1f37e82cdf8eb75ecbd92e08021}{Cpu\+Timer0\+Regs}
+\item 
+struct \hyperlink{struct_c_p_u_t_i_m_e_r___v_a_r_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S} \hyperlink{_d_s_p2833x___cpu_timers_8h_ac4d96e0d33fc1ee7a5c22f8a091fcff5}{Cpu\+Timer0}
+\item 
+volatile struct \hyperlink{struct_c_p_u_t_i_m_e_r___r_e_g_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+R\+E\+G\+S} \hyperlink{_d_s_p2833x___cpu_timers_8h_aa8e11544d0283ba6c9929340928d4b1b}{Cpu\+Timer1\+Regs}
+\item 
+volatile struct \hyperlink{struct_c_p_u_t_i_m_e_r___r_e_g_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+R\+E\+G\+S} \hyperlink{_d_s_p2833x___cpu_timers_8h_aac534b295a9cd13391bc2b414abf0952}{Cpu\+Timer2\+Regs}
+\item 
+struct \hyperlink{struct_c_p_u_t_i_m_e_r___v_a_r_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S} \hyperlink{_d_s_p2833x___cpu_timers_8h_ab0efabdc64b1ff989ecc7654d34e7894}{Cpu\+Timer1}
+\item 
+struct \hyperlink{struct_c_p_u_t_i_m_e_r___v_a_r_s}{C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S} \hyperlink{_d_s_p2833x___cpu_timers_8h_ad510e7823bc189dcb96e3b786c3f571e}{Cpu\+Timer2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_adc6c0b5670b0b5229826c58309c56830}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Read\+Cpu\+Timer0\+Counter@{Read\+Cpu\+Timer0\+Counter}}
+\index{Read\+Cpu\+Timer0\+Counter@{Read\+Cpu\+Timer0\+Counter}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Read\+Cpu\+Timer0\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}\#define Read\+Cpu\+Timer0\+Counter(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer0\+Regs.\+T\+I\+M.\+all}\label{_d_s_p2833x___cpu_timers_8h_adc6c0b5670b0b5229826c58309c56830}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a925369d3f767097b913219e3f6b0991f}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Read\+Cpu\+Timer0\+Period@{Read\+Cpu\+Timer0\+Period}}
+\index{Read\+Cpu\+Timer0\+Period@{Read\+Cpu\+Timer0\+Period}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Read\+Cpu\+Timer0\+Period}]{\setlength{\rightskip}{0pt plus 5cm}\#define Read\+Cpu\+Timer0\+Period(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer0\+Regs.\+P\+R\+D.\+all}\label{_d_s_p2833x___cpu_timers_8h_a925369d3f767097b913219e3f6b0991f}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a0145fb1bc37359d7932af09a1805f3d1}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Read\+Cpu\+Timer1\+Counter@{Read\+Cpu\+Timer1\+Counter}}
+\index{Read\+Cpu\+Timer1\+Counter@{Read\+Cpu\+Timer1\+Counter}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Read\+Cpu\+Timer1\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}\#define Read\+Cpu\+Timer1\+Counter(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer1\+Regs.\+T\+I\+M.\+all}\label{_d_s_p2833x___cpu_timers_8h_a0145fb1bc37359d7932af09a1805f3d1}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a25929ef1e114fbc5c2b9fb5563d88369}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Read\+Cpu\+Timer1\+Period@{Read\+Cpu\+Timer1\+Period}}
+\index{Read\+Cpu\+Timer1\+Period@{Read\+Cpu\+Timer1\+Period}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Read\+Cpu\+Timer1\+Period}]{\setlength{\rightskip}{0pt plus 5cm}\#define Read\+Cpu\+Timer1\+Period(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer1\+Regs.\+P\+R\+D.\+all}\label{_d_s_p2833x___cpu_timers_8h_a25929ef1e114fbc5c2b9fb5563d88369}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a24a4a5053f09943aac76265f3859d0d5}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Read\+Cpu\+Timer2\+Counter@{Read\+Cpu\+Timer2\+Counter}}
+\index{Read\+Cpu\+Timer2\+Counter@{Read\+Cpu\+Timer2\+Counter}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Read\+Cpu\+Timer2\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}\#define Read\+Cpu\+Timer2\+Counter(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer2\+Regs.\+T\+I\+M.\+all}\label{_d_s_p2833x___cpu_timers_8h_a24a4a5053f09943aac76265f3859d0d5}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a91fd6cae3bdea2b6691297b28237d780}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Read\+Cpu\+Timer2\+Period@{Read\+Cpu\+Timer2\+Period}}
+\index{Read\+Cpu\+Timer2\+Period@{Read\+Cpu\+Timer2\+Period}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Read\+Cpu\+Timer2\+Period}]{\setlength{\rightskip}{0pt plus 5cm}\#define Read\+Cpu\+Timer2\+Period(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer2\+Regs.\+P\+R\+D.\+all}\label{_d_s_p2833x___cpu_timers_8h_a91fd6cae3bdea2b6691297b28237d780}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a2b059a810ae91f3b44021b7fe5c10ee3}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Reload\+Cpu\+Timer0@{Reload\+Cpu\+Timer0}}
+\index{Reload\+Cpu\+Timer0@{Reload\+Cpu\+Timer0}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Reload\+Cpu\+Timer0}]{\setlength{\rightskip}{0pt plus 5cm}\#define Reload\+Cpu\+Timer0(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer0\+Regs.\+T\+C\+R.\+bit.\+T\+R\+B = 1}\label{_d_s_p2833x___cpu_timers_8h_a2b059a810ae91f3b44021b7fe5c10ee3}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a536a8b96dcf7e7a89c2262936497a084}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Reload\+Cpu\+Timer1@{Reload\+Cpu\+Timer1}}
+\index{Reload\+Cpu\+Timer1@{Reload\+Cpu\+Timer1}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Reload\+Cpu\+Timer1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Reload\+Cpu\+Timer1(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer1\+Regs.\+T\+C\+R.\+bit.\+T\+R\+B = 1}\label{_d_s_p2833x___cpu_timers_8h_a536a8b96dcf7e7a89c2262936497a084}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a97461baeb4cd3cf6bf8b66d5f56c9a1b}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Reload\+Cpu\+Timer2@{Reload\+Cpu\+Timer2}}
+\index{Reload\+Cpu\+Timer2@{Reload\+Cpu\+Timer2}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Reload\+Cpu\+Timer2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Reload\+Cpu\+Timer2(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer2\+Regs.\+T\+C\+R.\+bit.\+T\+R\+B = 1}\label{_d_s_p2833x___cpu_timers_8h_a97461baeb4cd3cf6bf8b66d5f56c9a1b}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a98358fad4405f518535934bb8b0420af}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Start\+Cpu\+Timer0@{Start\+Cpu\+Timer0}}
+\index{Start\+Cpu\+Timer0@{Start\+Cpu\+Timer0}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Start\+Cpu\+Timer0}]{\setlength{\rightskip}{0pt plus 5cm}\#define Start\+Cpu\+Timer0(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer0\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 0}\label{_d_s_p2833x___cpu_timers_8h_a98358fad4405f518535934bb8b0420af}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a018edd11d50b967cdfb852168a843fd8}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Start\+Cpu\+Timer1@{Start\+Cpu\+Timer1}}
+\index{Start\+Cpu\+Timer1@{Start\+Cpu\+Timer1}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Start\+Cpu\+Timer1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Start\+Cpu\+Timer1(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer1\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 0}\label{_d_s_p2833x___cpu_timers_8h_a018edd11d50b967cdfb852168a843fd8}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_aa0f5329bb23b2566e86358eca9ed3573}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Start\+Cpu\+Timer2@{Start\+Cpu\+Timer2}}
+\index{Start\+Cpu\+Timer2@{Start\+Cpu\+Timer2}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Start\+Cpu\+Timer2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Start\+Cpu\+Timer2(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer2\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 0}\label{_d_s_p2833x___cpu_timers_8h_aa0f5329bb23b2566e86358eca9ed3573}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_ac4d5a46e949f4dfda25cde6ea4c754a5}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Stop\+Cpu\+Timer0@{Stop\+Cpu\+Timer0}}
+\index{Stop\+Cpu\+Timer0@{Stop\+Cpu\+Timer0}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Stop\+Cpu\+Timer0}]{\setlength{\rightskip}{0pt plus 5cm}\#define Stop\+Cpu\+Timer0(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer0\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 1}\label{_d_s_p2833x___cpu_timers_8h_ac4d5a46e949f4dfda25cde6ea4c754a5}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a0eb843ef1cc940e64e1b75a023a40bab}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Stop\+Cpu\+Timer1@{Stop\+Cpu\+Timer1}}
+\index{Stop\+Cpu\+Timer1@{Stop\+Cpu\+Timer1}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Stop\+Cpu\+Timer1}]{\setlength{\rightskip}{0pt plus 5cm}\#define Stop\+Cpu\+Timer1(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer1\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 1}\label{_d_s_p2833x___cpu_timers_8h_a0eb843ef1cc940e64e1b75a023a40bab}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_adc200976083bb13b49c2674ac042cf9f}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Stop\+Cpu\+Timer2@{Stop\+Cpu\+Timer2}}
+\index{Stop\+Cpu\+Timer2@{Stop\+Cpu\+Timer2}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Stop\+Cpu\+Timer2}]{\setlength{\rightskip}{0pt plus 5cm}\#define Stop\+Cpu\+Timer2(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~Cpu\+Timer2\+Regs.\+T\+C\+R.\+bit.\+T\+S\+S = 1}\label{_d_s_p2833x___cpu_timers_8h_adc200976083bb13b49c2674ac042cf9f}
+
+
+\subsection{Function Documentation}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_ab9368e14715e9c17a2223c7433fabe73}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Config\+Cpu\+Timer@{Config\+Cpu\+Timer}}
+\index{Config\+Cpu\+Timer@{Config\+Cpu\+Timer}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Config\+Cpu\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void Config\+Cpu\+Timer (
+\begin{DoxyParamCaption}
+\item[{struct {\bf C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S} $\ast$}]{Timer, }
+\item[{float}]{Freq, }
+\item[{float}]{Period}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___cpu_timers_8h_ab9368e14715e9c17a2223c7433fabe73}
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{_d_s_p2833x___cpu_timers_8h_aa23a1f332721d800fa9b232563403609}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Init\+Cpu\+Timers@{Init\+Cpu\+Timers}}
+\index{Init\+Cpu\+Timers@{Init\+Cpu\+Timers}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Init\+Cpu\+Timers}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Cpu\+Timers (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___cpu_timers_8h_aa23a1f332721d800fa9b232563403609}
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_ac4d96e0d33fc1ee7a5c22f8a091fcff5}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Cpu\+Timer0@{Cpu\+Timer0}}
+\index{Cpu\+Timer0@{Cpu\+Timer0}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Cpu\+Timer0}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S} Cpu\+Timer0}\label{_d_s_p2833x___cpu_timers_8h_ac4d96e0d33fc1ee7a5c22f8a091fcff5}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_a755ad1f37e82cdf8eb75ecbd92e08021}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Cpu\+Timer0\+Regs@{Cpu\+Timer0\+Regs}}
+\index{Cpu\+Timer0\+Regs@{Cpu\+Timer0\+Regs}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Cpu\+Timer0\+Regs}]{\setlength{\rightskip}{0pt plus 5cm}volatile struct {\bf C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+R\+E\+G\+S} Cpu\+Timer0\+Regs}\label{_d_s_p2833x___cpu_timers_8h_a755ad1f37e82cdf8eb75ecbd92e08021}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_ab0efabdc64b1ff989ecc7654d34e7894}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Cpu\+Timer1@{Cpu\+Timer1}}
+\index{Cpu\+Timer1@{Cpu\+Timer1}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Cpu\+Timer1}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S} Cpu\+Timer1}\label{_d_s_p2833x___cpu_timers_8h_ab0efabdc64b1ff989ecc7654d34e7894}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_aa8e11544d0283ba6c9929340928d4b1b}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Cpu\+Timer1\+Regs@{Cpu\+Timer1\+Regs}}
+\index{Cpu\+Timer1\+Regs@{Cpu\+Timer1\+Regs}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Cpu\+Timer1\+Regs}]{\setlength{\rightskip}{0pt plus 5cm}volatile struct {\bf C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+R\+E\+G\+S} Cpu\+Timer1\+Regs}\label{_d_s_p2833x___cpu_timers_8h_aa8e11544d0283ba6c9929340928d4b1b}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_ad510e7823bc189dcb96e3b786c3f571e}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Cpu\+Timer2@{Cpu\+Timer2}}
+\index{Cpu\+Timer2@{Cpu\+Timer2}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Cpu\+Timer2}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+V\+A\+R\+S} Cpu\+Timer2}\label{_d_s_p2833x___cpu_timers_8h_ad510e7823bc189dcb96e3b786c3f571e}
+\hypertarget{_d_s_p2833x___cpu_timers_8h_aac534b295a9cd13391bc2b414abf0952}{}\index{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}!Cpu\+Timer2\+Regs@{Cpu\+Timer2\+Regs}}
+\index{Cpu\+Timer2\+Regs@{Cpu\+Timer2\+Regs}!D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h@{D\+S\+P2833x\+\_\+\+Cpu\+Timers.\+h}}
+\subsubsection[{Cpu\+Timer2\+Regs}]{\setlength{\rightskip}{0pt plus 5cm}volatile struct {\bf C\+P\+U\+T\+I\+M\+E\+R\+\_\+\+R\+E\+G\+S} Cpu\+Timer2\+Regs}\label{_d_s_p2833x___cpu_timers_8h_aac534b295a9cd13391bc2b414abf0952}

@@ -1,0 +1,127 @@
+\hypertarget{zcon_8c}{}\section{zcon/zcon.c File Reference}
+\label{zcon_8c}\index{zcon/zcon.\+c@{zcon/zcon.\+c}}
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Device.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$O\+S\+A\+P\+I.\+h$>$}\\*
+{\ttfamily \#include $<$M\+S\+E\+C\+Config.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}zcon.\+h\char`\"{}}\\*
+Include dependency graph for zcon.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{zcon_8c_a769d2edef7176613d3e1b31bf119e44f}{Z\+C\+O\+N\+\_\+\+N}~S\+Y\+S\+\_\+\+N
+\item 
+\#define \hyperlink{zcon_8c_a420df90aba1602bcd4b83d016dd1bd32}{Z\+C\+O\+N\+\_\+pfa}~S\+Y\+S\+\_\+a
+\item 
+\#define \hyperlink{zcon_8c_ad7518c8124569777d143037212ccf57e}{Z\+C\+O\+N\+\_\+pfb}~S\+Y\+S\+\_\+b
+\item 
+\#define \hyperlink{zcon_8c_afe050798947fe6a27c3243bddf693187}{Z\+C\+O\+N\+\_\+pfu}~S\+Y\+S\+\_\+u
+\item 
+\#define \hyperlink{zcon_8c_a9eb1b1303fbeb95cd7794cb1e8575ed1}{Z\+C\+O\+N\+\_\+pfy}~S\+Y\+S\+\_\+y
+\item 
+\#define \hyperlink{zcon_8c_a443b46a0fa15f5afe03edb45d2f1c569}{Z\+C\+O\+N\+\_\+\+Control\+Domain}~S\+Y\+S\+\_\+\+Control\+Domain
+\item 
+\#define \hyperlink{zcon_8c_a034b92bccae5dd7a248215f6d0aa0f20}{Z\+C\+O\+N\+\_\+\+Task\+Period}~S\+Y\+S\+\_\+\+Sampling\+Period
+\item 
+\#define \hyperlink{zcon_8c_ab5786aee2b61563c75670506db643beb}{Z\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State}~S\+Y\+S\+\_\+\+M\+S\+E\+C\+State
+\item 
+\#define \hyperlink{zcon_8c_aa4de0c9b5a957de4c03dc7dcc4249643}{Z\+C\+O\+N\+\_\+\+Max\+Val}~(float)(4.\+0)
+\item 
+\#define \hyperlink{zcon_8c_aef7c11491f4e3d20829dbf32ac80c211}{Z\+C\+O\+N\+\_\+\+Min\+Val}~(float)(-\/4.\+0)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{zcon_8c_a2bcb877d8d1a2414cff5a90cf45a9f86}{Z\+C\+O\+N\+\_\+v\+Init} (void)
+\item 
+void \hyperlink{zcon_8c_aa6bb2589f074808d230b826b0a0f156c}{Z\+C\+O\+N\+\_\+v\+Task} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{zcon_8c_a443b46a0fa15f5afe03edb45d2f1c569}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+\+Control\+Domain@{Z\+C\+O\+N\+\_\+\+Control\+Domain}}
+\index{Z\+C\+O\+N\+\_\+\+Control\+Domain@{Z\+C\+O\+N\+\_\+\+Control\+Domain}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+\+Control\+Domain}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+\+Control\+Domain~S\+Y\+S\+\_\+\+Control\+Domain}\label{zcon_8c_a443b46a0fa15f5afe03edb45d2f1c569}
+\hypertarget{zcon_8c_aa4de0c9b5a957de4c03dc7dcc4249643}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+\+Max\+Val@{Z\+C\+O\+N\+\_\+\+Max\+Val}}
+\index{Z\+C\+O\+N\+\_\+\+Max\+Val@{Z\+C\+O\+N\+\_\+\+Max\+Val}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+\+Max\+Val}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+\+Max\+Val~(float)(4.\+0)}\label{zcon_8c_aa4de0c9b5a957de4c03dc7dcc4249643}
+\hypertarget{zcon_8c_aef7c11491f4e3d20829dbf32ac80c211}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+\+Min\+Val@{Z\+C\+O\+N\+\_\+\+Min\+Val}}
+\index{Z\+C\+O\+N\+\_\+\+Min\+Val@{Z\+C\+O\+N\+\_\+\+Min\+Val}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+\+Min\+Val}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+\+Min\+Val~(float)(-\/4.\+0)}\label{zcon_8c_aef7c11491f4e3d20829dbf32ac80c211}
+\hypertarget{zcon_8c_ab5786aee2b61563c75670506db643beb}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State@{Z\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State}}
+\index{Z\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State@{Z\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+\+M\+S\+E\+C\+State~S\+Y\+S\+\_\+\+M\+S\+E\+C\+State}\label{zcon_8c_ab5786aee2b61563c75670506db643beb}
+\hypertarget{zcon_8c_a769d2edef7176613d3e1b31bf119e44f}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+\+N@{Z\+C\+O\+N\+\_\+\+N}}
+\index{Z\+C\+O\+N\+\_\+\+N@{Z\+C\+O\+N\+\_\+\+N}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+\+N~S\+Y\+S\+\_\+\+N}\label{zcon_8c_a769d2edef7176613d3e1b31bf119e44f}
+Z-\/domain Controller Foreign header files Internal header files Module level configuration \hypertarget{zcon_8c_a420df90aba1602bcd4b83d016dd1bd32}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+pfa@{Z\+C\+O\+N\+\_\+pfa}}
+\index{Z\+C\+O\+N\+\_\+pfa@{Z\+C\+O\+N\+\_\+pfa}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+pfa}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+pfa~S\+Y\+S\+\_\+a}\label{zcon_8c_a420df90aba1602bcd4b83d016dd1bd32}
+\hypertarget{zcon_8c_ad7518c8124569777d143037212ccf57e}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+pfb@{Z\+C\+O\+N\+\_\+pfb}}
+\index{Z\+C\+O\+N\+\_\+pfb@{Z\+C\+O\+N\+\_\+pfb}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+pfb}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+pfb~S\+Y\+S\+\_\+b}\label{zcon_8c_ad7518c8124569777d143037212ccf57e}
+\hypertarget{zcon_8c_afe050798947fe6a27c3243bddf693187}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+pfu@{Z\+C\+O\+N\+\_\+pfu}}
+\index{Z\+C\+O\+N\+\_\+pfu@{Z\+C\+O\+N\+\_\+pfu}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+pfu}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+pfu~S\+Y\+S\+\_\+u}\label{zcon_8c_afe050798947fe6a27c3243bddf693187}
+\hypertarget{zcon_8c_a9eb1b1303fbeb95cd7794cb1e8575ed1}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+pfy@{Z\+C\+O\+N\+\_\+pfy}}
+\index{Z\+C\+O\+N\+\_\+pfy@{Z\+C\+O\+N\+\_\+pfy}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+pfy}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+pfy~S\+Y\+S\+\_\+y}\label{zcon_8c_a9eb1b1303fbeb95cd7794cb1e8575ed1}
+\hypertarget{zcon_8c_a034b92bccae5dd7a248215f6d0aa0f20}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+\+Task\+Period@{Z\+C\+O\+N\+\_\+\+Task\+Period}}
+\index{Z\+C\+O\+N\+\_\+\+Task\+Period@{Z\+C\+O\+N\+\_\+\+Task\+Period}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+\+Task\+Period}]{\setlength{\rightskip}{0pt plus 5cm}\#define Z\+C\+O\+N\+\_\+\+Task\+Period~S\+Y\+S\+\_\+\+Sampling\+Period}\label{zcon_8c_a034b92bccae5dd7a248215f6d0aa0f20}
+
+
+\subsection{Function Documentation}
+\hypertarget{zcon_8c_a2bcb877d8d1a2414cff5a90cf45a9f86}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+v\+Init@{Z\+C\+O\+N\+\_\+v\+Init}}
+\index{Z\+C\+O\+N\+\_\+v\+Init@{Z\+C\+O\+N\+\_\+v\+Init}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+v\+Init}]{\setlength{\rightskip}{0pt plus 5cm}void Z\+C\+O\+N\+\_\+v\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{zcon_8c_a2bcb877d8d1a2414cff5a90cf45a9f86}
+Module level variables Module initialization 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{zcon_8c_aa6bb2589f074808d230b826b0a0f156c}{}\index{zcon.\+c@{zcon.\+c}!Z\+C\+O\+N\+\_\+v\+Task@{Z\+C\+O\+N\+\_\+v\+Task}}
+\index{Z\+C\+O\+N\+\_\+v\+Task@{Z\+C\+O\+N\+\_\+v\+Task}!zcon.\+c@{zcon.\+c}}
+\subsubsection[{Z\+C\+O\+N\+\_\+v\+Task}]{\setlength{\rightskip}{0pt plus 5cm}void Z\+C\+O\+N\+\_\+v\+Task (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{zcon_8c_aa6bb2589f074808d230b826b0a0f156c}
+Main function task 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+y(k) = b0 u(k) + b1 u(k-\/1) + ... + b\+N u(k-\/\+N)
+
+y(k) = y(k) -\/ a1 y(k-\/1) + a2 y(k-\/2) + ... + a\+N y(k-\/\+N)
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+

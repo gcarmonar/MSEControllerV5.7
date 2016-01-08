@@ -1,0 +1,56 @@
+\hypertarget{_o_s_a_p_i_8h}{}\section{os/\+O\+S\+A\+P\+I.h File Reference}
+\label{_o_s_a_p_i_8h}\index{os/\+O\+S\+A\+P\+I.\+h@{os/\+O\+S\+A\+P\+I.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_o_s_a_p_i_8h_a650dfb551ee93c4ea285725decf04dff}{O\+S\+\_\+\+S\+L\+E\+E\+P} (\hyperlink{_d_s_p2833x___device_8h_aba99025e657f892beb7ff31cecf64653}{Uint32})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{_o_s_a_p_i_8h_a650dfb551ee93c4ea285725decf04dff}{}\index{O\+S\+A\+P\+I.\+h@{O\+S\+A\+P\+I.\+h}!O\+S\+\_\+\+S\+L\+E\+E\+P@{O\+S\+\_\+\+S\+L\+E\+E\+P}}
+\index{O\+S\+\_\+\+S\+L\+E\+E\+P@{O\+S\+\_\+\+S\+L\+E\+E\+P}!O\+S\+A\+P\+I.\+h@{O\+S\+A\+P\+I.\+h}}
+\subsubsection[{O\+S\+\_\+\+S\+L\+E\+E\+P}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+\_\+\+S\+L\+E\+E\+P (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{}
+\end{DoxyParamCaption}
+)}\label{_o_s_a_p_i_8h_a650dfb551ee93c4ea285725decf04dff}
+=============================================================== \subsection*{Extern Function prototypes }
+
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em Uint32} & Hilo\+Sleep\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+we are not interested in keeping in the stack the argument to the jump to O\+S\+\_\+\+S\+L\+E\+E\+P
+
+Active\+Task was self-\/preempted context is saved into the current task Stack starting at Stack.\+Stack\+Pointer the stack increase in direction of Stack.\+Stack\+Top but never beyond
+
+Notify that Active\+Task was sent to sleep
+
+move Active\+Task to the Ready\+Task list
+
+Invalidate task
+
+jump to the scheduler
+
+S\+P = R\+P\+C S\+P has now the address of the caller of O\+S\+\_\+\+S\+L\+E\+E\+P, however we don\textquotesingle{}t care about this address since we will load S\+P with the address of the system stack R\+P\+C = P\+C + 2 R\+P\+C is loaded with the address of O\+S\+\_\+\+S\+L\+E\+E\+P, but we are not interested to return to this point P\+C = \+\_\+\+O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R \+\_\+\+O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R is the new value of P\+C
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+

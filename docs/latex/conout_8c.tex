@@ -1,0 +1,204 @@
+\hypertarget{conout_8c}{}\section{conout/conout.c File Reference}
+\label{conout_8c}\index{conout/conout.\+c@{conout/conout.\+c}}
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Device.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$O\+S\+A\+P\+I.\+h$>$}\\*
+{\ttfamily \#include $<$M\+S\+E\+C\+Config.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}conout.\+h\char`\"{}}\\*
+Include dependency graph for conout.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{conout_8c_a358eec763a98adea1fca110c5fd31e26}{C\+O\+N\+O\+U\+T\+\_\+\+S\+P}~S\+Y\+S\+\_\+\+Set\+Point
+\item 
+\#define \hyperlink{conout_8c_ae5e183d43cc4ced46de16d24a514c5f5}{C\+O\+N\+O\+U\+T\+\_\+\+N}~S\+Y\+S\+\_\+\+N
+\item 
+\#define \hyperlink{conout_8c_a852c8082dbc07a0a06a7dc89f20ead65}{C\+O\+N\+O\+U\+T\+\_\+pfy}~S\+Y\+S\+\_\+y
+\item 
+\#define \hyperlink{conout_8c_a4a464b12ffbfe3aa4076f086e12244a9}{C\+O\+N\+O\+U\+T\+\_\+\+Task\+Period}~S\+Y\+S\+\_\+\+Sampling\+Period
+\item 
+\#define \hyperlink{conout_8c_a04dc35719cc77d1d132c99f3a91949fe}{C\+O\+N\+O\+U\+T\+\_\+\+M\+S\+E\+C\+State}~S\+Y\+S\+\_\+\+M\+S\+E\+C\+State
+\item 
+\#define \hyperlink{conout_8c_a6b96e4b77c04497b966873849a81fbaa}{C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val}~(\hyperlink{_d_s_p2833x___device_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32})(4.\+0)
+\item 
+\#define \hyperlink{conout_8c_ab36d5f4a59819cda40d30442f2f0a159}{C\+O\+N\+O\+U\+T\+\_\+\+Min\+Val}~(\hyperlink{_d_s_p2833x___device_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32})(-\/4.\+0)
+\item 
+\#define \hyperlink{conout_8c_af29bc0040b38a072da86760a0e579945}{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Zero}~0x80
+\item 
+\#define \hyperlink{conout_8c_a606a1019ab11b97460530368d3e3d051}{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Res}~0x\+F\+F
+\item 
+\#define \hyperlink{conout_8c_a212515b51f0c69a597a43d15a058c4db}{C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor}~100
+\item 
+\#define \hyperlink{conout_8c_a30fac1f932024f3fe202d40674b55a23}{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Steps}~(\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16})(2$\ast$\hyperlink{conout_8c_a6b96e4b77c04497b966873849a81fbaa}{C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val}$\ast$\hyperlink{conout_8c_a212515b51f0c69a597a43d15a058c4db}{C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{conout_8c_a3d3568e13d64f6f0e5f8ca73da7ea937}{C\+O\+N\+O\+U\+T\+\_\+v\+Init} (void)
+\item 
+void \hyperlink{conout_8c_a08479b52fa7b863d1b58daf64fcfe63a}{C\+O\+M\+M\+\_\+\+\_\+v\+Process\+Output} (void)
+\item 
+void \hyperlink{conout_8c_af550a6d98a25d09bb45852f369e14905}{C\+O\+N\+O\+U\+T\+\_\+v\+Task} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_aba99025e657f892beb7ff31cecf64653}{Uint32} \hyperlink{conout_8c_aae029c95de2b3f8c9bf3bd99eb7af0b7}{C\+O\+N\+O\+U\+T\+\_\+u32\+D\+A\+Cout} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{conout_8c_a606a1019ab11b97460530368d3e3d051}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Res@{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Res}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Res@{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Res}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Res}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Res~0x\+F\+F}\label{conout_8c_a606a1019ab11b97460530368d3e3d051}
+\hypertarget{conout_8c_a30fac1f932024f3fe202d40674b55a23}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Steps@{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Steps}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Steps@{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Steps}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Steps}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Steps~({\bf Uint16})(2$\ast${\bf C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val}$\ast${\bf C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor})}\label{conout_8c_a30fac1f932024f3fe202d40674b55a23}
+\hypertarget{conout_8c_af29bc0040b38a072da86760a0e579945}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Zero@{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Zero}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Zero@{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Zero}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Zero}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+Dac\+Zero~0x80}\label{conout_8c_af29bc0040b38a072da86760a0e579945}
+\hypertarget{conout_8c_a6b96e4b77c04497b966873849a81fbaa}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val@{C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val@{C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+Max\+Val~({\bf float32})(4.\+0)}\label{conout_8c_a6b96e4b77c04497b966873849a81fbaa}
+\hypertarget{conout_8c_ab36d5f4a59819cda40d30442f2f0a159}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+Min\+Val@{C\+O\+N\+O\+U\+T\+\_\+\+Min\+Val}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+Min\+Val@{C\+O\+N\+O\+U\+T\+\_\+\+Min\+Val}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+Min\+Val}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+Min\+Val~({\bf float32})(-\/4.\+0)}\label{conout_8c_ab36d5f4a59819cda40d30442f2f0a159}
+\hypertarget{conout_8c_a04dc35719cc77d1d132c99f3a91949fe}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+M\+S\+E\+C\+State@{C\+O\+N\+O\+U\+T\+\_\+\+M\+S\+E\+C\+State}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+M\+S\+E\+C\+State@{C\+O\+N\+O\+U\+T\+\_\+\+M\+S\+E\+C\+State}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+M\+S\+E\+C\+State}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+M\+S\+E\+C\+State~S\+Y\+S\+\_\+\+M\+S\+E\+C\+State}\label{conout_8c_a04dc35719cc77d1d132c99f3a91949fe}
+\hypertarget{conout_8c_ae5e183d43cc4ced46de16d24a514c5f5}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+N@{C\+O\+N\+O\+U\+T\+\_\+\+N}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+N@{C\+O\+N\+O\+U\+T\+\_\+\+N}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+N~S\+Y\+S\+\_\+\+N}\label{conout_8c_ae5e183d43cc4ced46de16d24a514c5f5}
+\hypertarget{conout_8c_a852c8082dbc07a0a06a7dc89f20ead65}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+pfy@{C\+O\+N\+O\+U\+T\+\_\+pfy}}
+\index{C\+O\+N\+O\+U\+T\+\_\+pfy@{C\+O\+N\+O\+U\+T\+\_\+pfy}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+pfy}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+pfy~S\+Y\+S\+\_\+y}\label{conout_8c_a852c8082dbc07a0a06a7dc89f20ead65}
+\hypertarget{conout_8c_a212515b51f0c69a597a43d15a058c4db}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor@{C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor@{C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+Scale\+Factor~100}\label{conout_8c_a212515b51f0c69a597a43d15a058c4db}
+\hypertarget{conout_8c_a358eec763a98adea1fca110c5fd31e26}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+S\+P@{C\+O\+N\+O\+U\+T\+\_\+\+S\+P}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+S\+P@{C\+O\+N\+O\+U\+T\+\_\+\+S\+P}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+S\+P~S\+Y\+S\+\_\+\+Set\+Point}\label{conout_8c_a358eec763a98adea1fca110c5fd31e26}
+S-\/domain Controller Foreign header files Module level configuration \hypertarget{conout_8c_a4a464b12ffbfe3aa4076f086e12244a9}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+\+Task\+Period@{C\+O\+N\+O\+U\+T\+\_\+\+Task\+Period}}
+\index{C\+O\+N\+O\+U\+T\+\_\+\+Task\+Period@{C\+O\+N\+O\+U\+T\+\_\+\+Task\+Period}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+\+Task\+Period}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+O\+U\+T\+\_\+\+Task\+Period~S\+Y\+S\+\_\+\+Sampling\+Period}\label{conout_8c_a4a464b12ffbfe3aa4076f086e12244a9}
+
+
+\subsection{Function Documentation}
+\hypertarget{conout_8c_a08479b52fa7b863d1b58daf64fcfe63a}{}\index{conout.\+c@{conout.\+c}!C\+O\+M\+M\+\_\+\+\_\+v\+Process\+Output@{C\+O\+M\+M\+\_\+\+\_\+v\+Process\+Output}}
+\index{C\+O\+M\+M\+\_\+\+\_\+v\+Process\+Output@{C\+O\+M\+M\+\_\+\+\_\+v\+Process\+Output}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+M\+M\+\_\+\+\_\+v\+Process\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void C\+O\+M\+M\+\_\+\+\_\+v\+Process\+Output (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{conout_8c_a08479b52fa7b863d1b58daf64fcfe63a}
+C\+O\+M\+M\+\_\+\+\_\+v\+Process\+Output 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+$<$ Limit output to max value
+
+$<$ Limit output to min value
+
+$<$ Output inside allowed range
+
+Convert float controller out to Uint16
+
+Scale output
+
+T\+O\+D\+O\+: This must be uncommented when output is necessary
+
+y(0) is written in the output (e\+P\+W\+M) 
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{conout_8c_a3d3568e13d64f6f0e5f8ca73da7ea937}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+v\+Init@{C\+O\+N\+O\+U\+T\+\_\+v\+Init}}
+\index{C\+O\+N\+O\+U\+T\+\_\+v\+Init@{C\+O\+N\+O\+U\+T\+\_\+v\+Init}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+v\+Init}]{\setlength{\rightskip}{0pt plus 5cm}void C\+O\+N\+O\+U\+T\+\_\+v\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{conout_8c_a3d3568e13d64f6f0e5f8ca73da7ea937}
+Module initialization 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+$<$D\+A\+C 3
+
+$<$D\+A\+C 4
+
+$<$D\+A\+C 5
+
+$<$D\+A\+C 6
+
+$<$D\+A\+C 7
+
+$<$D\+A\+C 8
+
+$<$D\+A\+C 9
+
+$<$D\+A\+C 10
+
+Initi port values( 0x80 )
+
+Init as outputs
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{conout_8c_af550a6d98a25d09bb45852f369e14905}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+v\+Task@{C\+O\+N\+O\+U\+T\+\_\+v\+Task}}
+\index{C\+O\+N\+O\+U\+T\+\_\+v\+Task@{C\+O\+N\+O\+U\+T\+\_\+v\+Task}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+v\+Task}]{\setlength{\rightskip}{0pt plus 5cm}void C\+O\+N\+O\+U\+T\+\_\+v\+Task (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{conout_8c_af550a6d98a25d09bb45852f369e14905}
+Main function task 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{conout_8c_aae029c95de2b3f8c9bf3bd99eb7af0b7}{}\index{conout.\+c@{conout.\+c}!C\+O\+N\+O\+U\+T\+\_\+u32\+D\+A\+Cout@{C\+O\+N\+O\+U\+T\+\_\+u32\+D\+A\+Cout}}
+\index{C\+O\+N\+O\+U\+T\+\_\+u32\+D\+A\+Cout@{C\+O\+N\+O\+U\+T\+\_\+u32\+D\+A\+Cout}!conout.\+c@{conout.\+c}}
+\subsubsection[{C\+O\+N\+O\+U\+T\+\_\+u32\+D\+A\+Cout}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint32} C\+O\+N\+O\+U\+T\+\_\+u32\+D\+A\+Cout = 0}\label{conout_8c_aae029c95de2b3f8c9bf3bd99eb7af0b7}
+D\+A\+C output variable 

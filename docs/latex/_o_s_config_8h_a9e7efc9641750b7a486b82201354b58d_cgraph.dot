@@ -1,0 +1,31 @@
+digraph "InitTaskStacks"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="InitTaskStacks",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="IDLE_vTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$idle_8c.html#afdbbbbc956ecbcd7f451fb6fb3e53ee0"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="IDLE_vDummy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$idle_8c.html#a5c3bb159607f535afab707c2ea3f856f"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="ZCON_vTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zcon_8c.html#aa6bb2589f074808d230b826b0a0f156c"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="OS_SLEEP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#a650dfb551ee93c4ea285725decf04dff"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="SCON_vTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$scon_8c.html#ab4be858291df764cf93902ace4b7caca"];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="CONIN_vTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conin_8c.html#abe06d928e08bab90251b86812656e660"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="CONIN__vBufferShift",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conin_8c.html#a76922910e256312552deed01937a9cb1"];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="CONOUT_vTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conout_8c.html#af550a6d98a25d09bb45852f369e14905"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="COMM__vProcessOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conout_8c.html#a08479b52fa7b863d1b58daf64fcfe63a"];
+  Node9 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="COMM_vTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$comm_8c.html#a71cb0217f7c619913c0eff499eae6351"];
+  Node11 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+}

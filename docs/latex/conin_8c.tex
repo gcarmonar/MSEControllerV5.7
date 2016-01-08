@@ -1,0 +1,238 @@
+\hypertarget{conin_8c}{}\section{conin/conin.c File Reference}
+\label{conin_8c}\index{conin/conin.\+c@{conin/conin.\+c}}
+
+
+File containing common definitions for all project.  
+
+
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Device.\+h$>$}\\*
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h$>$}\\*
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+E\+Qep.\+h$>$}\\*
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Gpio.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$O\+S\+A\+P\+I.\+h$>$}\\*
+{\ttfamily \#include $<$M\+S\+E\+C\+Config.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}conin.\+h\char`\"{}}\\*
+Include dependency graph for conin.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{conin_8c_ab21b8b62b914aba7db8e00c27ccf8269}{C\+O\+N\+I\+N\+\_\+\+S\+P}~S\+Y\+S\+\_\+\+Set\+Point
+\item 
+\#define \hyperlink{conin_8c_a238a78732fb898c474676bee809545b5}{C\+O\+N\+I\+N\+\_\+\+N}~S\+Y\+S\+\_\+\+N
+\item 
+\#define \hyperlink{conin_8c_ab703d3422a15da1df73a9c438d18cbe8}{C\+O\+N\+I\+N\+\_\+pfu}~S\+Y\+S\+\_\+u
+\item 
+\#define \hyperlink{conin_8c_ada5dd2cb43dfe9903cc97c97ef6d80f0}{C\+O\+N\+I\+N\+\_\+pfy}~S\+Y\+S\+\_\+y
+\item 
+\#define \hyperlink{conin_8c_a84a6adeea0b1cb4cd053b4922929442d}{C\+O\+N\+I\+N\+\_\+\+Task\+Period}~S\+Y\+S\+\_\+\+Sampling\+Period
+\item 
+\#define \hyperlink{conin_8c_a2bb3e0196cdd2cd1b70565a2a42608c2}{C\+O\+N\+I\+N\+\_\+\+Control\+Input\+Source}~S\+Y\+S\+\_\+\+Control\+Input\+Source
+\item 
+\#define \hyperlink{conin_8c_a88677e0dacb13b975fbd5c98c3d21248}{C\+O\+N\+I\+N\+\_\+\+Pos\+Input1}~S\+Y\+S\+\_\+\+Pos\+Input1
+\item 
+\#define \hyperlink{conin_8c_a67b1a289c25c4126f47b3b31c31701eb}{C\+O\+N\+I\+N\+\_\+\+Pos\+Input2}~S\+Y\+S\+\_\+\+Pos\+Input2
+\item 
+\#define \hyperlink{conin_8c_af9f0089e7d02ab0dac03b77639e92147}{C\+O\+N\+I\+N\+\_\+\+M\+S\+E\+C\+State}~S\+Y\+S\+\_\+\+M\+S\+E\+C\+State
+\item 
+\#define \hyperlink{conin_8c_abbc3279bc92574276a2095de2e990454}{E\+Q\+E\+P\+\_\+\+\_\+n\+K\+Encoder}~(\hyperlink{_d_s_p2833x___device_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32})(70.\+6)
+\item 
+\#define \hyperlink{conin_8c_ab75fd505bbadf44cb548ab64f6d9130b}{E\+Q\+E\+P\+\_\+\+\_\+n\+Div\+Encoder}~(\hyperlink{_d_s_p2833x___device_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32})(16000)
+\item 
+\#define \hyperlink{conin_8c_afb7b5fc6f06e40f2f8ddb18773d49cfb}{E\+Q\+E\+P\+\_\+\+\_\+n\+Init\+Val\+Enc}~0x\+F\+F\+F\+F
+\item 
+\#define \hyperlink{conin_8c_aeef5e74dc47ffe6ff718146dfe85c0e9}{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim1}~(\hyperlink{_d_s_p2833x___device_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32})(289.\+173)
+\item 
+\#define \hyperlink{conin_8c_a4295284c8238c83e8402ed29aeee94a4}{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim2}~(\hyperlink{_d_s_p2833x___device_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32})(289.\+173)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{conin_8c_a76922910e256312552deed01937a9cb1}{C\+O\+N\+I\+N\+\_\+\+\_\+v\+Buffer\+Shift} (void)
+\item 
+void \hyperlink{conin_8c_a1c82b67fa3271c6bb5af3bed7f3bb6d8}{C\+O\+N\+I\+N\+\_\+v\+Init} (void)
+\item 
+void \hyperlink{conin_8c_acdaaee6859a4e7bbd8defddba87e29c6}{C\+O\+N\+I\+N\+\_\+v\+Set\+E\+Q\+E\+P\+Init\+Val} (void)
+\item 
+void \hyperlink{conin_8c_abe06d928e08bab90251b86812656e660}{C\+O\+N\+I\+N\+\_\+v\+Task} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing common definitions for all project. 
+
+\begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{conin_8c_a2bb3e0196cdd2cd1b70565a2a42608c2}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+\+Control\+Input\+Source@{C\+O\+N\+I\+N\+\_\+\+Control\+Input\+Source}}
+\index{C\+O\+N\+I\+N\+\_\+\+Control\+Input\+Source@{C\+O\+N\+I\+N\+\_\+\+Control\+Input\+Source}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+\+Control\+Input\+Source}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+\+Control\+Input\+Source~S\+Y\+S\+\_\+\+Control\+Input\+Source}\label{conin_8c_a2bb3e0196cdd2cd1b70565a2a42608c2}
+\hypertarget{conin_8c_af9f0089e7d02ab0dac03b77639e92147}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+\+M\+S\+E\+C\+State@{C\+O\+N\+I\+N\+\_\+\+M\+S\+E\+C\+State}}
+\index{C\+O\+N\+I\+N\+\_\+\+M\+S\+E\+C\+State@{C\+O\+N\+I\+N\+\_\+\+M\+S\+E\+C\+State}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+\+M\+S\+E\+C\+State}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+\+M\+S\+E\+C\+State~S\+Y\+S\+\_\+\+M\+S\+E\+C\+State}\label{conin_8c_af9f0089e7d02ab0dac03b77639e92147}
+\hypertarget{conin_8c_a238a78732fb898c474676bee809545b5}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+\+N@{C\+O\+N\+I\+N\+\_\+\+N}}
+\index{C\+O\+N\+I\+N\+\_\+\+N@{C\+O\+N\+I\+N\+\_\+\+N}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+\+N~S\+Y\+S\+\_\+\+N}\label{conin_8c_a238a78732fb898c474676bee809545b5}
+\hypertarget{conin_8c_ab703d3422a15da1df73a9c438d18cbe8}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+pfu@{C\+O\+N\+I\+N\+\_\+pfu}}
+\index{C\+O\+N\+I\+N\+\_\+pfu@{C\+O\+N\+I\+N\+\_\+pfu}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+pfu}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+pfu~S\+Y\+S\+\_\+u}\label{conin_8c_ab703d3422a15da1df73a9c438d18cbe8}
+\hypertarget{conin_8c_ada5dd2cb43dfe9903cc97c97ef6d80f0}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+pfy@{C\+O\+N\+I\+N\+\_\+pfy}}
+\index{C\+O\+N\+I\+N\+\_\+pfy@{C\+O\+N\+I\+N\+\_\+pfy}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+pfy}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+pfy~S\+Y\+S\+\_\+y}\label{conin_8c_ada5dd2cb43dfe9903cc97c97ef6d80f0}
+\hypertarget{conin_8c_a88677e0dacb13b975fbd5c98c3d21248}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+\+Pos\+Input1@{C\+O\+N\+I\+N\+\_\+\+Pos\+Input1}}
+\index{C\+O\+N\+I\+N\+\_\+\+Pos\+Input1@{C\+O\+N\+I\+N\+\_\+\+Pos\+Input1}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+\+Pos\+Input1}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+\+Pos\+Input1~S\+Y\+S\+\_\+\+Pos\+Input1}\label{conin_8c_a88677e0dacb13b975fbd5c98c3d21248}
+\hypertarget{conin_8c_a67b1a289c25c4126f47b3b31c31701eb}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+\+Pos\+Input2@{C\+O\+N\+I\+N\+\_\+\+Pos\+Input2}}
+\index{C\+O\+N\+I\+N\+\_\+\+Pos\+Input2@{C\+O\+N\+I\+N\+\_\+\+Pos\+Input2}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+\+Pos\+Input2}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+\+Pos\+Input2~S\+Y\+S\+\_\+\+Pos\+Input2}\label{conin_8c_a67b1a289c25c4126f47b3b31c31701eb}
+\hypertarget{conin_8c_ab21b8b62b914aba7db8e00c27ccf8269}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+\+S\+P@{C\+O\+N\+I\+N\+\_\+\+S\+P}}
+\index{C\+O\+N\+I\+N\+\_\+\+S\+P@{C\+O\+N\+I\+N\+\_\+\+S\+P}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+\+S\+P~S\+Y\+S\+\_\+\+Set\+Point}\label{conin_8c_ab21b8b62b914aba7db8e00c27ccf8269}
+S-\/domain Controller Foreign header files Internal header files Module level configuration \hypertarget{conin_8c_a84a6adeea0b1cb4cd053b4922929442d}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+\+Task\+Period@{C\+O\+N\+I\+N\+\_\+\+Task\+Period}}
+\index{C\+O\+N\+I\+N\+\_\+\+Task\+Period@{C\+O\+N\+I\+N\+\_\+\+Task\+Period}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+\+Task\+Period}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+I\+N\+\_\+\+Task\+Period~S\+Y\+S\+\_\+\+Sampling\+Period}\label{conin_8c_a84a6adeea0b1cb4cd053b4922929442d}
+\hypertarget{conin_8c_ab75fd505bbadf44cb548ab64f6d9130b}{}\index{conin.\+c@{conin.\+c}!E\+Q\+E\+P\+\_\+\+\_\+n\+Div\+Encoder@{E\+Q\+E\+P\+\_\+\+\_\+n\+Div\+Encoder}}
+\index{E\+Q\+E\+P\+\_\+\+\_\+n\+Div\+Encoder@{E\+Q\+E\+P\+\_\+\+\_\+n\+Div\+Encoder}!conin.\+c@{conin.\+c}}
+\subsubsection[{E\+Q\+E\+P\+\_\+\+\_\+n\+Div\+Encoder}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+Q\+E\+P\+\_\+\+\_\+n\+Div\+Encoder~({\bf float32})(16000)}\label{conin_8c_ab75fd505bbadf44cb548ab64f6d9130b}
+\hypertarget{conin_8c_afb7b5fc6f06e40f2f8ddb18773d49cfb}{}\index{conin.\+c@{conin.\+c}!E\+Q\+E\+P\+\_\+\+\_\+n\+Init\+Val\+Enc@{E\+Q\+E\+P\+\_\+\+\_\+n\+Init\+Val\+Enc}}
+\index{E\+Q\+E\+P\+\_\+\+\_\+n\+Init\+Val\+Enc@{E\+Q\+E\+P\+\_\+\+\_\+n\+Init\+Val\+Enc}!conin.\+c@{conin.\+c}}
+\subsubsection[{E\+Q\+E\+P\+\_\+\+\_\+n\+Init\+Val\+Enc}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+Q\+E\+P\+\_\+\+\_\+n\+Init\+Val\+Enc~0x\+F\+F\+F\+F}\label{conin_8c_afb7b5fc6f06e40f2f8ddb18773d49cfb}
+\hypertarget{conin_8c_abbc3279bc92574276a2095de2e990454}{}\index{conin.\+c@{conin.\+c}!E\+Q\+E\+P\+\_\+\+\_\+n\+K\+Encoder@{E\+Q\+E\+P\+\_\+\+\_\+n\+K\+Encoder}}
+\index{E\+Q\+E\+P\+\_\+\+\_\+n\+K\+Encoder@{E\+Q\+E\+P\+\_\+\+\_\+n\+K\+Encoder}!conin.\+c@{conin.\+c}}
+\subsubsection[{E\+Q\+E\+P\+\_\+\+\_\+n\+K\+Encoder}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+Q\+E\+P\+\_\+\+\_\+n\+K\+Encoder~({\bf float32})(70.\+6)}\label{conin_8c_abbc3279bc92574276a2095de2e990454}
+\hypertarget{conin_8c_aeef5e74dc47ffe6ff718146dfe85c0e9}{}\index{conin.\+c@{conin.\+c}!E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim1@{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim1}}
+\index{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim1@{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim1}!conin.\+c@{conin.\+c}}
+\subsubsection[{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim1}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim1~({\bf float32})(289.\+173)}\label{conin_8c_aeef5e74dc47ffe6ff718146dfe85c0e9}
+\hypertarget{conin_8c_a4295284c8238c83e8402ed29aeee94a4}{}\index{conin.\+c@{conin.\+c}!E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim2@{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim2}}
+\index{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim2@{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim2}!conin.\+c@{conin.\+c}}
+\subsubsection[{E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim2}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+Q\+E\+P\+\_\+\+\_\+n\+Offset\+Milim2~({\bf float32})(289.\+173)}\label{conin_8c_a4295284c8238c83e8402ed29aeee94a4}
+
+
+\subsection{Function Documentation}
+\hypertarget{conin_8c_a76922910e256312552deed01937a9cb1}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+\+\_\+v\+Buffer\+Shift@{C\+O\+N\+I\+N\+\_\+\+\_\+v\+Buffer\+Shift}}
+\index{C\+O\+N\+I\+N\+\_\+\+\_\+v\+Buffer\+Shift@{C\+O\+N\+I\+N\+\_\+\+\_\+v\+Buffer\+Shift}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+\+\_\+v\+Buffer\+Shift}]{\setlength{\rightskip}{0pt plus 5cm}void C\+O\+N\+I\+N\+\_\+\+\_\+v\+Buffer\+Shift (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{conin_8c_a76922910e256312552deed01937a9cb1}
+Module level variables Local functions
+
+C\+O\+N\+I\+N\+\_\+\+\_\+v\+Buffer\+Shift 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+error, N shall be higher than 1!
+
+size u\mbox{[}\mbox{]} = N + 1
+
+u(i) = u(i-\/1)
+
+u(0) becomes free
+
+size y\mbox{[}\mbox{]} = N + 1
+
+y(i) = y(i-\/1)
+
+y(0) becomes free
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{conin_8c_a1c82b67fa3271c6bb5af3bed7f3bb6d8}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+v\+Init@{C\+O\+N\+I\+N\+\_\+v\+Init}}
+\index{C\+O\+N\+I\+N\+\_\+v\+Init@{C\+O\+N\+I\+N\+\_\+v\+Init}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+v\+Init}]{\setlength{\rightskip}{0pt plus 5cm}void C\+O\+N\+I\+N\+\_\+v\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{conin_8c_a1c82b67fa3271c6bb5af3bed7f3bb6d8}
+Module initialization 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{conin_8c_acdaaee6859a4e7bbd8defddba87e29c6}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+v\+Set\+E\+Q\+E\+P\+Init\+Val@{C\+O\+N\+I\+N\+\_\+v\+Set\+E\+Q\+E\+P\+Init\+Val}}
+\index{C\+O\+N\+I\+N\+\_\+v\+Set\+E\+Q\+E\+P\+Init\+Val@{C\+O\+N\+I\+N\+\_\+v\+Set\+E\+Q\+E\+P\+Init\+Val}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+v\+Set\+E\+Q\+E\+P\+Init\+Val}]{\setlength{\rightskip}{0pt plus 5cm}void C\+O\+N\+I\+N\+\_\+v\+Set\+E\+Q\+E\+P\+Init\+Val (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{conin_8c_acdaaee6859a4e7bbd8defddba87e29c6}
+C\+O\+N\+I\+N\+\_\+v\+Set\+E\+Q\+E\+P\+Init\+Val 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{conin_8c_abe06d928e08bab90251b86812656e660}{}\index{conin.\+c@{conin.\+c}!C\+O\+N\+I\+N\+\_\+v\+Task@{C\+O\+N\+I\+N\+\_\+v\+Task}}
+\index{C\+O\+N\+I\+N\+\_\+v\+Task@{C\+O\+N\+I\+N\+\_\+v\+Task}!conin.\+c@{conin.\+c}}
+\subsubsection[{C\+O\+N\+I\+N\+\_\+v\+Task}]{\setlength{\rightskip}{0pt plus 5cm}void C\+O\+N\+I\+N\+\_\+v\+Task (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{conin_8c_abe06d928e08bab90251b86812656e660}
+Main function task 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+================================= Izquierda
+
+================================= Derecha
+
+================================= Izquierda
+
+================================= Derecha
+
+T\+O\+D\+O\+: Figure out why sign is different between Enc1 and Enc2
+
+================================= wrong condition
+
+u() and y() buffers shifting
+
+u(0) update
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 5
+
+

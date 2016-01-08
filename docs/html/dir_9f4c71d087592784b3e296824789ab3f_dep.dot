@@ -1,0 +1,11 @@
+digraph "f2833x/v140/DSP2833x_common/include" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_caa383324699c56258900c5d5c2a720c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="DSP2833x_common" fontname="Helvetica", fontsize="10", URL="dir_caa383324699c56258900c5d5c2a720c.html"]
+  dir_9f4c71d087592784b3e296824789ab3f [shape=box, label="include", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9f4c71d087592784b3e296824789ab3f.html"];
+  }
+  dir_b50d3d096ab707223c705c852576767d [shape=box label="DSP2833x_headers" fillcolor="white" style="filled" color="red" URL="dir_b50d3d096ab707223c705c852576767d.html"];
+  dir_9f4c71d087592784b3e296824789ab3f->dir_b50d3d096ab707223c705c852576767d [headlabel="1", labeldistance=1.5 headhref="dir_000007_000009.html"];
+}

@@ -1,0 +1,13 @@
+digraph "COMM__vStartStopController"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="COMM__vStartStopController",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CONIN_vSetEQEPInitVal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conin_8c.html#acdaaee6859a4e7bbd8defddba87e29c6"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CONOUT_vInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conout_8c.html#a3d3568e13d64f6f0e5f8ca73da7ea937"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="UART_enWrite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$uart_8c.html#a5529658e043720fd8c51479d193803d7"];
+}

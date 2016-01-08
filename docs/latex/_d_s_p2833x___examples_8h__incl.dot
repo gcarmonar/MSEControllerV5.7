@@ -1,0 +1,16 @@
+digraph "f2833x/v140/DSP2833x_common/include/DSP2833x_Examples.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="f2833x/v140/DSP2833x\l_common/include/DSP2833x\l_Examples.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DSP2833x_GlobalPrototypes.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___global_prototypes_8h.html"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="DSP2833x_EPwm_defines.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___e_pwm__defines_8h.html"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="DSP2833x_Dma_defines.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___dma__defines_8h.html"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="DSP2833x_I2c_defines.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___i2c__defines_8h.html"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="DSP2833x_DefaultIsr.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___default_isr_8h.html"];
+}

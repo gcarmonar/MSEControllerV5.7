@@ -1,0 +1,11 @@
+digraph "InitAdc"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="InitAdc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DSP28x_usDelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___global_prototypes_8h.html#a7892f304956b765c7d33b9b13894803f"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="ADC_cal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___global_prototypes_8h.html#aed94b3ab4ebd943d63e20b4b9b6cfdfb"];
+}

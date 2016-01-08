@@ -1,0 +1,248 @@
+\hypertarget{uart_8c}{}\section{comm/uart.c File Reference}
+\label{uart_8c}\index{comm/uart.\+c@{comm/uart.\+c}}
+
+
+File containing uart low level driver.  
+
+
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Device.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for uart.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+interrupt void \hyperlink{uart_8c_a93e91acc5269233469aa3a4e57324ba8}{U\+A\+R\+T\+\_\+\+\_\+v\+Rx\+Fifo\+Ch0\+Isr} (void)
+\item 
+void \hyperlink{uart_8c_aba11a19ce0149297d8e728da1708a2b8}{U\+A\+R\+T\+\_\+v\+Init} (void)
+\item 
+void \hyperlink{uart_8c_ad34d0c42e47cf618aba70ee8dfc63085}{U\+A\+R\+T\+\_\+v\+Open} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D, \hyperlink{uart_8h_acd354ef53b9be6941b51f23ffe59ba0a}{t\+Notification\+Func} pv\+Rx\+Hdlr, \hyperlink{uart_8h_acd354ef53b9be6941b51f23ffe59ba0a}{t\+Notification\+Func} pv\+Tx\+Hdlr)
+\item 
+void \hyperlink{uart_8c_a335786b9924dfb165f184e2edc257bdd}{U\+A\+R\+T\+\_\+v\+Close} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D)
+\item 
+\hyperlink{uart_8h_a7e8f176a18afa03ebe1a36916b64d46b}{U\+A\+R\+T\+\_\+ten\+Ret\+Value} \hyperlink{uart_8c_ae770c6bd341edb603ed1d7cc356ec4e0}{U\+A\+R\+T\+\_\+en\+Read} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D, \hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} $\ast$pu8\+Rx\+Buf, \hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} u8\+Rx\+Data\+Len)
+\item 
+\hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} \hyperlink{uart_8c_a1d0bbcc5e44c1a20068e4e593a9e2f15}{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D)
+\item 
+\hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} \hyperlink{uart_8c_a3be1f5e946607b641f498495e2a867d9}{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D)
+\item 
+\hyperlink{uart_8h_a7e8f176a18afa03ebe1a36916b64d46b}{U\+A\+R\+T\+\_\+ten\+Ret\+Value} \hyperlink{uart_8c_a5529658e043720fd8c51479d193803d7}{U\+A\+R\+T\+\_\+en\+Write} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D, \hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} $\ast$pu8\+Tx\+Buf, \hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} u8\+Tx\+Data\+Len)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_u_a_r_t__tst_channel_desc}{U\+A\+R\+T\+\_\+tst\+Channel\+Desc} \hyperlink{uart_8c_a269db099b8105b41dba0e5dfeb40f7de}{U\+A\+R\+T\+\_\+\+\_\+ast\+Channel\+Desc} \mbox{[}\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffbad69768fe71980bef9846a56ecaaf2114}{U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}\mbox{]} = \hyperlink{uart_8h_a99c83f314cacaee684408c21bcef4ade}{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} \hyperlink{uart_8c_a03cc601975f1397c86478b828adb8b0f}{U\+A\+R\+T\+\_\+\+\_\+au8\+Tx\+Buffer} \mbox{[}\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffbad69768fe71980bef9846a56ecaaf2114}{U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}\mbox{]}\mbox{[}\hyperlink{uart_8h_af3e6b375aa6a43e32ddfc97c3f8635a6}{U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length}\mbox{]} = \hyperlink{uart_8h_a2af787b8cecd20c3a15391285baa073a}{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} \hyperlink{uart_8c_a65a843a7944868a8a1f8c1e1a67d1a03}{U\+A\+R\+T\+\_\+\+\_\+au8\+Rx\+Buffer} \mbox{[}\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffbad69768fe71980bef9846a56ecaaf2114}{U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}\mbox{]}\mbox{[}\hyperlink{uart_8h_af3e6b375aa6a43e32ddfc97c3f8635a6}{U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length}\mbox{]} = \hyperlink{uart_8h_af5b5c30d5160a4015e8c0e400dd54ec6}{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing uart low level driver. 
+
+\begin{DoxyAuthor}{Author}
+Jalil Chavez 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26 April 2015 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.ti.com/lit/ug/sprufz5a/sprufz5a.pdf}{\tt http\+://www.\+ti.\+com/lit/ug/sprufz5a/sprufz5a.\+pdf}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{uart_8c_a93e91acc5269233469aa3a4e57324ba8}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+\+\_\+v\+Rx\+Fifo\+Ch0\+Isr@{U\+A\+R\+T\+\_\+\+\_\+v\+Rx\+Fifo\+Ch0\+Isr}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Rx\+Fifo\+Ch0\+Isr@{U\+A\+R\+T\+\_\+\+\_\+v\+Rx\+Fifo\+Ch0\+Isr}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Rx\+Fifo\+Ch0\+Isr}]{\setlength{\rightskip}{0pt plus 5cm}interrupt void U\+A\+R\+T\+\_\+\+\_\+v\+Rx\+Fifo\+Ch0\+Isr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{uart_8c_a93e91acc5269233469aa3a4e57324ba8}
+Description\+: Tx F\+I\+F\+O called every time that F\+I\+F\+O is empty. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & Description\+: Tx F\+I\+F\+O called every time that F\+I\+F\+O is empty. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+$<$ Read data
+
+Data has not been read yet, and buffer is full.
+
+Do nothing
+
+$<$ Clear Overflow flag
+
+$<$ Clear Interrupt flag
+
+$<$ Issue P\+I\+E ack \hypertarget{uart_8c_ae770c6bd341edb603ed1d7cc356ec4e0}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+en\+Read@{U\+A\+R\+T\+\_\+en\+Read}}
+\index{U\+A\+R\+T\+\_\+en\+Read@{U\+A\+R\+T\+\_\+en\+Read}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+en\+Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+A\+R\+T\+\_\+ten\+Ret\+Value} U\+A\+R\+T\+\_\+en\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D, }
+\item[{{\bf Uint8} $\ast$}]{pu8\+Rx\+Buf, }
+\item[{{\bf Uint8}}]{u8\+Rx\+Data\+Len}
+\end{DoxyParamCaption}
+)}\label{uart_8c_ae770c6bd341edb603ed1d7cc356ec4e0}
+Description\+: Read data from an U\+A\+R\+T channel rx buffer. Read is only valid, when data is available in rx buffer or rx notification callback is triggered. \begin{DoxyReturn}{Returns}
+U\+A\+R\+T\+\_\+ten\+Ret\+Value 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em en\+Ch\+I\+D} & channel I\+D \\
+\hline
+{\em puq6\+Rx\+Buf} & pointer to buffer where data will be retrieved \\
+\hline
+{\em u8\+Rx\+Data\+Len} & length of data for reception \\
+\hline
+\end{DoxyParams}
+\hypertarget{uart_8c_a5529658e043720fd8c51479d193803d7}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+en\+Write@{U\+A\+R\+T\+\_\+en\+Write}}
+\index{U\+A\+R\+T\+\_\+en\+Write@{U\+A\+R\+T\+\_\+en\+Write}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+en\+Write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+A\+R\+T\+\_\+ten\+Ret\+Value} U\+A\+R\+T\+\_\+en\+Write (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D, }
+\item[{{\bf Uint8} $\ast$}]{pu8\+Tx\+Buf, }
+\item[{{\bf Uint8}}]{u8\+Tx\+Data\+Len}
+\end{DoxyParamCaption}
+)}\label{uart_8c_a5529658e043720fd8c51479d193803d7}
+Description\+: Write data to an U\+A\+R\+T channel tx buffer. Write is only valid, when buss is free or tx notification callback is triggered. \begin{DoxyReturn}{Returns}
+U\+A\+R\+T\+\_\+ten\+Ret\+Value 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em en\+Ch\+I\+D} & channel I\+D \\
+\hline
+{\em puq6\+Rx\+Buf} & pointer to buffer where data will be obtained \\
+\hline
+{\em u8\+Rx\+Data\+Len} & length of data for transmission \\
+\hline
+\end{DoxyParams}
+Do nothing
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{uart_8c_a335786b9924dfb165f184e2edc257bdd}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+v\+Close@{U\+A\+R\+T\+\_\+v\+Close}}
+\index{U\+A\+R\+T\+\_\+v\+Close@{U\+A\+R\+T\+\_\+v\+Close}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void U\+A\+R\+T\+\_\+v\+Close (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D}
+\end{DoxyParamCaption}
+)}\label{uart_8c_a335786b9924dfb165f184e2edc257bdd}
+Description\+: Close an U\+A\+R\+T channel. If a channel is closed, all transmission is stopped. The U\+A\+R\+T channel state is set back to U\+A\+R\+T\+\_\+\+\_\+n\+Ch\+X\+\_\+\+Cfg. 
+\begin{DoxyParams}{Parameters}
+{\em en\+Ch} & channel number to be closed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{uart_8c_a1d0bbcc5e44c1a20068e4e593a9e2f15}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data@{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data}}
+\index{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data@{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8} U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D}
+\end{DoxyParamCaption}
+)}\label{uart_8c_a1d0bbcc5e44c1a20068e4e593a9e2f15}
+Description\+: Returns the value of data available in R\+X channel buffer. \begin{DoxyReturn}{Returns}
+Uint8 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} & en\+Ch\+I\+D \\
+\hline
+\end{DoxyParams}
+\hypertarget{uart_8c_a3be1f5e946607b641f498495e2a867d9}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data@{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data}}
+\index{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data@{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8} U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D}
+\end{DoxyParamCaption}
+)}\label{uart_8c_a3be1f5e946607b641f498495e2a867d9}
+Description\+: Returns the value of data available in T\+X channel buffer. \begin{DoxyReturn}{Returns}
+Uint8 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} & en\+Ch\+I\+D \\
+\hline
+\end{DoxyParams}
+\hypertarget{uart_8c_aba11a19ce0149297d8e728da1708a2b8}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+v\+Init@{U\+A\+R\+T\+\_\+v\+Init}}
+\index{U\+A\+R\+T\+\_\+v\+Init@{U\+A\+R\+T\+\_\+v\+Init}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Init}]{\setlength{\rightskip}{0pt plus 5cm}void U\+A\+R\+T\+\_\+v\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{uart_8c_aba11a19ce0149297d8e728da1708a2b8}
+Initializes the port functionality. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{uart_8c_ad34d0c42e47cf618aba70ee8dfc63085}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+v\+Open@{U\+A\+R\+T\+\_\+v\+Open}}
+\index{U\+A\+R\+T\+\_\+v\+Open@{U\+A\+R\+T\+\_\+v\+Open}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Open}]{\setlength{\rightskip}{0pt plus 5cm}void U\+A\+R\+T\+\_\+v\+Open (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D, }
+\item[{{\bf t\+Notification\+Func}}]{pv\+Rx\+Hdlr, }
+\item[{{\bf t\+Notification\+Func}}]{pv\+Tx\+Hdlr}
+\end{DoxyParamCaption}
+)}\label{uart_8c_ad34d0c42e47cf618aba70ee8dfc63085}
+Opens an U\+A\+R\+T channel. This function intialices a Serial port with the parameters specified by the channel descriptor. 
+\begin{DoxyParams}{Parameters}
+{\em pst\+Channel\+Desc} & \\
+\hline
+{\em pv\+Rx\+Hdlr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{uart_8c_a269db099b8105b41dba0e5dfeb40f7de}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+\+\_\+ast\+Channel\+Desc@{U\+A\+R\+T\+\_\+\+\_\+ast\+Channel\+Desc}}
+\index{U\+A\+R\+T\+\_\+\+\_\+ast\+Channel\+Desc@{U\+A\+R\+T\+\_\+\+\_\+ast\+Channel\+Desc}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+ast\+Channel\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+A\+R\+T\+\_\+tst\+Channel\+Desc} U\+A\+R\+T\+\_\+\+\_\+ast\+Channel\+Desc\mbox{[}{\bf U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}\mbox{]} = {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg}}\label{uart_8c_a269db099b8105b41dba0e5dfeb40f7de}
+Array of U\+A\+R\+T channels containing configuration and status parameters for each one. \hypertarget{uart_8c_a65a843a7944868a8a1f8c1e1a67d1a03}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+\+\_\+au8\+Rx\+Buffer@{U\+A\+R\+T\+\_\+\+\_\+au8\+Rx\+Buffer}}
+\index{U\+A\+R\+T\+\_\+\+\_\+au8\+Rx\+Buffer@{U\+A\+R\+T\+\_\+\+\_\+au8\+Rx\+Buffer}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+au8\+Rx\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8} U\+A\+R\+T\+\_\+\+\_\+au8\+Rx\+Buffer\mbox{[}{\bf U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}\mbox{]}\mbox{[}{\bf U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length}\mbox{]} = {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff}}\label{uart_8c_a65a843a7944868a8a1f8c1e1a67d1a03}
+Rx buffer for all U\+A\+R\+T channels. \hypertarget{uart_8c_a03cc601975f1397c86478b828adb8b0f}{}\index{uart.\+c@{uart.\+c}!U\+A\+R\+T\+\_\+\+\_\+au8\+Tx\+Buffer@{U\+A\+R\+T\+\_\+\+\_\+au8\+Tx\+Buffer}}
+\index{U\+A\+R\+T\+\_\+\+\_\+au8\+Tx\+Buffer@{U\+A\+R\+T\+\_\+\+\_\+au8\+Tx\+Buffer}!uart.\+c@{uart.\+c}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+au8\+Tx\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8} U\+A\+R\+T\+\_\+\+\_\+au8\+Tx\+Buffer\mbox{[}{\bf U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}\mbox{]}\mbox{[}{\bf U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length}\mbox{]} = {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff}}\label{uart_8c_a03cc601975f1397c86478b828adb8b0f}
+Tx buffer for all U\+A\+R\+T channels. 

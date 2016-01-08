@@ -1,0 +1,1112 @@
+\hypertarget{_d_s_p2833x___global_prototypes_8h}{}\section{f2833x/v140/\+D\+S\+P2833x\+\_\+common/include/\+D\+S\+P2833x\+\_\+\+Global\+Prototypes.h File Reference}
+\label{_d_s_p2833x___global_prototypes_8h}\index{f2833x/v140/\+D\+S\+P2833x\+\_\+common/include/\+D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{f2833x/v140/\+D\+S\+P2833x\+\_\+common/include/\+D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_d_s_p2833x___global_prototypes_8h_a30cbe9429e855935049ead93d6c33085}{Kick\+Dog}~\hyperlink{_d_s_p2833x___sys_ctrl_8c_aa5e4faa42368a6024ce1b6b65a16d948}{Service\+Dog}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aa7d188f9109e1a343b4774f9d67b9316}{Init\+Adc} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aa6ae83e5df65ae7dd66dc9b27b604cda}{D\+M\+A\+Initialize} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a6e29d138b612b0257f48b8992c92d4d9}{D\+M\+A\+C\+H1\+Addr\+Config} (volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Dest, volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Source)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a7b6ddb5bdc0278d0154fff6a305420b5}{D\+M\+A\+C\+H1\+Burst\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} bsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcbstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} desbstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_af335c4248024edeeaa9a6873ef61c0ec}{D\+M\+A\+C\+H1\+Transfer\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} tsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srctstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deststep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ac5c43fc553b0f2abd657b43fb153f133}{D\+M\+A\+C\+H1\+Wrap\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} srcwsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcwstep, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} deswsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deswstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aca6f2ef0a004ceb16981a79862bbf4c0}{D\+M\+A\+C\+H1\+Mode\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} persel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} perinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} oneshot, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} cont, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} synce, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} syncsel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} ovrinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} datasize, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chintmode, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chinte)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a62a5ccbe0d22d13a8a9e941d63874b09}{Start\+D\+M\+A\+C\+H1} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a2ec666243a40b366ba7c51aafed7bad7}{D\+M\+A\+C\+H2\+Addr\+Config} (volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Dest, volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Source)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a803e8a1a13bb239b219b0740acc04e31}{D\+M\+A\+C\+H2\+Burst\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} bsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcbstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} desbstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_af1d1e15328de76e5933396a577f768b8}{D\+M\+A\+C\+H2\+Transfer\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} tsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srctstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deststep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a133113fb4abad63ffff37e8933937543}{D\+M\+A\+C\+H2\+Wrap\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} srcwsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcwstep, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} deswsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deswstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_af7adfe4079f1097a41c10422a9ca202d}{D\+M\+A\+C\+H2\+Mode\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} persel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} perinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} oneshot, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} cont, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} synce, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} syncsel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} ovrinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} datasize, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chintmode, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chinte)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_af1473648ce8a9f4acdf83e636f42ac46}{Start\+D\+M\+A\+C\+H2} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a7d2adb146e8f72ff9a4a7e20e459e78e}{D\+M\+A\+C\+H3\+Addr\+Config} (volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Dest, volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Source)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a1ffe26b22920fe5afd12d033ab8496a9}{D\+M\+A\+C\+H3\+Burst\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} bsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcbstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} desbstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_adb94b31ac63cebcc93571a72b8532217}{D\+M\+A\+C\+H3\+Transfer\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} tsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srctstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deststep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a4b66c96d029a67a7a4d9e5272ed0d86b}{D\+M\+A\+C\+H3\+Wrap\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} srcwsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcwstep, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} deswsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deswstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ac2f6d3d0f0a46dea0ee2023bcc7b35a3}{D\+M\+A\+C\+H3\+Mode\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} persel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} perinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} oneshot, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} cont, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} synce, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} syncsel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} ovrinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} datasize, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chintmode, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chinte)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a9eb9839f2860ee5a46a08a4f5a8a9159}{Start\+D\+M\+A\+C\+H3} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ac3178d2cd85ab26bf5092ea8f00ca28a}{D\+M\+A\+C\+H4\+Addr\+Config} (volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Dest, volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Source)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a61cd19b78c16fc604c56a18dd4506747}{D\+M\+A\+C\+H4\+Burst\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} bsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcbstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} desbstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_af7d0b929c16709fb25d2473afb866b44}{D\+M\+A\+C\+H4\+Transfer\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} tsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srctstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deststep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a54e37d48bce3be3adc59fd04779d42b4}{D\+M\+A\+C\+H4\+Wrap\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} srcwsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcwstep, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} deswsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deswstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ada40867c0b0f91d08b85be3a23fb0d68}{D\+M\+A\+C\+H4\+Mode\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} persel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} perinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} oneshot, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} cont, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} synce, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} syncsel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} ovrinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} datasize, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chintmode, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chinte)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aefc4c376d6f3c31b60bcfc740c845bf9}{Start\+D\+M\+A\+C\+H4} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a82185d3cf7d141c52790c9660b831250}{D\+M\+A\+C\+H5\+Addr\+Config} (volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Dest, volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Source)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a303034d914ecc3ac92e6086787405e98}{D\+M\+A\+C\+H5\+Burst\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} bsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcbstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} desbstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a069a46d9832e99cb4caf2887b89486b4}{D\+M\+A\+C\+H5\+Transfer\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} tsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srctstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deststep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a8cd61819956b40c0cf53a95556edc314}{D\+M\+A\+C\+H5\+Wrap\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} srcwsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcwstep, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} deswsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deswstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aa51107421518a872c838d9b080847d7f}{D\+M\+A\+C\+H5\+Mode\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} persel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} perinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} oneshot, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} cont, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} synce, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} syncsel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} ovrinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} datasize, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chintmode, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chinte)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_adc548fb0384557182d562f52af864c56}{Start\+D\+M\+A\+C\+H5} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a958ae9834bd772752bcd0b322d3b5303}{D\+M\+A\+C\+H6\+Addr\+Config} (volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Dest, volatile \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$D\+M\+A\+\_\+\+Source)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a2c6abd447eb63e23ac5989b3f9aeaafe}{D\+M\+A\+C\+H6\+Burst\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} bsize, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} srcbstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} desbstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a9b12a18b84b1f446cd5a065a2ec2108f}{D\+M\+A\+C\+H6\+Transfer\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} tsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srctstep, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deststep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a490d0dde680622d32b34496339e64056}{D\+M\+A\+C\+H6\+Wrap\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} srcwsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} srcwstep, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} deswsize, \hyperlink{_d_s_p2833x___device_8h_a74c874318b0a5111bb5c5119fa8c71b5}{int16} deswstep)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_adf0ad762b1ed660f16c18c22b0c270e3}{D\+M\+A\+C\+H6\+Mode\+Config} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} persel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} perinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} oneshot, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} cont, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} synce, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} syncsel, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} ovrinte, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} datasize, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chintmode, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} chinte)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a71bf035235a0a5a42e6488716dd53c6b}{Start\+D\+M\+A\+C\+H6} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a31751c36ad991287e7f037c171682447}{Init\+Peripherals} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a671234d2b4c07745366083fc24952049}{Init\+E\+Cap} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a50067cf26a638fd435cfa3ce2a0ac2bb}{Init\+E\+Cap\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a5358f6ad31082481352cfb0ac92b8b78}{Init\+E\+Cap1\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ab484ba47d5c83459689d807118b8924a}{Init\+E\+Cap2\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a9a5688a6b05d103d93cf88e351bc38b3}{Init\+E\+Pwm} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a1360b7aa2de84e75803fb33d3365b8a5}{Init\+E\+Pwm\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a5e575b9a8e1596354331e182bf282c22}{Init\+E\+Pwm1\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a7579c9aceea08040c53f890db92da8b6}{Init\+E\+Pwm2\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a206168f6d25b1025e7483d47ebc0499b}{Init\+E\+Pwm3\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a689b89d10bed4779688743f7832195ca}{Init\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a9d95ec4b0a40fbea53b7c132d8dd50fa}{Init\+I2\+C\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a444cebe0a0ae0c15e57ececb614b63e0}{Init\+Mcbsp} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a3cf74bfb42a622f3ab0d81d96c87abff}{Init\+Mcbspa} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a43e53eea971611d3b56555c0b8543384}{delay\+\_\+loop} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aa6e7f58e0c4ee3c9fc2ef7827bf10450}{Init\+Mcbspa\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a1a7325b34ddef16c703fbe3b0d5d3147}{Init\+Mcbspa8bit} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aad47d7f2a6c2ca70eb3e0cfb7676bc87}{Init\+Mcbspa12bit} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ac19ff4ca1f0bb4205e7d2d3e85843ad2}{Init\+Mcbspa16bit} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ad8df80c77cca8d90d956b45371e5205d}{Init\+Mcbspa20bit} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aac876364c98bce76fe9d1ee5d51a990b}{Init\+Mcbspa24bit} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a73ac6905dd700ab29413e5884a610e39}{Init\+Mcbspa32bit} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_afc2722078adcaf1343954319297bd1e7}{Init\+Pie\+Ctrl} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aecb82ee7df34e57969f95df5a5fbd201}{Init\+Pie\+Vect\+Table} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aeaf0e34cb0a195461cd958268658506b}{Init\+Sci} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a56896c7a4c1a7d4c6169a4d03b2039ba}{Init\+Sci\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a76009b8b84fe544684c63f3e8ac52444}{Init\+Scia\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_abc5b3bd4febb79c0c63a256ba64fda3c}{Init\+Spi} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_abaf520711b8069c72f5af3d9c665fa2a}{Init\+Spi\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a2e1957b9ac42032f1cb0bd3955ace61b}{Init\+Spia\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a881937c4bb55a2120533f2e80dcea828}{Init\+Sys\+Ctrl} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a540e6b832d1fe0ee1d2304d826e983e1}{Init\+Tz\+Gpio} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aa33a90d7219f11b3bd844ebd0dd6410f}{Init\+X\+Intrupt} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a0a90722d05b51b58935e178092fb9e00}{Xintf\+Init} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ab10fdaafc4e40c816794e68293054fcd}{Init\+Xintf16\+Gpio} ()
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ab4b46ae1b50d03bc8c5eba655a603f8f}{Init\+Xintf32\+Gpio} ()
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a29bb556f177472ac8434897f94760643}{Init\+Pll} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} pllcr, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} clkindiv)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a17c664e03a629dcb5c59b71cf5ba6e9c}{Init\+Peripheral\+Clocks} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_ab712356331a62b04aebcb373865e68c4}{Enable\+Interrupts} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a7892f304956b765c7d33b9b13894803f}{D\+S\+P28x\+\_\+us\+Delay} (\hyperlink{_d_s_p2833x___device_8h_aba99025e657f892beb7ff31cecf64653}{Uint32} Count)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aed94b3ab4ebd943d63e20b4b9b6cfdfb}{A\+D\+C\+\_\+cal} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aa5e4faa42368a6024ce1b6b65a16d948}{Service\+Dog} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aecfa6e351779dbb2aed2ff491ce907ce}{Disable\+Dog} (void)
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___global_prototypes_8h_a5969da080723ffb6a69f29aa7b53dcd1}{Csm\+Unlock} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_aa2b400be77b23a8c8da7a9123891a658}{Set\+D\+B\+G\+I\+E\+R} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} dbgier)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_acfb15ebe58549117d808383513ee5cc8}{Init\+Flash} (void)
+\item 
+void \hyperlink{_d_s_p2833x___global_prototypes_8h_a11716af91ea205c04dfd16b2ce9b7460}{Mem\+Copy} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$Source\+Addr, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$Source\+End\+Addr, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} $\ast$Dest\+Addr)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___global_prototypes_8h_a2753d5f890452640a3a409e94aeb46ef}{Ramfuncs\+Load\+Start}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___global_prototypes_8h_ab4149f3ef4003a451b26b68775ea8df8}{Ramfuncs\+Load\+End}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___global_prototypes_8h_a01c2def8fe1e445716f7fbb7c3b9424c}{Ramfuncs\+Run\+Start}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___global_prototypes_8h_ad7086dd674798fd11fdff437460169a1}{Xintffuncs\+Load\+Start}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___global_prototypes_8h_a731276cdf0767f87cec314da2ead1106}{Xintffuncs\+Load\+End}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___global_prototypes_8h_a9699fdfe2b1bdef5a7cb38b74cc25226}{Xintffuncs\+Run\+Start}
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___global_prototypes_8h_aa81f4f41d89b7fa4532dcd98a5088d19}{Xintffuncs\+Load\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a30cbe9429e855935049ead93d6c33085}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Kick\+Dog@{Kick\+Dog}}
+\index{Kick\+Dog@{Kick\+Dog}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Kick\+Dog}]{\setlength{\rightskip}{0pt plus 5cm}\#define Kick\+Dog~{\bf Service\+Dog}}\label{_d_s_p2833x___global_prototypes_8h_a30cbe9429e855935049ead93d6c33085}
+
+
+\subsection{Function Documentation}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aed94b3ab4ebd943d63e20b4b9b6cfdfb}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!A\+D\+C\+\_\+cal@{A\+D\+C\+\_\+cal}}
+\index{A\+D\+C\+\_\+cal@{A\+D\+C\+\_\+cal}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{A\+D\+C\+\_\+cal}]{\setlength{\rightskip}{0pt plus 5cm}void A\+D\+C\+\_\+cal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aed94b3ab4ebd943d63e20b4b9b6cfdfb}
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a5969da080723ffb6a69f29aa7b53dcd1}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Csm\+Unlock@{Csm\+Unlock}}
+\index{Csm\+Unlock@{Csm\+Unlock}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Csm\+Unlock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Csm\+Unlock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a5969da080723ffb6a69f29aa7b53dcd1}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a43e53eea971611d3b56555c0b8543384}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!delay\+\_\+loop@{delay\+\_\+loop}}
+\index{delay\+\_\+loop@{delay\+\_\+loop}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{delay\+\_\+loop}]{\setlength{\rightskip}{0pt plus 5cm}void delay\+\_\+loop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a43e53eea971611d3b56555c0b8543384}
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aecfa6e351779dbb2aed2ff491ce907ce}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Disable\+Dog@{Disable\+Dog}}
+\index{Disable\+Dog@{Disable\+Dog}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Disable\+Dog}]{\setlength{\rightskip}{0pt plus 5cm}void Disable\+Dog (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aecfa6e351779dbb2aed2ff491ce907ce}
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a6e29d138b612b0257f48b8992c92d4d9}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H1\+Addr\+Config@{D\+M\+A\+C\+H1\+Addr\+Config}}
+\index{D\+M\+A\+C\+H1\+Addr\+Config@{D\+M\+A\+C\+H1\+Addr\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H1\+Addr\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H1\+Addr\+Config (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Dest, }
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Source}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a6e29d138b612b0257f48b8992c92d4d9}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a7b6ddb5bdc0278d0154fff6a305420b5}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H1\+Burst\+Config@{D\+M\+A\+C\+H1\+Burst\+Config}}
+\index{D\+M\+A\+C\+H1\+Burst\+Config@{D\+M\+A\+C\+H1\+Burst\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H1\+Burst\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H1\+Burst\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{bsize, }
+\item[{{\bf int16}}]{srcbstep, }
+\item[{{\bf int16}}]{desbstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a7b6ddb5bdc0278d0154fff6a305420b5}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aca6f2ef0a004ceb16981a79862bbf4c0}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H1\+Mode\+Config@{D\+M\+A\+C\+H1\+Mode\+Config}}
+\index{D\+M\+A\+C\+H1\+Mode\+Config@{D\+M\+A\+C\+H1\+Mode\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H1\+Mode\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H1\+Mode\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{persel, }
+\item[{{\bf Uint16}}]{perinte, }
+\item[{{\bf Uint16}}]{oneshot, }
+\item[{{\bf Uint16}}]{cont, }
+\item[{{\bf Uint16}}]{synce, }
+\item[{{\bf Uint16}}]{syncsel, }
+\item[{{\bf Uint16}}]{ovrinte, }
+\item[{{\bf Uint16}}]{datasize, }
+\item[{{\bf Uint16}}]{chintmode, }
+\item[{{\bf Uint16}}]{chinte}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aca6f2ef0a004ceb16981a79862bbf4c0}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_af335c4248024edeeaa9a6873ef61c0ec}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H1\+Transfer\+Config@{D\+M\+A\+C\+H1\+Transfer\+Config}}
+\index{D\+M\+A\+C\+H1\+Transfer\+Config@{D\+M\+A\+C\+H1\+Transfer\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H1\+Transfer\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H1\+Transfer\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{tsize, }
+\item[{{\bf int16}}]{srctstep, }
+\item[{{\bf int16}}]{deststep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_af335c4248024edeeaa9a6873ef61c0ec}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ac5c43fc553b0f2abd657b43fb153f133}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H1\+Wrap\+Config@{D\+M\+A\+C\+H1\+Wrap\+Config}}
+\index{D\+M\+A\+C\+H1\+Wrap\+Config@{D\+M\+A\+C\+H1\+Wrap\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H1\+Wrap\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H1\+Wrap\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{srcwsize, }
+\item[{{\bf int16}}]{srcwstep, }
+\item[{{\bf Uint16}}]{deswsize, }
+\item[{{\bf int16}}]{deswstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ac5c43fc553b0f2abd657b43fb153f133}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a2ec666243a40b366ba7c51aafed7bad7}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H2\+Addr\+Config@{D\+M\+A\+C\+H2\+Addr\+Config}}
+\index{D\+M\+A\+C\+H2\+Addr\+Config@{D\+M\+A\+C\+H2\+Addr\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H2\+Addr\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H2\+Addr\+Config (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Dest, }
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Source}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a2ec666243a40b366ba7c51aafed7bad7}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a803e8a1a13bb239b219b0740acc04e31}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H2\+Burst\+Config@{D\+M\+A\+C\+H2\+Burst\+Config}}
+\index{D\+M\+A\+C\+H2\+Burst\+Config@{D\+M\+A\+C\+H2\+Burst\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H2\+Burst\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H2\+Burst\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{bsize, }
+\item[{{\bf int16}}]{srcbstep, }
+\item[{{\bf int16}}]{desbstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a803e8a1a13bb239b219b0740acc04e31}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_af7adfe4079f1097a41c10422a9ca202d}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H2\+Mode\+Config@{D\+M\+A\+C\+H2\+Mode\+Config}}
+\index{D\+M\+A\+C\+H2\+Mode\+Config@{D\+M\+A\+C\+H2\+Mode\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H2\+Mode\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H2\+Mode\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{persel, }
+\item[{{\bf Uint16}}]{perinte, }
+\item[{{\bf Uint16}}]{oneshot, }
+\item[{{\bf Uint16}}]{cont, }
+\item[{{\bf Uint16}}]{synce, }
+\item[{{\bf Uint16}}]{syncsel, }
+\item[{{\bf Uint16}}]{ovrinte, }
+\item[{{\bf Uint16}}]{datasize, }
+\item[{{\bf Uint16}}]{chintmode, }
+\item[{{\bf Uint16}}]{chinte}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_af7adfe4079f1097a41c10422a9ca202d}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_af1d1e15328de76e5933396a577f768b8}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H2\+Transfer\+Config@{D\+M\+A\+C\+H2\+Transfer\+Config}}
+\index{D\+M\+A\+C\+H2\+Transfer\+Config@{D\+M\+A\+C\+H2\+Transfer\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H2\+Transfer\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H2\+Transfer\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{tsize, }
+\item[{{\bf int16}}]{srctstep, }
+\item[{{\bf int16}}]{deststep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_af1d1e15328de76e5933396a577f768b8}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a133113fb4abad63ffff37e8933937543}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H2\+Wrap\+Config@{D\+M\+A\+C\+H2\+Wrap\+Config}}
+\index{D\+M\+A\+C\+H2\+Wrap\+Config@{D\+M\+A\+C\+H2\+Wrap\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H2\+Wrap\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H2\+Wrap\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{srcwsize, }
+\item[{{\bf int16}}]{srcwstep, }
+\item[{{\bf Uint16}}]{deswsize, }
+\item[{{\bf int16}}]{deswstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a133113fb4abad63ffff37e8933937543}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a7d2adb146e8f72ff9a4a7e20e459e78e}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H3\+Addr\+Config@{D\+M\+A\+C\+H3\+Addr\+Config}}
+\index{D\+M\+A\+C\+H3\+Addr\+Config@{D\+M\+A\+C\+H3\+Addr\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H3\+Addr\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H3\+Addr\+Config (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Dest, }
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Source}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a7d2adb146e8f72ff9a4a7e20e459e78e}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a1ffe26b22920fe5afd12d033ab8496a9}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H3\+Burst\+Config@{D\+M\+A\+C\+H3\+Burst\+Config}}
+\index{D\+M\+A\+C\+H3\+Burst\+Config@{D\+M\+A\+C\+H3\+Burst\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H3\+Burst\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H3\+Burst\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{bsize, }
+\item[{{\bf int16}}]{srcbstep, }
+\item[{{\bf int16}}]{desbstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a1ffe26b22920fe5afd12d033ab8496a9}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ac2f6d3d0f0a46dea0ee2023bcc7b35a3}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H3\+Mode\+Config@{D\+M\+A\+C\+H3\+Mode\+Config}}
+\index{D\+M\+A\+C\+H3\+Mode\+Config@{D\+M\+A\+C\+H3\+Mode\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H3\+Mode\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H3\+Mode\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{persel, }
+\item[{{\bf Uint16}}]{perinte, }
+\item[{{\bf Uint16}}]{oneshot, }
+\item[{{\bf Uint16}}]{cont, }
+\item[{{\bf Uint16}}]{synce, }
+\item[{{\bf Uint16}}]{syncsel, }
+\item[{{\bf Uint16}}]{ovrinte, }
+\item[{{\bf Uint16}}]{datasize, }
+\item[{{\bf Uint16}}]{chintmode, }
+\item[{{\bf Uint16}}]{chinte}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ac2f6d3d0f0a46dea0ee2023bcc7b35a3}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_adb94b31ac63cebcc93571a72b8532217}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H3\+Transfer\+Config@{D\+M\+A\+C\+H3\+Transfer\+Config}}
+\index{D\+M\+A\+C\+H3\+Transfer\+Config@{D\+M\+A\+C\+H3\+Transfer\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H3\+Transfer\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H3\+Transfer\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{tsize, }
+\item[{{\bf int16}}]{srctstep, }
+\item[{{\bf int16}}]{deststep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_adb94b31ac63cebcc93571a72b8532217}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a4b66c96d029a67a7a4d9e5272ed0d86b}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H3\+Wrap\+Config@{D\+M\+A\+C\+H3\+Wrap\+Config}}
+\index{D\+M\+A\+C\+H3\+Wrap\+Config@{D\+M\+A\+C\+H3\+Wrap\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H3\+Wrap\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H3\+Wrap\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{srcwsize, }
+\item[{{\bf int16}}]{srcwstep, }
+\item[{{\bf Uint16}}]{deswsize, }
+\item[{{\bf int16}}]{deswstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a4b66c96d029a67a7a4d9e5272ed0d86b}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ac3178d2cd85ab26bf5092ea8f00ca28a}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H4\+Addr\+Config@{D\+M\+A\+C\+H4\+Addr\+Config}}
+\index{D\+M\+A\+C\+H4\+Addr\+Config@{D\+M\+A\+C\+H4\+Addr\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H4\+Addr\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H4\+Addr\+Config (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Dest, }
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Source}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ac3178d2cd85ab26bf5092ea8f00ca28a}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a61cd19b78c16fc604c56a18dd4506747}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H4\+Burst\+Config@{D\+M\+A\+C\+H4\+Burst\+Config}}
+\index{D\+M\+A\+C\+H4\+Burst\+Config@{D\+M\+A\+C\+H4\+Burst\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H4\+Burst\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H4\+Burst\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{bsize, }
+\item[{{\bf int16}}]{srcbstep, }
+\item[{{\bf int16}}]{desbstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a61cd19b78c16fc604c56a18dd4506747}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ada40867c0b0f91d08b85be3a23fb0d68}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H4\+Mode\+Config@{D\+M\+A\+C\+H4\+Mode\+Config}}
+\index{D\+M\+A\+C\+H4\+Mode\+Config@{D\+M\+A\+C\+H4\+Mode\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H4\+Mode\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H4\+Mode\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{persel, }
+\item[{{\bf Uint16}}]{perinte, }
+\item[{{\bf Uint16}}]{oneshot, }
+\item[{{\bf Uint16}}]{cont, }
+\item[{{\bf Uint16}}]{synce, }
+\item[{{\bf Uint16}}]{syncsel, }
+\item[{{\bf Uint16}}]{ovrinte, }
+\item[{{\bf Uint16}}]{datasize, }
+\item[{{\bf Uint16}}]{chintmode, }
+\item[{{\bf Uint16}}]{chinte}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ada40867c0b0f91d08b85be3a23fb0d68}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_af7d0b929c16709fb25d2473afb866b44}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H4\+Transfer\+Config@{D\+M\+A\+C\+H4\+Transfer\+Config}}
+\index{D\+M\+A\+C\+H4\+Transfer\+Config@{D\+M\+A\+C\+H4\+Transfer\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H4\+Transfer\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H4\+Transfer\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{tsize, }
+\item[{{\bf int16}}]{srctstep, }
+\item[{{\bf int16}}]{deststep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_af7d0b929c16709fb25d2473afb866b44}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a54e37d48bce3be3adc59fd04779d42b4}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H4\+Wrap\+Config@{D\+M\+A\+C\+H4\+Wrap\+Config}}
+\index{D\+M\+A\+C\+H4\+Wrap\+Config@{D\+M\+A\+C\+H4\+Wrap\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H4\+Wrap\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H4\+Wrap\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{srcwsize, }
+\item[{{\bf int16}}]{srcwstep, }
+\item[{{\bf Uint16}}]{deswsize, }
+\item[{{\bf int16}}]{deswstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a54e37d48bce3be3adc59fd04779d42b4}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a82185d3cf7d141c52790c9660b831250}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H5\+Addr\+Config@{D\+M\+A\+C\+H5\+Addr\+Config}}
+\index{D\+M\+A\+C\+H5\+Addr\+Config@{D\+M\+A\+C\+H5\+Addr\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H5\+Addr\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H5\+Addr\+Config (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Dest, }
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Source}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a82185d3cf7d141c52790c9660b831250}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a303034d914ecc3ac92e6086787405e98}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H5\+Burst\+Config@{D\+M\+A\+C\+H5\+Burst\+Config}}
+\index{D\+M\+A\+C\+H5\+Burst\+Config@{D\+M\+A\+C\+H5\+Burst\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H5\+Burst\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H5\+Burst\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{bsize, }
+\item[{{\bf int16}}]{srcbstep, }
+\item[{{\bf int16}}]{desbstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a303034d914ecc3ac92e6086787405e98}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aa51107421518a872c838d9b080847d7f}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H5\+Mode\+Config@{D\+M\+A\+C\+H5\+Mode\+Config}}
+\index{D\+M\+A\+C\+H5\+Mode\+Config@{D\+M\+A\+C\+H5\+Mode\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H5\+Mode\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H5\+Mode\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{persel, }
+\item[{{\bf Uint16}}]{perinte, }
+\item[{{\bf Uint16}}]{oneshot, }
+\item[{{\bf Uint16}}]{cont, }
+\item[{{\bf Uint16}}]{synce, }
+\item[{{\bf Uint16}}]{syncsel, }
+\item[{{\bf Uint16}}]{ovrinte, }
+\item[{{\bf Uint16}}]{datasize, }
+\item[{{\bf Uint16}}]{chintmode, }
+\item[{{\bf Uint16}}]{chinte}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aa51107421518a872c838d9b080847d7f}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a069a46d9832e99cb4caf2887b89486b4}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H5\+Transfer\+Config@{D\+M\+A\+C\+H5\+Transfer\+Config}}
+\index{D\+M\+A\+C\+H5\+Transfer\+Config@{D\+M\+A\+C\+H5\+Transfer\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H5\+Transfer\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H5\+Transfer\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{tsize, }
+\item[{{\bf int16}}]{srctstep, }
+\item[{{\bf int16}}]{deststep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a069a46d9832e99cb4caf2887b89486b4}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a8cd61819956b40c0cf53a95556edc314}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H5\+Wrap\+Config@{D\+M\+A\+C\+H5\+Wrap\+Config}}
+\index{D\+M\+A\+C\+H5\+Wrap\+Config@{D\+M\+A\+C\+H5\+Wrap\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H5\+Wrap\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H5\+Wrap\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{srcwsize, }
+\item[{{\bf int16}}]{srcwstep, }
+\item[{{\bf Uint16}}]{deswsize, }
+\item[{{\bf int16}}]{deswstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a8cd61819956b40c0cf53a95556edc314}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a958ae9834bd772752bcd0b322d3b5303}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H6\+Addr\+Config@{D\+M\+A\+C\+H6\+Addr\+Config}}
+\index{D\+M\+A\+C\+H6\+Addr\+Config@{D\+M\+A\+C\+H6\+Addr\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H6\+Addr\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H6\+Addr\+Config (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Dest, }
+\item[{volatile {\bf Uint16} $\ast$}]{D\+M\+A\+\_\+\+Source}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a958ae9834bd772752bcd0b322d3b5303}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a2c6abd447eb63e23ac5989b3f9aeaafe}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H6\+Burst\+Config@{D\+M\+A\+C\+H6\+Burst\+Config}}
+\index{D\+M\+A\+C\+H6\+Burst\+Config@{D\+M\+A\+C\+H6\+Burst\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H6\+Burst\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H6\+Burst\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{bsize, }
+\item[{{\bf Uint16}}]{srcbstep, }
+\item[{{\bf int16}}]{desbstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a2c6abd447eb63e23ac5989b3f9aeaafe}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_adf0ad762b1ed660f16c18c22b0c270e3}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H6\+Mode\+Config@{D\+M\+A\+C\+H6\+Mode\+Config}}
+\index{D\+M\+A\+C\+H6\+Mode\+Config@{D\+M\+A\+C\+H6\+Mode\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H6\+Mode\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H6\+Mode\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{persel, }
+\item[{{\bf Uint16}}]{perinte, }
+\item[{{\bf Uint16}}]{oneshot, }
+\item[{{\bf Uint16}}]{cont, }
+\item[{{\bf Uint16}}]{synce, }
+\item[{{\bf Uint16}}]{syncsel, }
+\item[{{\bf Uint16}}]{ovrinte, }
+\item[{{\bf Uint16}}]{datasize, }
+\item[{{\bf Uint16}}]{chintmode, }
+\item[{{\bf Uint16}}]{chinte}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_adf0ad762b1ed660f16c18c22b0c270e3}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a9b12a18b84b1f446cd5a065a2ec2108f}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H6\+Transfer\+Config@{D\+M\+A\+C\+H6\+Transfer\+Config}}
+\index{D\+M\+A\+C\+H6\+Transfer\+Config@{D\+M\+A\+C\+H6\+Transfer\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H6\+Transfer\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H6\+Transfer\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{tsize, }
+\item[{{\bf int16}}]{srctstep, }
+\item[{{\bf int16}}]{deststep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a9b12a18b84b1f446cd5a065a2ec2108f}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a490d0dde680622d32b34496339e64056}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+C\+H6\+Wrap\+Config@{D\+M\+A\+C\+H6\+Wrap\+Config}}
+\index{D\+M\+A\+C\+H6\+Wrap\+Config@{D\+M\+A\+C\+H6\+Wrap\+Config}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+C\+H6\+Wrap\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+C\+H6\+Wrap\+Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{srcwsize, }
+\item[{{\bf int16}}]{srcwstep, }
+\item[{{\bf Uint16}}]{deswsize, }
+\item[{{\bf int16}}]{deswstep}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a490d0dde680622d32b34496339e64056}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aa6ae83e5df65ae7dd66dc9b27b604cda}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+M\+A\+Initialize@{D\+M\+A\+Initialize}}
+\index{D\+M\+A\+Initialize@{D\+M\+A\+Initialize}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+M\+A\+Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void D\+M\+A\+Initialize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aa6ae83e5df65ae7dd66dc9b27b604cda}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a7892f304956b765c7d33b9b13894803f}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!D\+S\+P28x\+\_\+us\+Delay@{D\+S\+P28x\+\_\+us\+Delay}}
+\index{D\+S\+P28x\+\_\+us\+Delay@{D\+S\+P28x\+\_\+us\+Delay}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{D\+S\+P28x\+\_\+us\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S\+P28x\+\_\+us\+Delay (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{Count}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a7892f304956b765c7d33b9b13894803f}
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ab712356331a62b04aebcb373865e68c4}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Enable\+Interrupts@{Enable\+Interrupts}}
+\index{Enable\+Interrupts@{Enable\+Interrupts}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Enable\+Interrupts}]{\setlength{\rightskip}{0pt plus 5cm}void Enable\+Interrupts (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ab712356331a62b04aebcb373865e68c4}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aa7d188f9109e1a343b4774f9d67b9316}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Adc@{Init\+Adc}}
+\index{Init\+Adc@{Init\+Adc}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Adc}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Adc (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aa7d188f9109e1a343b4774f9d67b9316}
+
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a671234d2b4c07745366083fc24952049}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Cap@{Init\+E\+Cap}}
+\index{Init\+E\+Cap@{Init\+E\+Cap}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Cap}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Cap (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a671234d2b4c07745366083fc24952049}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a5358f6ad31082481352cfb0ac92b8b78}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Cap1\+Gpio@{Init\+E\+Cap1\+Gpio}}
+\index{Init\+E\+Cap1\+Gpio@{Init\+E\+Cap1\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Cap1\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Cap1\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a5358f6ad31082481352cfb0ac92b8b78}
+
+
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ab484ba47d5c83459689d807118b8924a}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Cap2\+Gpio@{Init\+E\+Cap2\+Gpio}}
+\index{Init\+E\+Cap2\+Gpio@{Init\+E\+Cap2\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Cap2\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Cap2\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ab484ba47d5c83459689d807118b8924a}
+
+
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a50067cf26a638fd435cfa3ce2a0ac2bb}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Cap\+Gpio@{Init\+E\+Cap\+Gpio}}
+\index{Init\+E\+Cap\+Gpio@{Init\+E\+Cap\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Cap\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Cap\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a50067cf26a638fd435cfa3ce2a0ac2bb}
+
+
+Here is the call graph for this function\+:
+% FIG 8
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a9a5688a6b05d103d93cf88e351bc38b3}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Pwm@{Init\+E\+Pwm}}
+\index{Init\+E\+Pwm@{Init\+E\+Pwm}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Pwm}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Pwm (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a9a5688a6b05d103d93cf88e351bc38b3}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a5e575b9a8e1596354331e182bf282c22}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Pwm1\+Gpio@{Init\+E\+Pwm1\+Gpio}}
+\index{Init\+E\+Pwm1\+Gpio@{Init\+E\+Pwm1\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Pwm1\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Pwm1\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a5e575b9a8e1596354331e182bf282c22}
+
+
+Here is the caller graph for this function\+:
+% FIG 9
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a7579c9aceea08040c53f890db92da8b6}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Pwm2\+Gpio@{Init\+E\+Pwm2\+Gpio}}
+\index{Init\+E\+Pwm2\+Gpio@{Init\+E\+Pwm2\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Pwm2\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Pwm2\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a7579c9aceea08040c53f890db92da8b6}
+
+
+Here is the caller graph for this function\+:
+% FIG 10
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a206168f6d25b1025e7483d47ebc0499b}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Pwm3\+Gpio@{Init\+E\+Pwm3\+Gpio}}
+\index{Init\+E\+Pwm3\+Gpio@{Init\+E\+Pwm3\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Pwm3\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Pwm3\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a206168f6d25b1025e7483d47ebc0499b}
+
+
+Here is the caller graph for this function\+:
+% FIG 11
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a1360b7aa2de84e75803fb33d3365b8a5}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+E\+Pwm\+Gpio@{Init\+E\+Pwm\+Gpio}}
+\index{Init\+E\+Pwm\+Gpio@{Init\+E\+Pwm\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+E\+Pwm\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+E\+Pwm\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a1360b7aa2de84e75803fb33d3365b8a5}
+
+
+Here is the call graph for this function\+:
+% FIG 12
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_acfb15ebe58549117d808383513ee5cc8}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Flash@{Init\+Flash}}
+\index{Init\+Flash@{Init\+Flash}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Flash}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Flash (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_acfb15ebe58549117d808383513ee5cc8}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a689b89d10bed4779688743f7832195ca}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Gpio@{Init\+Gpio}}
+\index{Init\+Gpio@{Init\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a689b89d10bed4779688743f7832195ca}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a9d95ec4b0a40fbea53b7c132d8dd50fa}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+I2\+C\+Gpio@{Init\+I2\+C\+Gpio}}
+\index{Init\+I2\+C\+Gpio@{Init\+I2\+C\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+I2\+C\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+I2\+C\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a9d95ec4b0a40fbea53b7c132d8dd50fa}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a444cebe0a0ae0c15e57ececb614b63e0}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbsp@{Init\+Mcbsp}}
+\index{Init\+Mcbsp@{Init\+Mcbsp}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbsp}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbsp (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a444cebe0a0ae0c15e57ececb614b63e0}
+
+
+Here is the call graph for this function\+:
+% FIG 13
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a3cf74bfb42a622f3ab0d81d96c87abff}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbspa@{Init\+Mcbspa}}
+\index{Init\+Mcbspa@{Init\+Mcbspa}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbspa}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbspa (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a3cf74bfb42a622f3ab0d81d96c87abff}
+
+
+Here is the call graph for this function\+:
+% FIG 14
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 15
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aad47d7f2a6c2ca70eb3e0cfb7676bc87}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbspa12bit@{Init\+Mcbspa12bit}}
+\index{Init\+Mcbspa12bit@{Init\+Mcbspa12bit}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbspa12bit}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbspa12bit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aad47d7f2a6c2ca70eb3e0cfb7676bc87}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ac19ff4ca1f0bb4205e7d2d3e85843ad2}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbspa16bit@{Init\+Mcbspa16bit}}
+\index{Init\+Mcbspa16bit@{Init\+Mcbspa16bit}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbspa16bit}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbspa16bit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ac19ff4ca1f0bb4205e7d2d3e85843ad2}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ad8df80c77cca8d90d956b45371e5205d}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbspa20bit@{Init\+Mcbspa20bit}}
+\index{Init\+Mcbspa20bit@{Init\+Mcbspa20bit}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbspa20bit}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbspa20bit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ad8df80c77cca8d90d956b45371e5205d}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aac876364c98bce76fe9d1ee5d51a990b}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbspa24bit@{Init\+Mcbspa24bit}}
+\index{Init\+Mcbspa24bit@{Init\+Mcbspa24bit}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbspa24bit}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbspa24bit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aac876364c98bce76fe9d1ee5d51a990b}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a73ac6905dd700ab29413e5884a610e39}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbspa32bit@{Init\+Mcbspa32bit}}
+\index{Init\+Mcbspa32bit@{Init\+Mcbspa32bit}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbspa32bit}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbspa32bit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a73ac6905dd700ab29413e5884a610e39}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a1a7325b34ddef16c703fbe3b0d5d3147}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbspa8bit@{Init\+Mcbspa8bit}}
+\index{Init\+Mcbspa8bit@{Init\+Mcbspa8bit}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbspa8bit}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbspa8bit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a1a7325b34ddef16c703fbe3b0d5d3147}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aa6e7f58e0c4ee3c9fc2ef7827bf10450}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Mcbspa\+Gpio@{Init\+Mcbspa\+Gpio}}
+\index{Init\+Mcbspa\+Gpio@{Init\+Mcbspa\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Mcbspa\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Mcbspa\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aa6e7f58e0c4ee3c9fc2ef7827bf10450}
+
+
+Here is the caller graph for this function\+:
+% FIG 16
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a17c664e03a629dcb5c59b71cf5ba6e9c}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Peripheral\+Clocks@{Init\+Peripheral\+Clocks}}
+\index{Init\+Peripheral\+Clocks@{Init\+Peripheral\+Clocks}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Peripheral\+Clocks}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Peripheral\+Clocks (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a17c664e03a629dcb5c59b71cf5ba6e9c}
+
+
+Here is the call graph for this function\+:
+% FIG 17
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 18
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a31751c36ad991287e7f037c171682447}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Peripherals@{Init\+Peripherals}}
+\index{Init\+Peripherals@{Init\+Peripherals}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Peripherals}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Peripherals (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a31751c36ad991287e7f037c171682447}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_afc2722078adcaf1343954319297bd1e7}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Pie\+Ctrl@{Init\+Pie\+Ctrl}}
+\index{Init\+Pie\+Ctrl@{Init\+Pie\+Ctrl}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Pie\+Ctrl}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Pie\+Ctrl (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_afc2722078adcaf1343954319297bd1e7}
+
+
+Here is the caller graph for this function\+:
+% FIG 19
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aecb82ee7df34e57969f95df5a5fbd201}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Pie\+Vect\+Table@{Init\+Pie\+Vect\+Table}}
+\index{Init\+Pie\+Vect\+Table@{Init\+Pie\+Vect\+Table}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Pie\+Vect\+Table}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Pie\+Vect\+Table (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aecb82ee7df34e57969f95df5a5fbd201}
+
+
+Here is the caller graph for this function\+:
+% FIG 20
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a29bb556f177472ac8434897f94760643}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Pll@{Init\+Pll}}
+\index{Init\+Pll@{Init\+Pll}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Pll}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Pll (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{pllcr, }
+\item[{{\bf Uint16}}]{clkindiv}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a29bb556f177472ac8434897f94760643}
+
+
+Here is the call graph for this function\+:
+% FIG 21
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 22
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aeaf0e34cb0a195461cd958268658506b}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Sci@{Init\+Sci}}
+\index{Init\+Sci@{Init\+Sci}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Sci}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Sci (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aeaf0e34cb0a195461cd958268658506b}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a76009b8b84fe544684c63f3e8ac52444}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Scia\+Gpio@{Init\+Scia\+Gpio}}
+\index{Init\+Scia\+Gpio@{Init\+Scia\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Scia\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Scia\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a76009b8b84fe544684c63f3e8ac52444}
+
+
+Here is the caller graph for this function\+:
+% FIG 23
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a56896c7a4c1a7d4c6169a4d03b2039ba}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Sci\+Gpio@{Init\+Sci\+Gpio}}
+\index{Init\+Sci\+Gpio@{Init\+Sci\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Sci\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Sci\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a56896c7a4c1a7d4c6169a4d03b2039ba}
+
+
+Here is the call graph for this function\+:
+% FIG 24
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_abc5b3bd4febb79c0c63a256ba64fda3c}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Spi@{Init\+Spi}}
+\index{Init\+Spi@{Init\+Spi}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Spi}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Spi (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_abc5b3bd4febb79c0c63a256ba64fda3c}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a2e1957b9ac42032f1cb0bd3955ace61b}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Spia\+Gpio@{Init\+Spia\+Gpio}}
+\index{Init\+Spia\+Gpio@{Init\+Spia\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Spia\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Spia\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a2e1957b9ac42032f1cb0bd3955ace61b}
+
+
+Here is the caller graph for this function\+:
+% FIG 25
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_abaf520711b8069c72f5af3d9c665fa2a}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Spi\+Gpio@{Init\+Spi\+Gpio}}
+\index{Init\+Spi\+Gpio@{Init\+Spi\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Spi\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Spi\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_abaf520711b8069c72f5af3d9c665fa2a}
+
+
+Here is the call graph for this function\+:
+% FIG 26
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a881937c4bb55a2120533f2e80dcea828}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Sys\+Ctrl@{Init\+Sys\+Ctrl}}
+\index{Init\+Sys\+Ctrl@{Init\+Sys\+Ctrl}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Sys\+Ctrl}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Sys\+Ctrl (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a881937c4bb55a2120533f2e80dcea828}
+
+
+Here is the call graph for this function\+:
+% FIG 27
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 28
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a540e6b832d1fe0ee1d2304d826e983e1}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Tz\+Gpio@{Init\+Tz\+Gpio}}
+\index{Init\+Tz\+Gpio@{Init\+Tz\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Tz\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Tz\+Gpio (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a540e6b832d1fe0ee1d2304d826e983e1}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ab10fdaafc4e40c816794e68293054fcd}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Xintf16\+Gpio@{Init\+Xintf16\+Gpio}}
+\index{Init\+Xintf16\+Gpio@{Init\+Xintf16\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Xintf16\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Xintf16\+Gpio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ab10fdaafc4e40c816794e68293054fcd}
+
+
+Here is the caller graph for this function\+:
+% FIG 29
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ab4b46ae1b50d03bc8c5eba655a603f8f}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+Xintf32\+Gpio@{Init\+Xintf32\+Gpio}}
+\index{Init\+Xintf32\+Gpio@{Init\+Xintf32\+Gpio}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+Xintf32\+Gpio}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Xintf32\+Gpio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_ab4b46ae1b50d03bc8c5eba655a603f8f}
+
+
+Here is the call graph for this function\+:
+% FIG 30
+
+
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aa33a90d7219f11b3bd844ebd0dd6410f}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Init\+X\+Intrupt@{Init\+X\+Intrupt}}
+\index{Init\+X\+Intrupt@{Init\+X\+Intrupt}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Init\+X\+Intrupt}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+X\+Intrupt (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aa33a90d7219f11b3bd844ebd0dd6410f}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a11716af91ea205c04dfd16b2ce9b7460}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Mem\+Copy@{Mem\+Copy}}
+\index{Mem\+Copy@{Mem\+Copy}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Mem\+Copy}]{\setlength{\rightskip}{0pt plus 5cm}void Mem\+Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16} $\ast$}]{Source\+Addr, }
+\item[{{\bf Uint16} $\ast$}]{Source\+End\+Addr, }
+\item[{{\bf Uint16} $\ast$}]{Dest\+Addr}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a11716af91ea205c04dfd16b2ce9b7460}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aa5e4faa42368a6024ce1b6b65a16d948}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Service\+Dog@{Service\+Dog}}
+\index{Service\+Dog@{Service\+Dog}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Service\+Dog}]{\setlength{\rightskip}{0pt plus 5cm}void Service\+Dog (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aa5e4faa42368a6024ce1b6b65a16d948}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aa2b400be77b23a8c8da7a9123891a658}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Set\+D\+B\+G\+I\+E\+R@{Set\+D\+B\+G\+I\+E\+R}}
+\index{Set\+D\+B\+G\+I\+E\+R@{Set\+D\+B\+G\+I\+E\+R}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Set\+D\+B\+G\+I\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}void Set\+D\+B\+G\+I\+E\+R (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{dbgier}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aa2b400be77b23a8c8da7a9123891a658}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a62a5ccbe0d22d13a8a9e941d63874b09}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Start\+D\+M\+A\+C\+H1@{Start\+D\+M\+A\+C\+H1}}
+\index{Start\+D\+M\+A\+C\+H1@{Start\+D\+M\+A\+C\+H1}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Start\+D\+M\+A\+C\+H1}]{\setlength{\rightskip}{0pt plus 5cm}void Start\+D\+M\+A\+C\+H1 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a62a5ccbe0d22d13a8a9e941d63874b09}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_af1473648ce8a9f4acdf83e636f42ac46}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Start\+D\+M\+A\+C\+H2@{Start\+D\+M\+A\+C\+H2}}
+\index{Start\+D\+M\+A\+C\+H2@{Start\+D\+M\+A\+C\+H2}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Start\+D\+M\+A\+C\+H2}]{\setlength{\rightskip}{0pt plus 5cm}void Start\+D\+M\+A\+C\+H2 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_af1473648ce8a9f4acdf83e636f42ac46}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a9eb9839f2860ee5a46a08a4f5a8a9159}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Start\+D\+M\+A\+C\+H3@{Start\+D\+M\+A\+C\+H3}}
+\index{Start\+D\+M\+A\+C\+H3@{Start\+D\+M\+A\+C\+H3}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Start\+D\+M\+A\+C\+H3}]{\setlength{\rightskip}{0pt plus 5cm}void Start\+D\+M\+A\+C\+H3 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a9eb9839f2860ee5a46a08a4f5a8a9159}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aefc4c376d6f3c31b60bcfc740c845bf9}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Start\+D\+M\+A\+C\+H4@{Start\+D\+M\+A\+C\+H4}}
+\index{Start\+D\+M\+A\+C\+H4@{Start\+D\+M\+A\+C\+H4}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Start\+D\+M\+A\+C\+H4}]{\setlength{\rightskip}{0pt plus 5cm}void Start\+D\+M\+A\+C\+H4 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_aefc4c376d6f3c31b60bcfc740c845bf9}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_adc548fb0384557182d562f52af864c56}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Start\+D\+M\+A\+C\+H5@{Start\+D\+M\+A\+C\+H5}}
+\index{Start\+D\+M\+A\+C\+H5@{Start\+D\+M\+A\+C\+H5}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Start\+D\+M\+A\+C\+H5}]{\setlength{\rightskip}{0pt plus 5cm}void Start\+D\+M\+A\+C\+H5 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_adc548fb0384557182d562f52af864c56}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a71bf035235a0a5a42e6488716dd53c6b}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Start\+D\+M\+A\+C\+H6@{Start\+D\+M\+A\+C\+H6}}
+\index{Start\+D\+M\+A\+C\+H6@{Start\+D\+M\+A\+C\+H6}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Start\+D\+M\+A\+C\+H6}]{\setlength{\rightskip}{0pt plus 5cm}void Start\+D\+M\+A\+C\+H6 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a71bf035235a0a5a42e6488716dd53c6b}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a0a90722d05b51b58935e178092fb9e00}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Xintf\+Init@{Xintf\+Init}}
+\index{Xintf\+Init@{Xintf\+Init}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Xintf\+Init}]{\setlength{\rightskip}{0pt plus 5cm}void Xintf\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___global_prototypes_8h_a0a90722d05b51b58935e178092fb9e00}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ab4149f3ef4003a451b26b68775ea8df8}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Ramfuncs\+Load\+End@{Ramfuncs\+Load\+End}}
+\index{Ramfuncs\+Load\+End@{Ramfuncs\+Load\+End}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Ramfuncs\+Load\+End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Ramfuncs\+Load\+End}\label{_d_s_p2833x___global_prototypes_8h_ab4149f3ef4003a451b26b68775ea8df8}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a2753d5f890452640a3a409e94aeb46ef}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Ramfuncs\+Load\+Start@{Ramfuncs\+Load\+Start}}
+\index{Ramfuncs\+Load\+Start@{Ramfuncs\+Load\+Start}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Ramfuncs\+Load\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Ramfuncs\+Load\+Start}\label{_d_s_p2833x___global_prototypes_8h_a2753d5f890452640a3a409e94aeb46ef}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a01c2def8fe1e445716f7fbb7c3b9424c}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Ramfuncs\+Run\+Start@{Ramfuncs\+Run\+Start}}
+\index{Ramfuncs\+Run\+Start@{Ramfuncs\+Run\+Start}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Ramfuncs\+Run\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Ramfuncs\+Run\+Start}\label{_d_s_p2833x___global_prototypes_8h_a01c2def8fe1e445716f7fbb7c3b9424c}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a731276cdf0767f87cec314da2ead1106}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Xintffuncs\+Load\+End@{Xintffuncs\+Load\+End}}
+\index{Xintffuncs\+Load\+End@{Xintffuncs\+Load\+End}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Xintffuncs\+Load\+End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Xintffuncs\+Load\+End}\label{_d_s_p2833x___global_prototypes_8h_a731276cdf0767f87cec314da2ead1106}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_aa81f4f41d89b7fa4532dcd98a5088d19}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Xintffuncs\+Load\+Size@{Xintffuncs\+Load\+Size}}
+\index{Xintffuncs\+Load\+Size@{Xintffuncs\+Load\+Size}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Xintffuncs\+Load\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Xintffuncs\+Load\+Size}\label{_d_s_p2833x___global_prototypes_8h_aa81f4f41d89b7fa4532dcd98a5088d19}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_ad7086dd674798fd11fdff437460169a1}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Xintffuncs\+Load\+Start@{Xintffuncs\+Load\+Start}}
+\index{Xintffuncs\+Load\+Start@{Xintffuncs\+Load\+Start}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Xintffuncs\+Load\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Xintffuncs\+Load\+Start}\label{_d_s_p2833x___global_prototypes_8h_ad7086dd674798fd11fdff437460169a1}
+\hypertarget{_d_s_p2833x___global_prototypes_8h_a9699fdfe2b1bdef5a7cb38b74cc25226}{}\index{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}!Xintffuncs\+Run\+Start@{Xintffuncs\+Run\+Start}}
+\index{Xintffuncs\+Run\+Start@{Xintffuncs\+Run\+Start}!D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h@{D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h}}
+\subsubsection[{Xintffuncs\+Run\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Xintffuncs\+Run\+Start}\label{_d_s_p2833x___global_prototypes_8h_a9699fdfe2b1bdef5a7cb38b74cc25226}

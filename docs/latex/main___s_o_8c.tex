@@ -1,0 +1,542 @@
+\hypertarget{main___s_o_8c}{}\section{os/main\+\_\+\+S\+O.c File Reference}
+\label{main___s_o_8c}\index{os/main\+\_\+\+S\+O.\+c@{os/main\+\_\+\+S\+O.\+c}}
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Device.\+h$>$}\\*
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}main\+\_\+\+S\+O.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}O\+S\+Config.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for main\+\_\+\+S\+O.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main___s_o_8c_ae9cfb073532ce9962371c5296c4c3421}{Init\+S\+O} (void)
+\begin{DoxyCompactList}\small\item\em Preemptive O\+S Kernel. \end{DoxyCompactList}\item 
+void \hyperlink{main___s_o_8c_a650dfb551ee93c4ea285725decf04dff}{O\+S\+\_\+\+S\+L\+E\+E\+P} (\hyperlink{_d_s_p2833x___device_8h_aba99025e657f892beb7ff31cecf64653}{Uint32})
+\item 
+void \hyperlink{main___s_o_8c_a200ce9c7c345c3777e63271dd1252c0e}{O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R} (void)
+\item 
+void \hyperlink{main___s_o_8c_a87ca6376ee6baae5762bd81215d95ae7}{Init\+Stack} (\hyperlink{struct_stack_type}{Stack\+Type} Stack)
+\item 
+void \hyperlink{main___s_o_8c_a99bb928600f9951bddd589ee31963f4a}{Save\+Context\+From\+I\+S\+R} (\hyperlink{struct_stack_type}{Stack\+Type} $\ast$Stack)
+\item 
+void \hyperlink{main___s_o_8c_a8b5935457822dd4a391fb2ecd2cfd99b}{Restore\+Interrupted\+Task\+Context} (\hyperlink{struct_stack_type}{Stack\+Type} Stack)
+\item 
+void \hyperlink{main___s_o_8c_a124eb1ed1c421db933cbb7b445eea45d}{Save\+Context\+From\+Sleep} (\hyperlink{struct_stack_type}{Stack\+Type} $\ast$Stack)
+\item 
+void \hyperlink{main___s_o_8c_a5a3e7583ec4240cce4e574ae4d824281}{Restore\+Slept\+Task\+Context} (\hyperlink{struct_stack_type}{Stack\+Type} Stack)
+\item 
+void \hyperlink{main___s_o_8c_a3e6eee2cb5b75dddeb4782c1c5e66765}{Set\+Alarm} (unsigned long int Wait\+Time)
+\item 
+unsigned long int \hyperlink{main___s_o_8c_a4271bf954ac7e91f35eec23ab98b19bd}{Elapsed\+Time\+Since\+Last\+Scheduling} (void)
+\item 
+int \hyperlink{main___s_o_8c_a0da452cbc779c9fa43ae9ee3ff555046}{Sort} (\hyperlink{struct_task_type}{Task\+Type} $\ast$Task\+List, unsigned int List\+Size, \hyperlink{main___s_o_8h_a15aeb39c8cd202f897e448b46732ffab}{Sorting\+Pivot} Pivot)
+\item 
+interrupt void \hyperlink{main___s_o_8c_a0950d135719562f192fb7fd782cd58be}{cpu\+\_\+timer0\+\_\+isr} (void)
+\item 
+void \hyperlink{main___s_o_8c_ac502be35364d004469bad9977e6633d8}{Check\+Task\+Overflow} (void)
+\item 
+void \hyperlink{main___s_o_8c_a56c461d51674933419dd5c23ec48bf14}{Init\+Gpio\+L\+E\+D} (void)
+\item 
+void \hyperlink{main___s_o_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{main} (void)
+\item 
+void \hyperlink{main___s_o_8c_a5f150fcb40db814440fbfd0779244637}{Update\+Ready\+Task\+Time} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long int $\ast$ \hyperlink{main___s_o_8c_a59db4d8d5e4b7234f9d9eeac75e5aaaf}{Ptr\+Stack\+\_\+\+Global}
+\item 
+\hyperlink{struct_task_type}{Task\+Type} \hyperlink{main___s_o_8c_a0dab4ab7913d17ed0232937b5a5af70d}{Ready\+Tasks} \mbox{[}\hyperlink{_o_s_config_8h_adbf7773e48c947a9a25620dabd0b936e}{N\+O\+\_\+\+T\+A\+S\+K\+S}\mbox{]} = \hyperlink{_o_s_config_8h_aaf0eb7dd18da4e1c3153066520568c22}{I\+N\+I\+T\+\_\+\+T\+A\+S\+K\+S}
+\item 
+\hyperlink{struct_task_type}{Task\+Type} \hyperlink{main___s_o_8c_abad1734a6e819e77000f0b13f47824fc}{Active\+Task}
+\item 
+unsigned long int \hyperlink{main___s_o_8c_aed98e63aa059d404062c74d77775fc3b}{Next\+Scheduling\+Delay}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main___s_o_8c_ac502be35364d004469bad9977e6633d8}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Check\+Task\+Overflow@{Check\+Task\+Overflow}}
+\index{Check\+Task\+Overflow@{Check\+Task\+Overflow}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Check\+Task\+Overflow}]{\setlength{\rightskip}{0pt plus 5cm}void Check\+Task\+Overflow (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_ac502be35364d004469bad9977e6633d8}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Stop program here and wait for a watchdog reset
+
+Stack is within allowed limits
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{main___s_o_8c_a0950d135719562f192fb7fd782cd58be}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!cpu\+\_\+timer0\+\_\+isr@{cpu\+\_\+timer0\+\_\+isr}}
+\index{cpu\+\_\+timer0\+\_\+isr@{cpu\+\_\+timer0\+\_\+isr}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{cpu\+\_\+timer0\+\_\+isr}]{\setlength{\rightskip}{0pt plus 5cm}interrupt void cpu\+\_\+timer0\+\_\+isr (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a0950d135719562f192fb7fd782cd58be}
+Añadir descripcion de la interrupcion 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Acknowledge this interrupt to receive more interrupts from group 1
+
+save context of task in execution
+
+Notify that Active\+Task was interrupted
+
+move Active\+Task to the Ready\+Task list
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{main___s_o_8c_a4271bf954ac7e91f35eec23ab98b19bd}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Elapsed\+Time\+Since\+Last\+Scheduling@{Elapsed\+Time\+Since\+Last\+Scheduling}}
+\index{Elapsed\+Time\+Since\+Last\+Scheduling@{Elapsed\+Time\+Since\+Last\+Scheduling}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Elapsed\+Time\+Since\+Last\+Scheduling}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int Elapsed\+Time\+Since\+Last\+Scheduling (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a4271bf954ac7e91f35eec23ab98b19bd}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned long int 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\hypertarget{main___s_o_8c_a56c461d51674933419dd5c23ec48bf14}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Init\+Gpio\+L\+E\+D@{Init\+Gpio\+L\+E\+D}}
+\index{Init\+Gpio\+L\+E\+D@{Init\+Gpio\+L\+E\+D}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Init\+Gpio\+L\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Gpio\+L\+E\+D (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a56c461d51674933419dd5c23ec48bf14}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Paso 0\+: Por seguridad, se inicializan todos los puertos como G\+P\+I\+O
+
+All G\+P\+I\+O
+
+All G\+P\+I\+O
+
+Paso 2\+: Habilitar/\+Deshabilitar Pull-\/up
+
+L\+E\+D 1
+
+L\+E\+D 2
+
+Paso 3\+: Seleccionar Cualificacion de la entrada Para usar default (S\+Y\+S\+C\+L\+K\+O\+U\+T) lo dejamos sin modificar
+
+Paso 4\+: Seleccionar funcion del puerto En el paso 0 se establecieron todos los puertos como G\+P\+I\+O, modificar solo en caso de tener otra funcion Paso 5\+: Sentido del puerto (1=Out, 0=In)
+
+Los G\+P\+I\+O 31 y 34 los podemos visualizar en la Control Card
+
+Paso 6\+: Seleccionar si el puerto despierta al C\+P\+U de H\+A\+L\+T o del modo de bajo consumo Si no lo hace despertar se omite Paso 7\+: Seleccionar si el puerto puerto estara configurado como interrupcion externa Si no se configurara como interrupcion se omite
+
+Here is the caller graph for this function\+:
+% FIG 5
+
+
+\hypertarget{main___s_o_8c_ae9cfb073532ce9962371c5296c4c3421}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Init\+S\+O@{Init\+S\+O}}
+\index{Init\+S\+O@{Init\+S\+O}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Init\+S\+O}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+S\+O (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_ae9cfb073532ce9962371c5296c4c3421}
+
+
+Preemptive O\+S Kernel. 
+
+O\+S-\/\+Kernel based on the pre-\/emptive kernel provided in the Embedded Systems course. \begin{DoxyAuthor}{Author}
+Jalil Chavez 
+
+Jose Pesado 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+4.\+5 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2015 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+Configure the tasks in application file M\+S\+E\+C\+Config.\+h. 
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+Tested and released for T\+I C2000 F28335. 
+\end{DoxyWarning}
+\begin{DoxyCopyright}{Copyright}
+G\+N\+U Public License.$<$ D\+S\+P2833x Headerfile Include File
+\end{DoxyCopyright}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+invalidate Active\+Task descriptor
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+\hypertarget{main___s_o_8c_a87ca6376ee6baae5762bd81215d95ae7}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Init\+Stack@{Init\+Stack}}
+\index{Init\+Stack@{Init\+Stack}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Init\+Stack}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\+Type}}]{Stack}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a87ca6376ee6baae5762bd81215d95ae7}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_stack_type}{Stack\+Type}} & Stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+\hypertarget{main___s_o_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!main@{main}}
+\index{main@{main}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}void main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a6288eba0f8e8ad3ab1544ad731eb7667}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+% FIG 9
+
+
+\hypertarget{main___s_o_8c_a200ce9c7c345c3777e63271dd1252c0e}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R@{O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R}}
+\index{O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R@{O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a200ce9c7c345c3777e63271dd1252c0e}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+disable global interrupts, the scheduler routine is non-\/preemptive
+
+Restore context of scheduler, the global stack
+
+sort Ready tasks by Wait\+Time
+
+Check integrity of task stacks
+
+find and sort by Priority group of tasks of same Wait\+Time
+
+search for tasks with same Wait\+Time
+
+another group starts at j-\/th task, break the search
+
+j-\/th task is from the same group as task i
+
+sort group of tasks by Priority
+
+find next group of tasks
+
+the first task in the list is the shortest wait time and higher priority
+
+it\textquotesingle{}s time to activate task
+
+find the next higher priority task (0 is the highest priority)
+
+the scheduler shall be executed again in Ready\+Tasks\mbox{[}i\mbox{]}.Wait\+Time
+
+there is no task with higher priority than the task about to be activated the scheduler will be called whenever the coming task finishes
+
+the scheduler shall be called again in Next\+Task.\+Wait\+Time
+
+Remove task to be activated from the Ready\+Tasks list
+
+Restore context of task to be executed (interrupts are enabled just before jumping to the interrupted task)
+
+Scheduler was called from O\+S\+\_\+\+S\+L\+E\+E\+P function
+
+Scheduler was called from interrupt routine
+
+Task is ready to run
+
+Invalid caller
+
+set a timer to delay activation of the task
+
+now the interrupts are enabled
+
+Here is the call graph for this function\+:
+% FIG 10
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 11
+
+
+\hypertarget{main___s_o_8c_a650dfb551ee93c4ea285725decf04dff}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!O\+S\+\_\+\+S\+L\+E\+E\+P@{O\+S\+\_\+\+S\+L\+E\+E\+P}}
+\index{O\+S\+\_\+\+S\+L\+E\+E\+P@{O\+S\+\_\+\+S\+L\+E\+E\+P}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{O\+S\+\_\+\+S\+L\+E\+E\+P}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+\_\+\+S\+L\+E\+E\+P (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint32}}]{Hilo\+Sleep\+Time}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a650dfb551ee93c4ea285725decf04dff}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em Uint32} & Hilo\+Sleep\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+we are not interested in keeping in the stack the argument to the jump to O\+S\+\_\+\+S\+L\+E\+E\+P
+
+Active\+Task was self-\/preempted context is saved into the current task Stack starting at Stack.\+Stack\+Pointer the stack increase in direction of Stack.\+Stack\+Top but never beyond
+
+Notify that Active\+Task was sent to sleep
+
+move Active\+Task to the Ready\+Task list
+
+Invalidate task
+
+jump to the scheduler
+
+S\+P = R\+P\+C S\+P has now the address of the caller of O\+S\+\_\+\+S\+L\+E\+E\+P, however we don\textquotesingle{}t care about this address since we will load S\+P with the address of the system stack R\+P\+C = P\+C + 2 R\+P\+C is loaded with the address of O\+S\+\_\+\+S\+L\+E\+E\+P, but we are not interested to return to this point P\+C = \+\_\+\+O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R \+\_\+\+O\+S\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+R is the new value of P\+C
+
+Here is the caller graph for this function\+:
+% FIG 12
+
+
+\hypertarget{main___s_o_8c_a8b5935457822dd4a391fb2ecd2cfd99b}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Restore\+Interrupted\+Task\+Context@{Restore\+Interrupted\+Task\+Context}}
+\index{Restore\+Interrupted\+Task\+Context@{Restore\+Interrupted\+Task\+Context}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Restore\+Interrupted\+Task\+Context}]{\setlength{\rightskip}{0pt plus 5cm}void Restore\+Interrupted\+Task\+Context (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\+Type}}]{Stack}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a8b5935457822dd4a391fb2ecd2cfd99b}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_stack_type}{Stack\+Type}} & Stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+context is restored from Stack.\+Stack\+Pointer I\+R\+E\+T instruction is used in order to take advantage of the context stored at interruption point
+
+Here is the caller graph for this function\+:
+% FIG 13
+
+
+\hypertarget{main___s_o_8c_a5a3e7583ec4240cce4e574ae4d824281}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Restore\+Slept\+Task\+Context@{Restore\+Slept\+Task\+Context}}
+\index{Restore\+Slept\+Task\+Context@{Restore\+Slept\+Task\+Context}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Restore\+Slept\+Task\+Context}]{\setlength{\rightskip}{0pt plus 5cm}void Restore\+Slept\+Task\+Context (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\+Type}}]{Stack}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a5a3e7583ec4240cce4e574ae4d824281}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_stack_type}{Stack\+Type}} & Stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+context is restored from Stack starting at Stack.\+Stack\+Pointer the stack decrease in direction of Stack.\+Stack\+Bottom but never below
+
+Here is the caller graph for this function\+:
+% FIG 14
+
+
+\hypertarget{main___s_o_8c_a99bb928600f9951bddd589ee31963f4a}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Save\+Context\+From\+I\+S\+R@{Save\+Context\+From\+I\+S\+R}}
+\index{Save\+Context\+From\+I\+S\+R@{Save\+Context\+From\+I\+S\+R}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Save\+Context\+From\+I\+S\+R}]{\setlength{\rightskip}{0pt plus 5cm}void Save\+Context\+From\+I\+S\+R (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\+Type} $\ast$}]{Stack}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a99bb928600f9951bddd589ee31963f4a}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_stack_type}{Stack\+Type}} & $\ast$ Stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+current context is saved in Stack starting at Stack.\+Stack\+Pointer the stack grows in direction of Stack.\+Stack\+Top but never beyond\hypertarget{main___s_o_8c_a124eb1ed1c421db933cbb7b445eea45d}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Save\+Context\+From\+Sleep@{Save\+Context\+From\+Sleep}}
+\index{Save\+Context\+From\+Sleep@{Save\+Context\+From\+Sleep}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Save\+Context\+From\+Sleep}]{\setlength{\rightskip}{0pt plus 5cm}void Save\+Context\+From\+Sleep (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\+Type} $\ast$}]{Stack}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a124eb1ed1c421db933cbb7b445eea45d}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_stack_type}{Stack\+Type}} & $\ast$ Stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+current context is saved in Stack starting at Stack.\+Stack\+Pointer the stack grows in direction of Stack.\+Stack\+Top but never beyond as interrupt did not ocurr, it is necessary to save context manually\hypertarget{main___s_o_8c_a3e6eee2cb5b75dddeb4782c1c5e66765}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Set\+Alarm@{Set\+Alarm}}
+\index{Set\+Alarm@{Set\+Alarm}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Set\+Alarm}]{\setlength{\rightskip}{0pt plus 5cm}void Set\+Alarm (
+\begin{DoxyParamCaption}
+\item[{unsigned long int}]{Wait\+Time}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a3e6eee2cb5b75dddeb4782c1c5e66765}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & long int Wait\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Use write-\/only instruction to set T\+S\+S bit = 0 
+
+Here is the call graph for this function\+:
+% FIG 15
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 16
+
+
+\hypertarget{main___s_o_8c_a0da452cbc779c9fa43ae9ee3ff555046}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Sort@{Sort}}
+\index{Sort@{Sort}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Sort}]{\setlength{\rightskip}{0pt plus 5cm}int Sort (
+\begin{DoxyParamCaption}
+\item[{{\bf Task\+Type} $\ast$}]{Task\+List, }
+\item[{unsigned int}]{List\+Size, }
+\item[{{\bf Sorting\+Pivot}}]{Pivot}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a0da452cbc779c9fa43ae9ee3ff555046}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_task_type}{Task\+Type}} & $\ast$ Task\+List, unsigned int List\+Size, Sorting\+Pivot Pivot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Bubble sort
+
+swap position of Current and Next
+
+Here is the caller graph for this function\+:
+% FIG 17
+
+
+\hypertarget{main___s_o_8c_a5f150fcb40db814440fbfd0779244637}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Update\+Ready\+Task\+Time@{Update\+Ready\+Task\+Time}}
+\index{Update\+Ready\+Task\+Time@{Update\+Ready\+Task\+Time}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Update\+Ready\+Task\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void Update\+Ready\+Task\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main___s_o_8c_a5f150fcb40db814440fbfd0779244637}
+Añadir descripcion de la funcion 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Update the wait time of all the ready tasks
+
+Here is the call graph for this function\+:
+% FIG 18
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 19
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main___s_o_8c_abad1734a6e819e77000f0b13f47824fc}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Active\+Task@{Active\+Task}}
+\index{Active\+Task@{Active\+Task}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Active\+Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Type} Active\+Task}\label{main___s_o_8c_abad1734a6e819e77000f0b13f47824fc}
+collection of tasks ready to be executed \hypertarget{main___s_o_8c_aed98e63aa059d404062c74d77775fc3b}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Next\+Scheduling\+Delay@{Next\+Scheduling\+Delay}}
+\index{Next\+Scheduling\+Delay@{Next\+Scheduling\+Delay}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Next\+Scheduling\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int Next\+Scheduling\+Delay}\label{main___s_o_8c_aed98e63aa059d404062c74d77775fc3b}
+task currently in execution \hypertarget{main___s_o_8c_a59db4d8d5e4b7234f9d9eeac75e5aaaf}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Ptr\+Stack\+\_\+\+Global@{Ptr\+Stack\+\_\+\+Global}}
+\index{Ptr\+Stack\+\_\+\+Global@{Ptr\+Stack\+\_\+\+Global}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Ptr\+Stack\+\_\+\+Global}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int$\ast$ Ptr\+Stack\+\_\+\+Global}\label{main___s_o_8c_a59db4d8d5e4b7234f9d9eeac75e5aaaf}
+\hypertarget{main___s_o_8c_a0dab4ab7913d17ed0232937b5a5af70d}{}\index{main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}!Ready\+Tasks@{Ready\+Tasks}}
+\index{Ready\+Tasks@{Ready\+Tasks}!main\+\_\+\+S\+O.\+c@{main\+\_\+\+S\+O.\+c}}
+\subsubsection[{Ready\+Tasks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Type} Ready\+Tasks\mbox{[}{\bf N\+O\+\_\+\+T\+A\+S\+K\+S}\mbox{]} = {\bf I\+N\+I\+T\+\_\+\+T\+A\+S\+K\+S}}\label{main___s_o_8c_a0dab4ab7913d17ed0232937b5a5af70d}
+El Ptr stack del stack del S\+O 

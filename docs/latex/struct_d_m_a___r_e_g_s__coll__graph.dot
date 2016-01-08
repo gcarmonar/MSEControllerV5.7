@@ -1,0 +1,41 @@
+digraph "DMA_REGS"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DMA_REGS",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DMACTRL" ];
+  Node2 [label="DMACTRL_REG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$union_d_m_a_c_t_r_l___r_e_g.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bit" ];
+  Node3 [label="DMACTRL_BITS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_m_a_c_t_r_l___b_i_t_s.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" DEBUGCTRL" ];
+  Node4 [label="DEBUGCTRL_REG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$union_d_e_b_u_g_c_t_r_l___r_e_g.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bit" ];
+  Node5 [label="DEBUGCTRL_BITS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_d_e_b_u_g_c_t_r_l___b_i_t_s.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CH1\nCH2\nCH3\nCH4\nCH5\nCH6" ];
+  Node6 [label="CH_REGS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_h___r_e_g_s.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" MODE" ];
+  Node7 [label="MODE_REG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$union_m_o_d_e___r_e_g.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bit" ];
+  Node8 [label="MODE_BITS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_m_o_d_e___b_i_t_s.html"];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" CONTROL" ];
+  Node9 [label="CONTROL_REG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$union_c_o_n_t_r_o_l___r_e_g.html"];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bit" ];
+  Node10 [label="CONTROL_BITS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_c_o_n_t_r_o_l___b_i_t_s.html"];
+  Node11 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" BURST_SIZE" ];
+  Node11 [label="BURST_SIZE_REG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$union_b_u_r_s_t___s_i_z_e___r_e_g.html"];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bit" ];
+  Node12 [label="BURST_SIZE_BITS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_b_u_r_s_t___s_i_z_e___b_i_t_s.html"];
+  Node13 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" BURST_COUNT" ];
+  Node13 [label="BURST_COUNT_REG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$union_b_u_r_s_t___c_o_u_n_t___r_e_g.html"];
+  Node14 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bit" ];
+  Node14 [label="BURST_COUNT_BITS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_b_u_r_s_t___c_o_u_n_t___b_i_t_s.html"];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PRIORITYCTRL1" ];
+  Node15 [label="PRIORITYCTRL1_REG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$union_p_r_i_o_r_i_t_y_c_t_r_l1___r_e_g.html"];
+  Node16 -> Node15 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bit" ];
+  Node16 [label="PRIORITYCTRL1_BITS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_r_i_o_r_i_t_y_c_t_r_l1___b_i_t_s.html"];
+  Node17 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" PRIORITYSTAT" ];
+  Node17 [label="PRIORITYSTAT_REG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$union_p_r_i_o_r_i_t_y_s_t_a_t___r_e_g.html"];
+  Node18 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bit" ];
+  Node18 [label="PRIORITYSTAT_BITS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_p_r_i_o_r_i_t_y_s_t_a_t___b_i_t_s.html"];
+}

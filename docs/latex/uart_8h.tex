@@ -1,0 +1,563 @@
+\hypertarget{uart_8h}{}\section{comm/uart.h File Reference}
+\label{uart_8h}\index{comm/uart.\+h@{comm/uart.\+h}}
+
+
+File containing communication protocol between matlab and microcontroller.  
+
+
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Global\+Prototypes.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}..\textbackslash{}cdef\textbackslash{}cdef.\+h\char`\"{}}\\*
+Include dependency graph for uart.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_u_a_r_t__tst_channel_cfg}{U\+A\+R\+T\+\_\+tst\+Channel\+Cfg}
+\item 
+struct \hyperlink{struct_u_a_r_t__tst_channel_desc}{U\+A\+R\+T\+\_\+tst\+Channel\+Desc}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{uart_8h_adc3da9cd59bbadbd390c215a9e2f331e}{U\+A\+R\+T\+\_\+\+\_\+v\+Enter\+Critical\+Section}()~\hyperlink{_d_s_p2833x___device_8h_a058e7dbf59195ee615d22066fbdd844b}{D\+I\+N\+T}
+\item 
+\#define \hyperlink{uart_8h_a9ba0d4b9538aba5f783288fc262f014f}{U\+A\+R\+T\+\_\+\+\_\+v\+Leave\+Critical\+Section}()~\hyperlink{_d_s_p2833x___device_8h_aedda579089c56c5a0df23a0cd47f53a1}{E\+I\+N\+T}
+\item 
+\#define \hyperlink{uart_8h_af5ae8129926f1b64db6451c17aa66b48}{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Ctrl}()
+\item 
+\#define \hyperlink{uart_8h_aec3f10d33acaf6e5fd8baa81f272b182}{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Vec\+Table}()~\hyperlink{_d_s_p2833x___s_w_prioritized_pie_vect_8c_aecb82ee7df34e57969f95df5a5fbd201}{Init\+Pie\+Vect\+Table}()
+\item 
+\#define \hyperlink{uart_8h_aac0356e8864e5f51ba25c00f056afb89}{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch0\+Fun2\+I\+R\+Q\+Vector}(a)
+\item 
+\#define \hyperlink{uart_8h_a6a569c4cff41a941235a5bbe04bf7663}{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch0\+Fun2\+I\+R\+Q\+Vector}(a)
+\item 
+\#define \hyperlink{uart_8h_a993c720b4cf3e300cc7fe8ea923ac3f1}{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch1\+Fun2\+I\+R\+Q\+Vector}(a)
+\item 
+\#define \hyperlink{uart_8h_a4ab32b7d1011c4cb4cbf69a79bd899f0}{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch1\+Fun2\+I\+R\+Q\+Vector}(a)
+\item 
+\#define \hyperlink{uart_8h_a9583197c1f93e98becb066257fa8f1a6}{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch2\+Fun2\+I\+R\+Q\+Vector}(a)
+\item 
+\#define \hyperlink{uart_8h_affed728b8624fbde46f29915447cf53b}{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch2\+Fun2\+I\+R\+Q\+Vector}(a)
+\item 
+\#define \hyperlink{uart_8h_af2596aca540af22b7d3694eeb4b4ab3b}{U\+A\+R\+T\+\_\+\+\_\+n\+Tx\+I\+S\+R\+Enable}~(\hyperlink{cdef_8h_a554d6ecb4ae62985018db18be458114d}{No})
+\item 
+\#define \hyperlink{uart_8h_a5961f52ec19a91b560f0d9a7de3487f5}{U\+A\+R\+T\+\_\+\+\_\+n\+Rx\+I\+S\+R\+Enable}~(\hyperlink{cdef_8h_adf4f44e25f5216808d6ca83186e89119}{Yes})
+\item 
+\#define \hyperlink{uart_8h_af3e6b375aa6a43e32ddfc97c3f8635a6}{U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length}~(32)
+\item 
+\#define \hyperlink{uart_8h_a77ab65f4aa591714c1d7b30df167dc3d}{U\+A\+R\+T\+\_\+\+\_\+n\+Fifo\+Length}~(15)
+\item 
+\#define \hyperlink{uart_8h_a43fd6775e73d495f2f0096fc01a61f1a}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Enable}~(\hyperlink{cdef_8h_adf4f44e25f5216808d6ca83186e89119}{Yes})
+\item 
+\#define \hyperlink{uart_8h_adf936e6432d299b7eb55fd294c9622df}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg}
+\item 
+\#define \hyperlink{uart_8h_a4daa93bdf021caad979586b02dc5e04e}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init}~\{0\},
+\item 
+\#define \hyperlink{uart_8h_af3e833d9a564b4616874ecae3c0efe29}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init}~\{0\},
+\item 
+\#define \hyperlink{uart_8h_a7770aeb9a9ed4b9c49efff58aa50e466}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Enable}~(\hyperlink{cdef_8h_a554d6ecb4ae62985018db18be458114d}{No})
+\item 
+\#define \hyperlink{uart_8h_a1157a688e70f859ae923a02dda4d15f7}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg}
+\item 
+\#define \hyperlink{uart_8h_affeb8b8115b0906e6bf31948cb406e8c}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init}
+\item 
+\#define \hyperlink{uart_8h_a060b172f786f552c0d9ba4a846e138ad}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init}
+\item 
+\#define \hyperlink{uart_8h_a755eaa5b71594945569cb26bc9186f3c}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Enable}~(\hyperlink{cdef_8h_a554d6ecb4ae62985018db18be458114d}{No})
+\item 
+\#define \hyperlink{uart_8h_a84d24d53d7a6410969c130b6b3474dd5}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg}
+\item 
+\#define \hyperlink{uart_8h_a28f25fcc1f450ad765778c36c420850d}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init}
+\item 
+\#define \hyperlink{uart_8h_a3cd2192f51b34608383e60bf23f6be20}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init}
+\item 
+\#define \hyperlink{uart_8h_a99c83f314cacaee684408c21bcef4ade}{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg}~\{ \hyperlink{uart_8h_adf936e6432d299b7eb55fd294c9622df}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg} \hyperlink{uart_8h_a1157a688e70f859ae923a02dda4d15f7}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg} \hyperlink{uart_8h_a84d24d53d7a6410969c130b6b3474dd5}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg} \}
+\item 
+\#define \hyperlink{uart_8h_af5b5c30d5160a4015e8c0e400dd54ec6}{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff}~\{ \hyperlink{uart_8h_a4daa93bdf021caad979586b02dc5e04e}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init} \hyperlink{uart_8h_affeb8b8115b0906e6bf31948cb406e8c}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init} \hyperlink{uart_8h_a28f25fcc1f450ad765778c36c420850d}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init}\}
+\item 
+\#define \hyperlink{uart_8h_a2af787b8cecd20c3a15391285baa073a}{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff}~\{ \hyperlink{uart_8h_af3e833d9a564b4616874ecae3c0efe29}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init} \hyperlink{uart_8h_a060b172f786f552c0d9ba4a846e138ad}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init} \hyperlink{uart_8h_a3cd2192f51b34608383e60bf23f6be20}{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init}\}
+\item 
+\#define \hyperlink{uart_8h_a9c0f34f49d5606a4398241fff18cef40}{U\+A\+R\+T\+\_\+n\+Baud\+Dummy}~(\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16})(0)
+\item 
+\#define \hyperlink{uart_8h_ae8a9cf6903205595218ab53ff71f9367}{U\+A\+R\+T\+\_\+n\+Baud9600}~(\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16})(487)
+\item 
+\#define \hyperlink{uart_8h_aaebffa9a976bfa5fdb74de73e580ac7a}{U\+A\+R\+T\+\_\+n\+Baud19200}~(\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16})(243)
+\item 
+\#define \hyperlink{uart_8h_a273109e9a55b90f66aaa514335b0ef78}{U\+A\+R\+T\+\_\+n\+Baud38400}~(\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16})(181)
+\item 
+\#define \hyperlink{uart_8h_a6810b8c0478a80532fe3982b164f783f}{U\+A\+R\+T\+\_\+n\+Baud57600}~(\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16})(80)
+\item 
+\#define \hyperlink{uart_8h_aa3954ccf9b273e0ec840de81305a8a94}{U\+A\+R\+T\+\_\+n\+Baud115200}~(\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16})(39)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{uart_8h_acd354ef53b9be6941b51f23ffe59ba0a}{t\+Notification\+Func}) (void)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} \{ \hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffba93142f99f5e3190ef186b7c3bf61298b}{U\+A\+R\+T\+\_\+n\+Ch0} = 0, 
+\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffbad69768fe71980bef9846a56ecaaf2114}{U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}
+ \}
+\item 
+enum \hyperlink{uart_8h_a7e8f176a18afa03ebe1a36916b64d46b}{U\+A\+R\+T\+\_\+ten\+Ret\+Value} \{ \hyperlink{uart_8h_a7e8f176a18afa03ebe1a36916b64d46ba19fee1d9593bb12f3e893a8355723cbe}{U\+A\+R\+T\+\_\+n\+Ok} = 0, 
+\hyperlink{uart_8h_a7e8f176a18afa03ebe1a36916b64d46babdbd2541a8239b4566f383f87074b045}{U\+A\+R\+T\+\_\+n\+Error}, 
+\hyperlink{uart_8h_a7e8f176a18afa03ebe1a36916b64d46ba3b1880e378aed2fb79c541ffe6164d48}{U\+A\+R\+T\+\_\+n\+Num\+Of\+Resp}
+ \}
+\item 
+enum \hyperlink{uart_8h_a3160561225e7b6945530fa0b7d90c46d}{U\+A\+R\+T\+\_\+ten\+Channel\+State} \{ \hyperlink{uart_8h_a3160561225e7b6945530fa0b7d90c46dade1121f2b67fd01fad5f8c266b2464be}{U\+A\+R\+T\+\_\+n\+Opened} = 0, 
+\hyperlink{uart_8h_a3160561225e7b6945530fa0b7d90c46dab0903a88f5392e4ad157921bfdc37f19}{U\+A\+R\+T\+\_\+n\+Closed}, 
+\hyperlink{uart_8h_a3160561225e7b6945530fa0b7d90c46da58356ead2ebd5613a5cd5f0832c2f8bc}{U\+A\+R\+T\+\_\+n\+Busy}, 
+\hyperlink{uart_8h_a3160561225e7b6945530fa0b7d90c46da2df6a3742e49d773cf30d659931cfec5}{U\+A\+R\+T\+\_\+n\+Fault}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{uart_8h_aba11a19ce0149297d8e728da1708a2b8}{U\+A\+R\+T\+\_\+v\+Init} (void)
+\item 
+void \hyperlink{uart_8h_ad34d0c42e47cf618aba70ee8dfc63085}{U\+A\+R\+T\+\_\+v\+Open} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D, \hyperlink{uart_8h_acd354ef53b9be6941b51f23ffe59ba0a}{t\+Notification\+Func} pv\+Rx\+Hdlr, \hyperlink{uart_8h_acd354ef53b9be6941b51f23ffe59ba0a}{t\+Notification\+Func} pv\+Tx\+Hdlr)
+\item 
+void \hyperlink{uart_8h_a335786b9924dfb165f184e2edc257bdd}{U\+A\+R\+T\+\_\+v\+Close} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D)
+\item 
+\hyperlink{uart_8h_a7e8f176a18afa03ebe1a36916b64d46b}{U\+A\+R\+T\+\_\+ten\+Ret\+Value} \hyperlink{uart_8h_ae2eeb6f5e0ad76313c13612afa730184}{U\+A\+R\+T\+\_\+en\+Read} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D, \hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} $\ast$pu16\+Rx\+Buf, \hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} u16\+Rx\+Data\+Len)
+\item 
+\hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} \hyperlink{uart_8h_a1d0bbcc5e44c1a20068e4e593a9e2f15}{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D)
+\item 
+\hyperlink{uart_8h_a7e8f176a18afa03ebe1a36916b64d46b}{U\+A\+R\+T\+\_\+ten\+Ret\+Value} \hyperlink{uart_8h_a9048456a2692199b3a5f31481b3f19ff}{U\+A\+R\+T\+\_\+en\+Write} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D, \hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} $\ast$pu16\+Tx\+Buf, \hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} u16\+Tx\+Data\+Len)
+\item 
+\hyperlink{_d_s_p2833x___device_8h_af84840501dec18061d18a68c162a8fa2}{Uint8} \hyperlink{uart_8h_a3be1f5e946607b641f498495e2a867d9}{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data} (\hyperlink{uart_8h_a10de4895361ff2048b43401883a0fffb}{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} en\+Ch\+I\+D)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing communication protocol between matlab and microcontroller. 
+
+\begin{DoxyAuthor}{Author}
+Jalil Chavez 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26 April 2015 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.ti.com/lit/ug/sprufz5a/sprufz5a.pdf}{\tt http\+://www.\+ti.\+com/lit/ug/sprufz5a/sprufz5a.\+pdf} 
+\end{DoxySeeAlso}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{uart_8h_af3e6b375aa6a43e32ddfc97c3f8635a6}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length@{U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length@{U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Buffer\+Length~(32)}\label{uart_8h_af3e6b375aa6a43e32ddfc97c3f8635a6}
+Buffer length, this value is used for all channels in module \hypertarget{uart_8h_adf936e6432d299b7eb55fd294c9622df}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg}\label{uart_8h_adf936e6432d299b7eb55fd294c9622df}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{   \hyperlink{uart_8h_a3160561225e7b6945530fa0b7d90c46dab0903a88f5392e4ad157921bfdc37f19}{UART\_nClosed},       \(\backslash\)
+                                        0,                  \(\backslash\)
+                                        0,                  \hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{\(\backslash\)}
+\hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{                                        NULL},             \hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{\(\backslash\)}
+\hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{                                        NULL},             \hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{\(\backslash\)}
+\hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{                                        NULL},             \hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{\(\backslash\)}
+\hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{                                        NULL},             \hyperlink{uart_8h_aa3954ccf9b273e0ec840de81305a8a94}{\(\backslash\)}
+\hyperlink{uart_8h_aa3954ccf9b273e0ec840de81305a8a94}{                                        UART\_nBaud115200}, 
+      \hyperlink{uart_8h_a77ab65f4aa591714c1d7b30df167dc3d}{\(\backslash\)}
+\hyperlink{uart_8h_a77ab65f4aa591714c1d7b30df167dc3d}{                                        UART\_\_nFifoLength},   
+      \hyperlink{uart_8h_a77ab65f4aa591714c1d7b30df167dc3d}{\(\backslash\)}
+\hyperlink{uart_8h_a77ab65f4aa591714c1d7b30df167dc3d}{                                        UART\_\_nFifoLength},   
+      \hyperlink{cdef_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\(\backslash\)}
+\hyperlink{cdef_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{                                        TRUE},             \hyperlink{cdef_8h_aa93f0eb578d23995850d61f7d61c55c1}{\(\backslash\)}
+\hyperlink{cdef_8h_aa93f0eb578d23995850d61f7d61c55c1}{                                        FALSE}                \(\backslash\)
+                                    \},
+\end{DoxyCode}
+\hypertarget{uart_8h_a43fd6775e73d495f2f0096fc01a61f1a}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Enable}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Enable}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Enable~({\bf Yes})}\label{uart_8h_a43fd6775e73d495f2f0096fc01a61f1a}
+Initial configuration for channel 0 R\+X -\/ G\+P\+I\+O28 T\+X -\/ G\+P\+I\+O29 \hypertarget{uart_8h_a4daa93bdf021caad979586b02dc5e04e}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init~\{0\},}\label{uart_8h_a4daa93bdf021caad979586b02dc5e04e}
+\hypertarget{uart_8h_af3e833d9a564b4616874ecae3c0efe29}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init~\{0\},}\label{uart_8h_af3e833d9a564b4616874ecae3c0efe29}
+\hypertarget{uart_8h_a1157a688e70f859ae923a02dda4d15f7}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg}\label{uart_8h_a1157a688e70f859ae923a02dda4d15f7}
+\hypertarget{uart_8h_a7770aeb9a9ed4b9c49efff58aa50e466}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Enable}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Enable}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Enable~({\bf No})}\label{uart_8h_a7770aeb9a9ed4b9c49efff58aa50e466}
+Initial configuration for channel 1 R\+X -\/ G\+P\+I\+O19 T\+X -\/ G\+P\+I\+O18 \hypertarget{uart_8h_affeb8b8115b0906e6bf31948cb406e8c}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init}\label{uart_8h_affeb8b8115b0906e6bf31948cb406e8c}
+\hypertarget{uart_8h_a060b172f786f552c0d9ba4a846e138ad}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init}\label{uart_8h_a060b172f786f552c0d9ba4a846e138ad}
+\hypertarget{uart_8h_a84d24d53d7a6410969c130b6b3474dd5}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg}\label{uart_8h_a84d24d53d7a6410969c130b6b3474dd5}
+\hypertarget{uart_8h_a755eaa5b71594945569cb26bc9186f3c}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Enable}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Enable}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Enable~({\bf No})}\label{uart_8h_a755eaa5b71594945569cb26bc9186f3c}
+Initial configuration for channel 2 \hypertarget{uart_8h_a28f25fcc1f450ad765778c36c420850d}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init}\label{uart_8h_a28f25fcc1f450ad765778c36c420850d}
+\hypertarget{uart_8h_a3cd2192f51b34608383e60bf23f6be20}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init@{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init}\label{uart_8h_a3cd2192f51b34608383e60bf23f6be20}
+\hypertarget{uart_8h_a99c83f314cacaee684408c21bcef4ade}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg@{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg@{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Initial\+Cfg~\{ {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+\_\+\+Cfg} {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+\_\+\+Cfg} {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+\_\+\+Cfg} \}}\label{uart_8h_a99c83f314cacaee684408c21bcef4ade}
+\hypertarget{uart_8h_af5b5c30d5160a4015e8c0e400dd54ec6}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff@{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff@{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Rx\+Buff~\{ {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Rx\+Buff\+Init} {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Rx\+Buff\+Init} {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Rx\+Buff\+Init}\}}\label{uart_8h_af5b5c30d5160a4015e8c0e400dd54ec6}
+\hypertarget{uart_8h_a2af787b8cecd20c3a15391285baa073a}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff@{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff@{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Channels\+Init\+Tx\+Buff~\{ {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch0\+Tx\+Buff\+Init} {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch1\+Tx\+Buff\+Init} {\bf U\+A\+R\+T\+\_\+\+\_\+n\+Ch2\+Tx\+Buff\+Init}\}}\label{uart_8h_a2af787b8cecd20c3a15391285baa073a}
+\hypertarget{uart_8h_a77ab65f4aa591714c1d7b30df167dc3d}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Fifo\+Length@{U\+A\+R\+T\+\_\+\+\_\+n\+Fifo\+Length}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Fifo\+Length@{U\+A\+R\+T\+\_\+\+\_\+n\+Fifo\+Length}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Fifo\+Length}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Fifo\+Length~(15)}\label{uart_8h_a77ab65f4aa591714c1d7b30df167dc3d}
+Fifo size, it is the length of the hardware buffer \hypertarget{uart_8h_a5961f52ec19a91b560f0d9a7de3487f5}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Rx\+I\+S\+R\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Rx\+I\+S\+R\+Enable}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Rx\+I\+S\+R\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Rx\+I\+S\+R\+Enable}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Rx\+I\+S\+R\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Rx\+I\+S\+R\+Enable~({\bf Yes})}\label{uart_8h_a5961f52ec19a91b560f0d9a7de3487f5}
+Enable communications using I\+S\+R for Rx channel \hypertarget{uart_8h_af2596aca540af22b7d3694eeb4b4ab3b}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+n\+Tx\+I\+S\+R\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Tx\+I\+S\+R\+Enable}}
+\index{U\+A\+R\+T\+\_\+\+\_\+n\+Tx\+I\+S\+R\+Enable@{U\+A\+R\+T\+\_\+\+\_\+n\+Tx\+I\+S\+R\+Enable}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+n\+Tx\+I\+S\+R\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+n\+Tx\+I\+S\+R\+Enable~({\bf No})}\label{uart_8h_af2596aca540af22b7d3694eeb4b4ab3b}
+=============================================================== \subsection*{Configuration parameters }
+
+Enable communications using I\+S\+R for Tx channel \hypertarget{uart_8h_aac0356e8864e5f51ba25c00f056afb89}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch0\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch0\+Fun2\+I\+R\+Q\+Vector}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch0\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch0\+Fun2\+I\+R\+Q\+Vector}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch0\+Fun2\+I\+R\+Q\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch0\+Fun2\+I\+R\+Q\+Vector(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}\label{uart_8h_aac0356e8864e5f51ba25c00f056afb89}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{_d_s_p2833x___device_8h_a1a95377ebb4695a49196cd666e26d97d}{EALLOW};\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{                                        PieVectTable}.
+      \hyperlink{struct_p_i_e___v_e_c_t___t_a_b_l_e_a3414c0b9cd42c20e3b191322bbad00ef}{SCIRXINTA} = &(a);\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{                                        EDIS}
+\end{DoxyCode}
+\hypertarget{uart_8h_a993c720b4cf3e300cc7fe8ea923ac3f1}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch1\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch1\+Fun2\+I\+R\+Q\+Vector}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch1\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch1\+Fun2\+I\+R\+Q\+Vector}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch1\+Fun2\+I\+R\+Q\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch1\+Fun2\+I\+R\+Q\+Vector(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}\label{uart_8h_a993c720b4cf3e300cc7fe8ea923ac3f1}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{_d_s_p2833x___device_8h_a1a95377ebb4695a49196cd666e26d97d}{EALLOW};\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{                                        PieVectTable}.
+      \hyperlink{struct_p_i_e___v_e_c_t___t_a_b_l_e_a20ffba87ff2738b9fd7766d05a6f80b0}{SCIRXINTB} = &(a);\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{                                        EDIS}
+\end{DoxyCode}
+\hypertarget{uart_8h_a9583197c1f93e98becb066257fa8f1a6}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch2\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch2\+Fun2\+I\+R\+Q\+Vector}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch2\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch2\+Fun2\+I\+R\+Q\+Vector}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch2\+Fun2\+I\+R\+Q\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Rx\+Ch2\+Fun2\+I\+R\+Q\+Vector(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}\label{uart_8h_a9583197c1f93e98becb066257fa8f1a6}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{_d_s_p2833x___device_8h_a1a95377ebb4695a49196cd666e26d97d}{EALLOW};\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{                                        PieVectTable}.
+      \hyperlink{struct_p_i_e___v_e_c_t___t_a_b_l_e_acf599ba2cdcd892c52642e009af169a4}{SCIRXINTC} = &(a);\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{                                        EDIS}
+\end{DoxyCode}
+\hypertarget{uart_8h_a6a569c4cff41a941235a5bbe04bf7663}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch0\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch0\+Fun2\+I\+R\+Q\+Vector}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch0\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch0\+Fun2\+I\+R\+Q\+Vector}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch0\+Fun2\+I\+R\+Q\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch0\+Fun2\+I\+R\+Q\+Vector(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}\label{uart_8h_a6a569c4cff41a941235a5bbe04bf7663}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{_d_s_p2833x___device_8h_a1a95377ebb4695a49196cd666e26d97d}{EALLOW};\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{                                        PieVectTable}.
+      \hyperlink{struct_p_i_e___v_e_c_t___t_a_b_l_e_a116c13ce450d4040f4fa7851871e5e5a}{SCITXINTA} = &(a);\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{                                        EDIS}
+\end{DoxyCode}
+\hypertarget{uart_8h_a4ab32b7d1011c4cb4cbf69a79bd899f0}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch1\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch1\+Fun2\+I\+R\+Q\+Vector}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch1\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch1\+Fun2\+I\+R\+Q\+Vector}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch1\+Fun2\+I\+R\+Q\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch1\+Fun2\+I\+R\+Q\+Vector(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}\label{uart_8h_a4ab32b7d1011c4cb4cbf69a79bd899f0}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{_d_s_p2833x___device_8h_a1a95377ebb4695a49196cd666e26d97d}{EALLOW};\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{                                        PieVectTable}.
+      \hyperlink{struct_p_i_e___v_e_c_t___t_a_b_l_e_ab88461dc750679e152a58bbd18d34d4b}{SCITXINTB} = &(a);\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{                                        EDIS}
+\end{DoxyCode}
+\hypertarget{uart_8h_affed728b8624fbde46f29915447cf53b}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch2\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch2\+Fun2\+I\+R\+Q\+Vector}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch2\+Fun2\+I\+R\+Q\+Vector@{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch2\+Fun2\+I\+R\+Q\+Vector}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch2\+Fun2\+I\+R\+Q\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Assign\+Tx\+Ch2\+Fun2\+I\+R\+Q\+Vector(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}\label{uart_8h_affed728b8624fbde46f29915447cf53b}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{_d_s_p2833x___device_8h_a1a95377ebb4695a49196cd666e26d97d}{EALLOW};\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___pie_vect_8h_a47d5f783aec1944b901c4f4ca8db6b66}{                                        PieVectTable}.
+      \hyperlink{struct_p_i_e___v_e_c_t___t_a_b_l_e_a38d7077ab08fd5e3f7e0551ca490bc59}{SCITXINTC} = &(a);\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___device_8h_a4b430256ca8934310dac586331dd358f}{                                        EDIS}
+\end{DoxyCode}
+\hypertarget{uart_8h_adc3da9cd59bbadbd390c215a9e2f331e}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Enter\+Critical\+Section@{U\+A\+R\+T\+\_\+\+\_\+v\+Enter\+Critical\+Section}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Enter\+Critical\+Section@{U\+A\+R\+T\+\_\+\+\_\+v\+Enter\+Critical\+Section}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Enter\+Critical\+Section}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Enter\+Critical\+Section(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf D\+I\+N\+T}}\label{uart_8h_adc3da9cd59bbadbd390c215a9e2f331e}
+=============================================================== \subsection*{Adaption macros }
+
+Disable interrupts \hypertarget{uart_8h_af5ae8129926f1b64db6451c17aa66b48}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Ctrl@{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Ctrl}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Ctrl@{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Ctrl}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Ctrl}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Ctrl(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{uart_8h_af5ae8129926f1b64db6451c17aa66b48}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{_d_s_p2833x___global_prototypes_8h_afc2722078adcaf1343954319297bd1e7}{InitPieCtrl}();\hyperlink{_d_s_p2833x___device_8h_a8d912c89db0fb8d197e5856f05ce4907}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___device_8h_a8d912c89db0fb8d197e5856f05ce4907}{                                        IER} = 0x0000;\hyperlink{_d_s_p2833x___device_8h_a1790c0117f7106f597b3540ba57df515}{\(\backslash\)}
+\hyperlink{_d_s_p2833x___device_8h_a1790c0117f7106f597b3540ba57df515}{                                        IFR} = 0x0000
+\end{DoxyCode}
+Initialize P\+I\+E control registers \hypertarget{uart_8h_aec3f10d33acaf6e5fd8baa81f272b182}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Vec\+Table@{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Vec\+Table}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Vec\+Table@{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Vec\+Table}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Vec\+Table}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Init\+P\+I\+E\+Vec\+Table(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf Init\+Pie\+Vect\+Table}()}\label{uart_8h_aec3f10d33acaf6e5fd8baa81f272b182}
+Initialize P\+I\+E Vector table \hypertarget{uart_8h_a9ba0d4b9538aba5f783288fc262f014f}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+\_\+v\+Leave\+Critical\+Section@{U\+A\+R\+T\+\_\+\+\_\+v\+Leave\+Critical\+Section}}
+\index{U\+A\+R\+T\+\_\+\+\_\+v\+Leave\+Critical\+Section@{U\+A\+R\+T\+\_\+\+\_\+v\+Leave\+Critical\+Section}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+\+\_\+v\+Leave\+Critical\+Section}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+\+\_\+v\+Leave\+Critical\+Section(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf E\+I\+N\+T}}\label{uart_8h_a9ba0d4b9538aba5f783288fc262f014f}
+Enable interrupts \hypertarget{uart_8h_aa3954ccf9b273e0ec840de81305a8a94}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Baud115200@{U\+A\+R\+T\+\_\+n\+Baud115200}}
+\index{U\+A\+R\+T\+\_\+n\+Baud115200@{U\+A\+R\+T\+\_\+n\+Baud115200}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+n\+Baud115200}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+n\+Baud115200~({\bf Uint16})(39)}\label{uart_8h_aa3954ccf9b273e0ec840de81305a8a94}
+\hypertarget{uart_8h_aaebffa9a976bfa5fdb74de73e580ac7a}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Baud19200@{U\+A\+R\+T\+\_\+n\+Baud19200}}
+\index{U\+A\+R\+T\+\_\+n\+Baud19200@{U\+A\+R\+T\+\_\+n\+Baud19200}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+n\+Baud19200}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+n\+Baud19200~({\bf Uint16})(243)}\label{uart_8h_aaebffa9a976bfa5fdb74de73e580ac7a}
+\hypertarget{uart_8h_a273109e9a55b90f66aaa514335b0ef78}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Baud38400@{U\+A\+R\+T\+\_\+n\+Baud38400}}
+\index{U\+A\+R\+T\+\_\+n\+Baud38400@{U\+A\+R\+T\+\_\+n\+Baud38400}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+n\+Baud38400}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+n\+Baud38400~({\bf Uint16})(181)}\label{uart_8h_a273109e9a55b90f66aaa514335b0ef78}
+\hypertarget{uart_8h_a6810b8c0478a80532fe3982b164f783f}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Baud57600@{U\+A\+R\+T\+\_\+n\+Baud57600}}
+\index{U\+A\+R\+T\+\_\+n\+Baud57600@{U\+A\+R\+T\+\_\+n\+Baud57600}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+n\+Baud57600}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+n\+Baud57600~({\bf Uint16})(80)}\label{uart_8h_a6810b8c0478a80532fe3982b164f783f}
+\hypertarget{uart_8h_ae8a9cf6903205595218ab53ff71f9367}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Baud9600@{U\+A\+R\+T\+\_\+n\+Baud9600}}
+\index{U\+A\+R\+T\+\_\+n\+Baud9600@{U\+A\+R\+T\+\_\+n\+Baud9600}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+n\+Baud9600}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+n\+Baud9600~({\bf Uint16})(487)}\label{uart_8h_ae8a9cf6903205595218ab53ff71f9367}
+\hypertarget{uart_8h_a9c0f34f49d5606a4398241fff18cef40}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Baud\+Dummy@{U\+A\+R\+T\+\_\+n\+Baud\+Dummy}}
+\index{U\+A\+R\+T\+\_\+n\+Baud\+Dummy@{U\+A\+R\+T\+\_\+n\+Baud\+Dummy}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+n\+Baud\+Dummy}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+A\+R\+T\+\_\+n\+Baud\+Dummy~({\bf Uint16})(0)}\label{uart_8h_a9c0f34f49d5606a4398241fff18cef40}
+Pre defined values to use different communication baud rates 
+
+\subsection{Typedef Documentation}
+\hypertarget{uart_8h_acd354ef53b9be6941b51f23ffe59ba0a}{}\index{uart.\+h@{uart.\+h}!t\+Notification\+Func@{t\+Notification\+Func}}
+\index{t\+Notification\+Func@{t\+Notification\+Func}!uart.\+h@{uart.\+h}}
+\subsubsection[{t\+Notification\+Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ t\+Notification\+Func) (void)}\label{uart_8h_acd354ef53b9be6941b51f23ffe59ba0a}
+Function pointer type(used for handling transmission and reception of data) 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{uart_8h_a10de4895361ff2048b43401883a0fffb}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+ten\+Channel\+I\+D@{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}
+\index{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D@{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}\label{uart_8h_a10de4895361ff2048b43401883a0fffb}
+=============================================================== \subsection*{Module types }
+
+An enumeration of U\+A\+R\+T channels \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+A\+R\+T\+\_\+n\+Ch0@{U\+A\+R\+T\+\_\+n\+Ch0}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Ch0@{U\+A\+R\+T\+\_\+n\+Ch0}}\item[{\em 
+\hypertarget{uart_8h_a10de4895361ff2048b43401883a0fffba93142f99f5e3190ef186b7c3bf61298b}{}U\+A\+R\+T\+\_\+n\+Ch0\label{uart_8h_a10de4895361ff2048b43401883a0fffba93142f99f5e3190ef186b7c3bf61298b}
+}]U\+A\+R\+T Channel 0 \index{U\+A\+R\+T\+\_\+n\+No\+Of\+Channels@{U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+No\+Of\+Channels@{U\+A\+R\+T\+\_\+n\+No\+Of\+Channels}}\item[{\em 
+\hypertarget{uart_8h_a10de4895361ff2048b43401883a0fffbad69768fe71980bef9846a56ecaaf2114}{}U\+A\+R\+T\+\_\+n\+No\+Of\+Channels\label{uart_8h_a10de4895361ff2048b43401883a0fffbad69768fe71980bef9846a56ecaaf2114}
+}]Max number of channels \end{description}
+\end{Desc}
+\hypertarget{uart_8h_a3160561225e7b6945530fa0b7d90c46d}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+ten\+Channel\+State@{U\+A\+R\+T\+\_\+ten\+Channel\+State}}
+\index{U\+A\+R\+T\+\_\+ten\+Channel\+State@{U\+A\+R\+T\+\_\+ten\+Channel\+State}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+ten\+Channel\+State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf U\+A\+R\+T\+\_\+ten\+Channel\+State}}\label{uart_8h_a3160561225e7b6945530fa0b7d90c46d}
+An enumeration of U\+A\+R\+T channel status \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+A\+R\+T\+\_\+n\+Opened@{U\+A\+R\+T\+\_\+n\+Opened}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Opened@{U\+A\+R\+T\+\_\+n\+Opened}}\item[{\em 
+\hypertarget{uart_8h_a3160561225e7b6945530fa0b7d90c46dade1121f2b67fd01fad5f8c266b2464be}{}U\+A\+R\+T\+\_\+n\+Opened\label{uart_8h_a3160561225e7b6945530fa0b7d90c46dade1121f2b67fd01fad5f8c266b2464be}
+}]Channel opened \index{U\+A\+R\+T\+\_\+n\+Closed@{U\+A\+R\+T\+\_\+n\+Closed}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Closed@{U\+A\+R\+T\+\_\+n\+Closed}}\item[{\em 
+\hypertarget{uart_8h_a3160561225e7b6945530fa0b7d90c46dab0903a88f5392e4ad157921bfdc37f19}{}U\+A\+R\+T\+\_\+n\+Closed\label{uart_8h_a3160561225e7b6945530fa0b7d90c46dab0903a88f5392e4ad157921bfdc37f19}
+}]Channel closed, initial status of any port \index{U\+A\+R\+T\+\_\+n\+Busy@{U\+A\+R\+T\+\_\+n\+Busy}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Busy@{U\+A\+R\+T\+\_\+n\+Busy}}\item[{\em 
+\hypertarget{uart_8h_a3160561225e7b6945530fa0b7d90c46da58356ead2ebd5613a5cd5f0832c2f8bc}{}U\+A\+R\+T\+\_\+n\+Busy\label{uart_8h_a3160561225e7b6945530fa0b7d90c46da58356ead2ebd5613a5cd5f0832c2f8bc}
+}]Ok result of any operation performed by U\+A\+R\+T module \index{U\+A\+R\+T\+\_\+n\+Fault@{U\+A\+R\+T\+\_\+n\+Fault}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Fault@{U\+A\+R\+T\+\_\+n\+Fault}}\item[{\em 
+\hypertarget{uart_8h_a3160561225e7b6945530fa0b7d90c46da2df6a3742e49d773cf30d659931cfec5}{}U\+A\+R\+T\+\_\+n\+Fault\label{uart_8h_a3160561225e7b6945530fa0b7d90c46da2df6a3742e49d773cf30d659931cfec5}
+}]Eror detected in channel \end{description}
+\end{Desc}
+\hypertarget{uart_8h_a7e8f176a18afa03ebe1a36916b64d46b}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+ten\+Ret\+Value@{U\+A\+R\+T\+\_\+ten\+Ret\+Value}}
+\index{U\+A\+R\+T\+\_\+ten\+Ret\+Value@{U\+A\+R\+T\+\_\+ten\+Ret\+Value}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+ten\+Ret\+Value}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf U\+A\+R\+T\+\_\+ten\+Ret\+Value}}\label{uart_8h_a7e8f176a18afa03ebe1a36916b64d46b}
+An enumeration of U\+A\+R\+T process result \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+A\+R\+T\+\_\+n\+Ok@{U\+A\+R\+T\+\_\+n\+Ok}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Ok@{U\+A\+R\+T\+\_\+n\+Ok}}\item[{\em 
+\hypertarget{uart_8h_a7e8f176a18afa03ebe1a36916b64d46ba19fee1d9593bb12f3e893a8355723cbe}{}U\+A\+R\+T\+\_\+n\+Ok\label{uart_8h_a7e8f176a18afa03ebe1a36916b64d46ba19fee1d9593bb12f3e893a8355723cbe}
+}]Ok result of any operation performed by U\+A\+R\+T module \index{U\+A\+R\+T\+\_\+n\+Error@{U\+A\+R\+T\+\_\+n\+Error}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Error@{U\+A\+R\+T\+\_\+n\+Error}}\item[{\em 
+\hypertarget{uart_8h_a7e8f176a18afa03ebe1a36916b64d46babdbd2541a8239b4566f383f87074b045}{}U\+A\+R\+T\+\_\+n\+Error\label{uart_8h_a7e8f176a18afa03ebe1a36916b64d46babdbd2541a8239b4566f383f87074b045}
+}]Erroneous result of any operation performed by U\+A\+R\+T module \index{U\+A\+R\+T\+\_\+n\+Num\+Of\+Resp@{U\+A\+R\+T\+\_\+n\+Num\+Of\+Resp}!uart.\+h@{uart.\+h}}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+n\+Num\+Of\+Resp@{U\+A\+R\+T\+\_\+n\+Num\+Of\+Resp}}\item[{\em 
+\hypertarget{uart_8h_a7e8f176a18afa03ebe1a36916b64d46ba3b1880e378aed2fb79c541ffe6164d48}{}U\+A\+R\+T\+\_\+n\+Num\+Of\+Resp\label{uart_8h_a7e8f176a18afa03ebe1a36916b64d46ba3b1880e378aed2fb79c541ffe6164d48}
+}]Count of ennumeration elements \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{uart_8h_ae2eeb6f5e0ad76313c13612afa730184}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+en\+Read@{U\+A\+R\+T\+\_\+en\+Read}}
+\index{U\+A\+R\+T\+\_\+en\+Read@{U\+A\+R\+T\+\_\+en\+Read}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+en\+Read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+A\+R\+T\+\_\+ten\+Ret\+Value} U\+A\+R\+T\+\_\+en\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D, }
+\item[{{\bf Uint8} $\ast$}]{pu8\+Rx\+Buf, }
+\item[{{\bf Uint8}}]{u8\+Rx\+Data\+Len}
+\end{DoxyParamCaption}
+)}\label{uart_8h_ae2eeb6f5e0ad76313c13612afa730184}
+Description\+: Read data from an U\+A\+R\+T channel rx buffer. Read is only valid, when data is available in rx buffer or rx notification callback is triggered. \begin{DoxyReturn}{Returns}
+U\+A\+R\+T\+\_\+ten\+Ret\+Value 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em en\+Ch\+I\+D} & channel I\+D \\
+\hline
+{\em puq6\+Rx\+Buf} & pointer to buffer where data will be retrieved \\
+\hline
+{\em u8\+Rx\+Data\+Len} & length of data for reception \\
+\hline
+\end{DoxyParams}
+\hypertarget{uart_8h_a9048456a2692199b3a5f31481b3f19ff}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+en\+Write@{U\+A\+R\+T\+\_\+en\+Write}}
+\index{U\+A\+R\+T\+\_\+en\+Write@{U\+A\+R\+T\+\_\+en\+Write}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+en\+Write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf U\+A\+R\+T\+\_\+ten\+Ret\+Value} U\+A\+R\+T\+\_\+en\+Write (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D, }
+\item[{{\bf Uint8} $\ast$}]{pu8\+Tx\+Buf, }
+\item[{{\bf Uint8}}]{u8\+Tx\+Data\+Len}
+\end{DoxyParamCaption}
+)}\label{uart_8h_a9048456a2692199b3a5f31481b3f19ff}
+Description\+: Write data to an U\+A\+R\+T channel tx buffer. Write is only valid, when buss is free or tx notification callback is triggered. \begin{DoxyReturn}{Returns}
+U\+A\+R\+T\+\_\+ten\+Ret\+Value 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em en\+Ch\+I\+D} & channel I\+D \\
+\hline
+{\em puq6\+Rx\+Buf} & pointer to buffer where data will be obtained \\
+\hline
+{\em u8\+Rx\+Data\+Len} & length of data for transmission \\
+\hline
+\end{DoxyParams}
+Do nothing
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\hypertarget{uart_8h_a335786b9924dfb165f184e2edc257bdd}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+v\+Close@{U\+A\+R\+T\+\_\+v\+Close}}
+\index{U\+A\+R\+T\+\_\+v\+Close@{U\+A\+R\+T\+\_\+v\+Close}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void U\+A\+R\+T\+\_\+v\+Close (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D}
+\end{DoxyParamCaption}
+)}\label{uart_8h_a335786b9924dfb165f184e2edc257bdd}
+Description\+: Close an U\+A\+R\+T channel. If a channel is closed, all transmission is stopped. The U\+A\+R\+T channel state is set back to U\+A\+R\+T\+\_\+\+\_\+n\+Ch\+X\+\_\+\+Cfg. 
+\begin{DoxyParams}{Parameters}
+{\em en\+Ch} & channel number to be closed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{uart_8h_a1d0bbcc5e44c1a20068e4e593a9e2f15}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data@{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data}}
+\index{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data@{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8} U\+A\+R\+T\+\_\+v\+Get\+Available\+Rx\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D}
+\end{DoxyParamCaption}
+)}\label{uart_8h_a1d0bbcc5e44c1a20068e4e593a9e2f15}
+Description\+: Returns the value of data available in R\+X channel buffer. \begin{DoxyReturn}{Returns}
+Uint8 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} & en\+Ch\+I\+D \\
+\hline
+\end{DoxyParams}
+\hypertarget{uart_8h_a3be1f5e946607b641f498495e2a867d9}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data@{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data}}
+\index{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data@{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint8} U\+A\+R\+T\+\_\+v\+Get\+Available\+Tx\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D}
+\end{DoxyParamCaption}
+)}\label{uart_8h_a3be1f5e946607b641f498495e2a867d9}
+Description\+: Returns the value of data available in T\+X channel buffer. \begin{DoxyReturn}{Returns}
+Uint8 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em U\+A\+R\+T\+\_\+ten\+Channel\+I\+D} & en\+Ch\+I\+D \\
+\hline
+\end{DoxyParams}
+\hypertarget{uart_8h_aba11a19ce0149297d8e728da1708a2b8}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+v\+Init@{U\+A\+R\+T\+\_\+v\+Init}}
+\index{U\+A\+R\+T\+\_\+v\+Init@{U\+A\+R\+T\+\_\+v\+Init}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Init}]{\setlength{\rightskip}{0pt plus 5cm}void U\+A\+R\+T\+\_\+v\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{uart_8h_aba11a19ce0149297d8e728da1708a2b8}
+=============================================================== \subsection*{Function prototypes }
+
+Initializes the port functionality. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{uart_8h_ad34d0c42e47cf618aba70ee8dfc63085}{}\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+v\+Open@{U\+A\+R\+T\+\_\+v\+Open}}
+\index{U\+A\+R\+T\+\_\+v\+Open@{U\+A\+R\+T\+\_\+v\+Open}!uart.\+h@{uart.\+h}}
+\subsubsection[{U\+A\+R\+T\+\_\+v\+Open}]{\setlength{\rightskip}{0pt plus 5cm}void U\+A\+R\+T\+\_\+v\+Open (
+\begin{DoxyParamCaption}
+\item[{{\bf U\+A\+R\+T\+\_\+ten\+Channel\+I\+D}}]{en\+Ch\+I\+D, }
+\item[{{\bf t\+Notification\+Func}}]{pv\+Rx\+Hdlr, }
+\item[{{\bf t\+Notification\+Func}}]{pv\+Tx\+Hdlr}
+\end{DoxyParamCaption}
+)}\label{uart_8h_ad34d0c42e47cf618aba70ee8dfc63085}
+Opens an U\+A\+R\+T channel. This function intialices a Serial port with the parameters specified by the channel descriptor. 
+\begin{DoxyParams}{Parameters}
+{\em pst\+Channel\+Desc} & \\
+\hline
+{\em pv\+Rx\+Hdlr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+

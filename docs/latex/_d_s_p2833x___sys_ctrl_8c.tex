@@ -1,0 +1,134 @@
+\hypertarget{_d_s_p2833x___sys_ctrl_8c}{}\section{f2833x/v140/\+D\+S\+P2833x\+\_\+common/source/\+D\+S\+P2833x\+\_\+\+Sys\+Ctrl.c File Reference}
+\label{_d_s_p2833x___sys_ctrl_8c}\index{f2833x/v140/\+D\+S\+P2833x\+\_\+common/source/\+D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{f2833x/v140/\+D\+S\+P2833x\+\_\+common/source/\+D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Device.\+h$>$}\\*
+{\ttfamily \#include $<$D\+S\+P2833x\+\_\+\+Examples.\+h$>$}\\*
+Include dependency graph for D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_d_s_p2833x___sys_ctrl_8c_a9024ed05f7df784637ef7b44ca8caf97}{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L}~0
+\item 
+\#define \hyperlink{_d_s_p2833x___sys_ctrl_8c_ae56fdb340b23940f7a64ed2e37c1774a}{S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+S\+S}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_d_s_p2833x___sys_ctrl_8c_a881937c4bb55a2120533f2e80dcea828}{Init\+Sys\+Ctrl} (void)
+\item 
+void \hyperlink{_d_s_p2833x___sys_ctrl_8c_acfb15ebe58549117d808383513ee5cc8}{Init\+Flash} (void)
+\item 
+void \hyperlink{_d_s_p2833x___sys_ctrl_8c_aa5e4faa42368a6024ce1b6b65a16d948}{Service\+Dog} (void)
+\item 
+void \hyperlink{_d_s_p2833x___sys_ctrl_8c_aecfa6e351779dbb2aed2ff491ce907ce}{Disable\+Dog} (void)
+\item 
+void \hyperlink{_d_s_p2833x___sys_ctrl_8c_a06f78c7dd731e949c5dfd048fd8cb7ab}{Init\+Pll} (\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} val, \hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} divsel)
+\item 
+void \hyperlink{_d_s_p2833x___sys_ctrl_8c_a17c664e03a629dcb5c59b71cf5ba6e9c}{Init\+Peripheral\+Clocks} (void)
+\item 
+\hyperlink{_d_s_p2833x___device_8h_a59a9f6be4562c327cbfb4f7e8e18f08b}{Uint16} \hyperlink{_d_s_p2833x___sys_ctrl_8c_a524466399dcf9b09f7fa4c150cd7fb63}{Csm\+Unlock} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_a9024ed05f7df784637ef7b44ca8caf97}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L@{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L@{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L~0}\label{_d_s_p2833x___sys_ctrl_8c_a9024ed05f7df784637ef7b44ca8caf97}
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_ae56fdb340b23940f7a64ed2e37c1774a}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+S\+S@{S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+S\+S}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+S\+S@{S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+S\+S}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+A\+T\+U\+S\+\_\+\+S\+U\+C\+C\+E\+S\+S~1}\label{_d_s_p2833x___sys_ctrl_8c_ae56fdb340b23940f7a64ed2e37c1774a}
+
+
+\subsection{Function Documentation}
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_a524466399dcf9b09f7fa4c150cd7fb63}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!Csm\+Unlock@{Csm\+Unlock}}
+\index{Csm\+Unlock@{Csm\+Unlock}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{Csm\+Unlock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Uint16} Csm\+Unlock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___sys_ctrl_8c_a524466399dcf9b09f7fa4c150cd7fb63}
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_aecfa6e351779dbb2aed2ff491ce907ce}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!Disable\+Dog@{Disable\+Dog}}
+\index{Disable\+Dog@{Disable\+Dog}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{Disable\+Dog}]{\setlength{\rightskip}{0pt plus 5cm}void Disable\+Dog (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___sys_ctrl_8c_aecfa6e351779dbb2aed2ff491ce907ce}
+
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_acfb15ebe58549117d808383513ee5cc8}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!Init\+Flash@{Init\+Flash}}
+\index{Init\+Flash@{Init\+Flash}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{Init\+Flash}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Flash (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___sys_ctrl_8c_acfb15ebe58549117d808383513ee5cc8}
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_a17c664e03a629dcb5c59b71cf5ba6e9c}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!Init\+Peripheral\+Clocks@{Init\+Peripheral\+Clocks}}
+\index{Init\+Peripheral\+Clocks@{Init\+Peripheral\+Clocks}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{Init\+Peripheral\+Clocks}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Peripheral\+Clocks (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___sys_ctrl_8c_a17c664e03a629dcb5c59b71cf5ba6e9c}
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_a06f78c7dd731e949c5dfd048fd8cb7ab}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!Init\+Pll@{Init\+Pll}}
+\index{Init\+Pll@{Init\+Pll}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{Init\+Pll}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Pll (
+\begin{DoxyParamCaption}
+\item[{{\bf Uint16}}]{val, }
+\item[{{\bf Uint16}}]{divsel}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___sys_ctrl_8c_a06f78c7dd731e949c5dfd048fd8cb7ab}
+
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 5
+
+
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_a881937c4bb55a2120533f2e80dcea828}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!Init\+Sys\+Ctrl@{Init\+Sys\+Ctrl}}
+\index{Init\+Sys\+Ctrl@{Init\+Sys\+Ctrl}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{Init\+Sys\+Ctrl}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Sys\+Ctrl (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___sys_ctrl_8c_a881937c4bb55a2120533f2e80dcea828}
+
+
+Here is the call graph for this function\+:
+% FIG 6
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+\hypertarget{_d_s_p2833x___sys_ctrl_8c_aa5e4faa42368a6024ce1b6b65a16d948}{}\index{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}!Service\+Dog@{Service\+Dog}}
+\index{Service\+Dog@{Service\+Dog}!D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c@{D\+S\+P2833x\+\_\+\+Sys\+Ctrl.\+c}}
+\subsubsection[{Service\+Dog}]{\setlength{\rightskip}{0pt plus 5cm}void Service\+Dog (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_s_p2833x___sys_ctrl_8c_aa5e4faa42368a6024ce1b6b65a16d948}

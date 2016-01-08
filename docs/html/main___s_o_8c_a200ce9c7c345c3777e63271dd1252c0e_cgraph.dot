@@ -1,0 +1,27 @@
+digraph "OS_SCHEDULER"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OS_SCHEDULER",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Sort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#a0da452cbc779c9fa43ae9ee3ff555046"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CheckTaskOverflow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#ac502be35364d004469bad9977e6633d8"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SetAlarm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#a3e6eee2cb5b75dddeb4782c1c5e66765"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="cpu_timer0_isr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#a0950d135719562f192fb7fd782cd58be"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="UpdateReadyTaskTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#a5f150fcb40db814440fbfd0779244637"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ElapsedTimeSinceLastScheduling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#a4271bf954ac7e91f35eec23ab98b19bd"];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="InitCpuTimers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___cpu_timers_8c.html#aa23a1f332721d800fa9b232563403609"];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ConfigCpuTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_d_s_p2833x___cpu_timers_8c.html#ab9368e14715e9c17a2223c7433fabe73"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="RestoreSleptTaskContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#a5a3e7583ec4240cce4e574ae4d824281"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="RestoreInterruptedTaskContext",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main___s_o_8c.html#a8b5935457822dd4a391fb2ecd2cfd99b"];
+}

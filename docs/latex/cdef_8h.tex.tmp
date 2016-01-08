@@ -1,0 +1,36 @@
+\hypertarget{cdef_8h}{}\section{cdef/cdef.h File Reference}
+\label{cdef_8h}\index{cdef/cdef.\+h@{cdef/cdef.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+L\+L}~((void$\ast$)0)
+\item 
+\#define \hyperlink{cdef_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+U\+E}~(1==1)
+\item 
+\#define \hyperlink{cdef_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+S\+E}~(1==0)
+\item 
+\#define \hyperlink{cdef_8h_adf4f44e25f5216808d6ca83186e89119}{Yes}~(1)
+\item 
+\#define \hyperlink{cdef_8h_a554d6ecb4ae62985018db18be458114d}{No}~(0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cdef_8h_aa93f0eb578d23995850d61f7d61c55c1}{}\index{cdef.\+h@{cdef.\+h}!F\+A\+L\+S\+E@{F\+A\+L\+S\+E}}
+\index{F\+A\+L\+S\+E@{F\+A\+L\+S\+E}!cdef.\+h@{cdef.\+h}}
+\subsubsection[{F\+A\+L\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+A\+L\+S\+E~(1==0)}\label{cdef_8h_aa93f0eb578d23995850d61f7d61c55c1}
+Definition of F\+A\+L\+S\+E. \hypertarget{cdef_8h_a554d6ecb4ae62985018db18be458114d}{}\index{cdef.\+h@{cdef.\+h}!No@{No}}
+\index{No@{No}!cdef.\+h@{cdef.\+h}}
+\subsubsection[{No}]{\setlength{\rightskip}{0pt plus 5cm}\#define No~(0)}\label{cdef_8h_a554d6ecb4ae62985018db18be458114d}
+Definition of F\+A\+L\+S\+E. \hypertarget{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{}\index{cdef.\+h@{cdef.\+h}!N\+U\+L\+L@{N\+U\+L\+L}}
+\index{N\+U\+L\+L@{N\+U\+L\+L}!cdef.\+h@{cdef.\+h}}
+\subsubsection[{N\+U\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+U\+L\+L~((void$\ast$)0)}\label{cdef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}
+Definition of N\+U\+L\+L, mostly used in pointer initializations. \hypertarget{cdef_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{}\index{cdef.\+h@{cdef.\+h}!T\+R\+U\+E@{T\+R\+U\+E}}
+\index{T\+R\+U\+E@{T\+R\+U\+E}!cdef.\+h@{cdef.\+h}}
+\subsubsection[{T\+R\+U\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+R\+U\+E~(1==1)}\label{cdef_8h_aa8cecfc5c5c054d2875c03e77b7be15d}
+Definition of T\+R\+U\+E. \hypertarget{cdef_8h_adf4f44e25f5216808d6ca83186e89119}{}\index{cdef.\+h@{cdef.\+h}!Yes@{Yes}}
+\index{Yes@{Yes}!cdef.\+h@{cdef.\+h}}
+\subsubsection[{Yes}]{\setlength{\rightskip}{0pt plus 5cm}\#define Yes~(1)}\label{cdef_8h_adf4f44e25f5216808d6ca83186e89119}
+Definition of T\+R\+U\+E. 
